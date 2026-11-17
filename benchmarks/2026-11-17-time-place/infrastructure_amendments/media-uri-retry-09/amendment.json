@@ -1,0 +1,14 @@
+{
+  "time": 1794933356.1593893,
+  "reason": "A verified JPEG previously accepted in other batches received a provider data-URI parsing error. Retry this exact recognized error with unchanged bytes/query; keep sanitized private diagnostics and bounded media abstentions. Reuse completed batches only after checking case IDs and both prediction hashes.",
+  "changed_modules": [
+    "hybrid_run.py",
+    "provider_guard.py",
+    "providers.py"
+  ],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "runtime_changes": {},
+  "previous_protocol_sha256": "b9aa9cf8b085dc72cf69be709b5c264fa68b520bffe2b49e3a8560b6b4fae28b",
+  "new_protocol_sha256": "ddd229f4f3a9ac2c9d4fd455dab1ff82bde5e95b972b24153e4de8a9aeb579f0"
+}

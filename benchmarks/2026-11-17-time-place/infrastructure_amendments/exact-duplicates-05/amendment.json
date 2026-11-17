@@ -1,0 +1,12 @@
+{
+  "time": 1794926335.044727,
+  "reason": "Collapse byte-equivalent normalized duplicate judgment records; conflicting records remain invalid and require a fresh response. Every original status and reason is retained.",
+  "changed_modules": [
+    "providers.py"
+  ],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "runtime_changes": {},
+  "previous_protocol_sha256": "c48f9a3ccbb1061233bf38b23cda507e81f01c7af82c7d2a6edf6a98357ce0ce",
+  "new_protocol_sha256": "ec6fa122398a5ba9dfc3fc0fb0a51713ec3a1ce565d41cfd699631355fbb7e40"
+}

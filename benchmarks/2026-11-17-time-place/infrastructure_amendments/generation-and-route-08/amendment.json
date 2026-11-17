@@ -1,0 +1,13 @@
+{
+  "time": 1794927737.2675972,
+  "reason": "Diagnosed provider HTTP400 invalid_parameter_error explicitly aborting JSON generation; retry only this recognized output failure, retain bounded uncertain abstentions. Repair planner output IDs/names against original inputs without selecting directories manually.",
+  "changed_modules": [
+    "provider_guard.py",
+    "providers.py"
+  ],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "runtime_changes": {},
+  "previous_protocol_sha256": "6fb6d6a6dfb9610f1d224671e22224e57315f381784fe4ae7f32198ba6dab499",
+  "new_protocol_sha256": "b9aa9cf8b085dc72cf69be709b5c264fa68b520bffe2b49e3a8560b6b4fae28b"
+}

@@ -1,0 +1,13 @@
+{
+  "time": 1794926635.6362011,
+  "reason": "After two explicit ID/schema repair responses still fail strict coverage, record an audited uncertain abstention for the original input pairs; never accept a conflicting status, create a positive, or count unreviewed work as negative.",
+  "changed_modules": [
+    "hybrid_run.py",
+    "providers.py"
+  ],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "runtime_changes": {},
+  "previous_protocol_sha256": "284df1712424215eff86a76fbf1a0a650565b698e7963efc4c0b8ce5d389843d",
+  "new_protocol_sha256": "6fb6d6a6dfb9610f1d224671e22224e57315f381784fe4ae7f32198ba6dab499"
+}

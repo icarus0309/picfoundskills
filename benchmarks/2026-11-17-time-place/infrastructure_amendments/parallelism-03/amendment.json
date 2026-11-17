@@ -1,0 +1,23 @@
+{
+  "time": 1794926078.5975492,
+  "reason": "Increase request concurrency to reduce elapsed time; query conditions, images, model settings and relevance rules are unchanged.",
+  "changed_modules": [],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "runtime_changes": {
+    "workers": {
+      "before": 8,
+      "after": 16
+    },
+    "parallel_batches": {
+      "before": 2,
+      "after": 4
+    },
+    "network_concurrency": {
+      "before": 16,
+      "after": 64
+    }
+  },
+  "previous_protocol_sha256": "5694026d2267152549ca24b196c99719386aff1df41915f2c3dd2d8b956fcd3b",
+  "new_protocol_sha256": "dca6a6773999e8a9b7d476d724e81dad228bd094c049b73b60f466995d8c2f92"
+}

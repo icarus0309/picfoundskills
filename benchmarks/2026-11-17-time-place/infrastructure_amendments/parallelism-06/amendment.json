@@ -1,0 +1,19 @@
+{
+  "time": 1794926487.5230725,
+  "reason": "Raise concurrency after the 64-request run remained stable; no input, model or judgment setting changes.",
+  "changed_modules": [],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "runtime_changes": {
+    "workers": {
+      "before": 16,
+      "after": 32
+    },
+    "network_concurrency": {
+      "before": 64,
+      "after": 128
+    }
+  },
+  "previous_protocol_sha256": "ec6fa122398a5ba9dfc3fc0fb0a51713ec3a1ce565d41cfd699631355fbb7e40",
+  "new_protocol_sha256": "284df1712424215eff86a76fbf1a0a650565b698e7963efc4c0b8ce5d389843d"
+}

@@ -1,0 +1,142 @@
+{
+  "scope": {
+    "cases": 162,
+    "source_start_case_number": 101,
+    "selection": "All A/B-classified time/named-location queries after the first 100; no ground-truth selection",
+    "categories": {
+      "place": 95,
+      "time": 56,
+      "both": 11
+    },
+    "reference_date": "2026-11-17"
+  },
+  "overall": {
+    "baseline": {
+      "cases": 162,
+      "labeled_cases": 160,
+      "without_labels": 2,
+      "hit_cases": 125,
+      "hit_rate": 0.78125,
+      "known_fid_hits": 1314,
+      "known_fid_total": 5758,
+      "known_fid_coverage": 0.22820423758249392,
+      "macro_known_fid_coverage": 0.24040264497537006,
+      "returned_pairs": 3285,
+      "uncertain_pairs": 4625
+    },
+    "hybrid": {
+      "cases": 162,
+      "labeled_cases": 160,
+      "without_labels": 2,
+      "hit_cases": 154,
+      "hit_rate": 0.9625,
+      "known_fid_hits": 2654,
+      "known_fid_total": 5758,
+      "known_fid_coverage": 0.46092393192080583,
+      "macro_known_fid_coverage": 0.45383941022249974,
+      "returned_pairs": 7420,
+      "uncertain_pairs": 5746
+    }
+  },
+  "by_category": {
+    "time": {
+      "baseline": {
+        "cases": 56,
+        "labeled_cases": 55,
+        "without_labels": 1,
+        "hit_cases": 39,
+        "hit_rate": 0.7090909090909091,
+        "known_fid_hits": 443,
+        "known_fid_total": 2129,
+        "known_fid_coverage": 0.20807891028651948,
+        "macro_known_fid_coverage": 0.21983384634934588,
+        "returned_pairs": 1093,
+        "uncertain_pairs": 994
+      },
+      "hybrid": {
+        "cases": 56,
+        "labeled_cases": 55,
+        "without_labels": 1,
+        "hit_cases": 52,
+        "hit_rate": 0.9454545454545454,
+        "known_fid_hits": 1065,
+        "known_fid_total": 2129,
+        "known_fid_coverage": 0.5002348520432128,
+        "macro_known_fid_coverage": 0.486531363040387,
+        "returned_pairs": 4004,
+        "uncertain_pairs": 1020
+      }
+    },
+    "place": {
+      "baseline": {
+        "cases": 95,
+        "labeled_cases": 94,
+        "without_labels": 1,
+        "hit_cases": 78,
+        "hit_rate": 0.8297872340425532,
+        "known_fid_hits": 792,
+        "known_fid_total": 3383,
+        "known_fid_coverage": 0.23411173514631983,
+        "macro_known_fid_coverage": 0.24118937757559902,
+        "returned_pairs": 1962,
+        "uncertain_pairs": 3314
+      },
+      "hybrid": {
+        "cases": 95,
+        "labeled_cases": 94,
+        "without_labels": 1,
+        "hit_cases": 93,
+        "hit_rate": 0.9893617021276596,
+        "known_fid_hits": 1488,
+        "known_fid_total": 3383,
+        "known_fid_coverage": 0.4398462902749039,
+        "macro_known_fid_coverage": 0.44074927717639495,
+        "returned_pairs": 3147,
+        "uncertain_pairs": 4504
+      }
+    },
+    "both": {
+      "baseline": {
+        "cases": 11,
+        "labeled_cases": 11,
+        "without_labels": 0,
+        "hit_cases": 8,
+        "hit_rate": 0.7272727272727273,
+        "known_fid_hits": 79,
+        "known_fid_total": 246,
+        "known_fid_coverage": 0.32113821138211385,
+        "macro_known_fid_coverage": 0.33652365043080706,
+        "returned_pairs": 230,
+        "uncertain_pairs": 317
+      },
+      "hybrid": {
+        "cases": 11,
+        "labeled_cases": 11,
+        "without_labels": 0,
+        "hit_cases": 9,
+        "hit_rate": 0.8181818181818182,
+        "known_fid_hits": 101,
+        "known_fid_total": 246,
+        "known_fid_coverage": 0.4105691056910569,
+        "macro_known_fid_coverage": 0.40224078307250455,
+        "returned_pairs": 269,
+        "uncertain_pairs": 222
+      }
+    }
+  },
+  "recovered_fid_stages": {
+    "directory_not_searched": 934,
+    "coarse_screen_miss": 335,
+    "baseline_uncertain": 53,
+    "baseline_visual_rejection": 16,
+    "provider_blocked_visual": 2
+  },
+  "missed_fid_stages": {
+    "final_uncertain": 397,
+    "visual_candidate_not_confirmed": 304,
+    "not_in_either_candidate_pool": 1790,
+    "metadata_candidate_not_confirmed": 511,
+    "unmapped_local_fid": 102
+  },
+  "unmapped_known_fid_relations": 102
+}

@@ -1,0 +1,11 @@
+{
+  "time": 1794925884.3339949,
+  "reason": "Discard non-judgment notes and echoed input records from review arrays; preserve every original status and retain strict image/query coverage checks.",
+  "changed_modules": [
+    "providers.py"
+  ],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "previous_protocol_sha256": "a49f1f5f6137dd35a71d58b8db11668d4eb49e9fbc7aef6a7647c5117d7b1717",
+  "new_protocol_sha256": "5694026d2267152549ca24b196c99719386aff1df41915f2c3dd2d8b956fcd3b"
+}

@@ -1,0 +1,1821 @@
+{
+  "version": "time-place-selection-v2",
+  "selection": "all eligible",
+  "query_source_sha256": "90c71072f6ff6489981b3159444840848c64a6dbf806fda8ea449c2956897efa",
+  "labels_used": false,
+  "cases": [
+    {
+      "id": "TC0101",
+      "query": "广州动物园",
+      "excel_row": 102,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "广州动物园"
+      ],
+      "reason": "广州动物园为具名地点"
+    },
+    {
+      "id": "TC0103",
+      "query": "悉尼歌剧院",
+      "excel_row": 104,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "悉尼歌剧院"
+      ],
+      "reason": "悉尼歌剧院为具名地标"
+    },
+    {
+      "id": "TC0113",
+      "query": "长隆",
+      "excel_row": 114,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "长隆"
+      ],
+      "reason": "长隆为具名景区/品牌"
+    },
+    {
+      "id": "TC0114",
+      "query": "拉萨",
+      "excel_row": 115,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "拉萨"
+      ],
+      "reason": "拉萨为具名城市"
+    },
+    {
+      "id": "TC0118",
+      "query": "搜下圣索菲亚大教堂",
+      "excel_row": 119,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "圣索菲亚大教堂"
+      ],
+      "reason": "圣索菲亚大教堂为具名地标"
+    },
+    {
+      "id": "TC0120",
+      "query": "暑假",
+      "excel_row": 121,
+      "category": "time",
+      "time_terms": [
+        "暑假"
+      ],
+      "place_terms": [],
+      "reason": "暑假为相对时段"
+    },
+    {
+      "id": "TC0121",
+      "query": "寒假",
+      "excel_row": 122,
+      "category": "time",
+      "time_terms": [
+        "寒假"
+      ],
+      "place_terms": [],
+      "reason": "寒假为相对时段"
+    },
+    {
+      "id": "TC0122",
+      "query": "国庆",
+      "excel_row": 123,
+      "category": "time",
+      "time_terms": [
+        "国庆"
+      ],
+      "place_terms": [],
+      "reason": "国庆为节日"
+    },
+    {
+      "id": "TC0123",
+      "query": "中秋",
+      "excel_row": 124,
+      "category": "time",
+      "time_terms": [
+        "中秋"
+      ],
+      "place_terms": [],
+      "reason": "中秋为节日"
+    },
+    {
+      "id": "TC0124",
+      "query": "故宫博物院",
+      "excel_row": 125,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "故宫博物院"
+      ],
+      "reason": "故宫博物院为具名机构/地标"
+    },
+    {
+      "id": "TC0126",
+      "query": "圣心大教堂",
+      "excel_row": 127,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "圣心大教堂"
+      ],
+      "reason": "圣心大教堂为具名地标"
+    },
+    {
+      "id": "TC0127",
+      "query": "开学",
+      "excel_row": 128,
+      "category": "time",
+      "time_terms": [
+        "开学"
+      ],
+      "place_terms": [],
+      "reason": "开学为相对时段"
+    },
+    {
+      "id": "TC0128",
+      "query": "新年",
+      "excel_row": 129,
+      "category": "time",
+      "time_terms": [
+        "新年"
+      ],
+      "place_terms": [],
+      "reason": "新年为节日"
+    },
+    {
+      "id": "TC0129",
+      "query": "无锡",
+      "excel_row": 130,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "无锡"
+      ],
+      "reason": "无锡为具名城市"
+    },
+    {
+      "id": "TC0130",
+      "query": "日本",
+      "excel_row": 131,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "日本"
+      ],
+      "reason": "日本为国家"
+    },
+    {
+      "id": "TC0131",
+      "query": "时代广场",
+      "excel_row": 132,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "时代广场"
+      ],
+      "reason": "时代广场为具名地标"
+    },
+    {
+      "id": "TC0134",
+      "query": "查找大雁塔",
+      "excel_row": 135,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "大雁塔"
+      ],
+      "reason": "大雁塔为具名地标"
+    },
+    {
+      "id": "TC0142",
+      "query": "红旗和天安门",
+      "excel_row": 143,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "天安门"
+      ],
+      "reason": "天安门为具名地标"
+    },
+    {
+      "id": "TC0145",
+      "query": "绍兴",
+      "excel_row": 146,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "绍兴"
+      ],
+      "reason": "绍兴为具名城市"
+    },
+    {
+      "id": "TC0148",
+      "query": "2012年 宫殿",
+      "excel_row": 149,
+      "category": "time",
+      "time_terms": [
+        "2012年"
+      ],
+      "place_terms": [],
+      "reason": "2012年为拍摄年份，宫殿为泛称"
+    },
+    {
+      "id": "TC0149",
+      "query": "2026年 摩天轮",
+      "excel_row": 150,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "2026年为拍摄年份，摩天轮为物体"
+    },
+    {
+      "id": "TC0150",
+      "query": "2023年 南京中山陵",
+      "excel_row": 151,
+      "category": "both",
+      "time_terms": [
+        "2023年"
+      ],
+      "place_terms": [
+        "南京中山陵"
+      ],
+      "reason": "2023年为年份，南京中山陵为具名地点"
+    },
+    {
+      "id": "TC0151",
+      "query": "2023年 音乐厅",
+      "excel_row": 152,
+      "category": "time",
+      "time_terms": [
+        "2023年"
+      ],
+      "place_terms": [],
+      "reason": "2023年为年份，音乐厅为泛称机构"
+    },
+    {
+      "id": "TC0152",
+      "query": "2013 水井",
+      "excel_row": 153,
+      "category": "time",
+      "time_terms": [
+        "2013"
+      ],
+      "place_terms": [],
+      "reason": "2013为年份，水井为物体"
+    },
+    {
+      "id": "TC0153",
+      "query": "2024年 北京大学",
+      "excel_row": 154,
+      "category": "both",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [
+        "北京大学"
+      ],
+      "reason": "2024年为年份，北京大学为具名机构"
+    },
+    {
+      "id": "TC0154",
+      "query": "莫高窟",
+      "excel_row": 155,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "莫高窟"
+      ],
+      "reason": "莫高窟为具名景区"
+    },
+    {
+      "id": "TC0158",
+      "query": "重庆",
+      "excel_row": 159,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "重庆"
+      ],
+      "reason": "重庆为具名城市"
+    },
+    {
+      "id": "TC0160",
+      "query": "祈年殿",
+      "excel_row": 161,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "祈年殿"
+      ],
+      "reason": "祈年殿为具名地标"
+    },
+    {
+      "id": "TC0161",
+      "query": "颐和园和湖",
+      "excel_row": 162,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "颐和园"
+      ],
+      "reason": "颐和园为具名景区"
+    },
+    {
+      "id": "TC0173",
+      "query": "天坛",
+      "excel_row": 174,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "天坛"
+      ],
+      "reason": "天坛为具名地标"
+    },
+    {
+      "id": "TC0186",
+      "query": "维多利亚港",
+      "excel_row": 187,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "维多利亚港"
+      ],
+      "reason": "维多利亚港为具名地标"
+    },
+    {
+      "id": "TC0189",
+      "query": "东京",
+      "excel_row": 190,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "东京"
+      ],
+      "reason": "东京为具名城市"
+    },
+    {
+      "id": "TC0191",
+      "query": "故宫",
+      "excel_row": 192,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "故宫"
+      ],
+      "reason": "故宫为具名地标"
+    },
+    {
+      "id": "TC0192",
+      "query": "上海陆家嘴",
+      "excel_row": 193,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "上海陆家嘴"
+      ],
+      "reason": "上海陆家嘴为具名地点"
+    },
+    {
+      "id": "TC0201",
+      "query": "万圣节",
+      "excel_row": 202,
+      "category": "time",
+      "time_terms": [
+        "万圣节"
+      ],
+      "place_terms": [],
+      "reason": "万圣节为节日，属时间条件"
+    },
+    {
+      "id": "TC0215",
+      "query": "南京 手办",
+      "excel_row": 216,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "南京"
+      ],
+      "reason": "南京为具名城市"
+    },
+    {
+      "id": "TC0222",
+      "query": "埃菲尔铁塔",
+      "excel_row": 223,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "埃菲尔铁塔"
+      ],
+      "reason": "埃菲尔铁塔为具名地标"
+    },
+    {
+      "id": "TC0255",
+      "query": "新宿",
+      "excel_row": 256,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "新宿"
+      ],
+      "reason": "新宿为具名地区"
+    },
+    {
+      "id": "TC0262",
+      "query": "湖北",
+      "excel_row": 263,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "湖北"
+      ],
+      "reason": "湖北为省级具名地点"
+    },
+    {
+      "id": "TC0267",
+      "query": "红色的迪士尼乐园",
+      "excel_row": 268,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "迪士尼乐园"
+      ],
+      "reason": "迪士尼乐园为具名地标"
+    },
+    {
+      "id": "TC0277",
+      "query": "在三亚的烟花",
+      "excel_row": 278,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "三亚"
+      ],
+      "reason": "三亚为具名城市"
+    },
+    {
+      "id": "TC0283",
+      "query": "2026年 喷泉",
+      "excel_row": 284,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "2026年为拍摄年份"
+    },
+    {
+      "id": "TC0288",
+      "query": "摩天轮 香港",
+      "excel_row": 289,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "香港"
+      ],
+      "reason": "香港为具名地区"
+    },
+    {
+      "id": "TC0289",
+      "query": "2026年 烤肉串",
+      "excel_row": 290,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "2026年为拍摄年份"
+    },
+    {
+      "id": "TC0293",
+      "query": "2023年 维多利亚港",
+      "excel_row": 294,
+      "category": "both",
+      "time_terms": [
+        "2023年"
+      ],
+      "place_terms": [
+        "维多利亚港"
+      ],
+      "reason": "2023年为年份，维多利亚港为具名地标"
+    },
+    {
+      "id": "TC0297",
+      "query": "2023年在市拍的烟花",
+      "excel_row": 298,
+      "category": "time",
+      "time_terms": [
+        "2023年"
+      ],
+      "place_terms": [],
+      "reason": "2023年为年份；市为泛称无具名地点"
+    },
+    {
+      "id": "TC0309",
+      "query": "2019年的马里奥玩偶",
+      "excel_row": 310,
+      "category": "time",
+      "time_terms": [
+        "2019年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2019年"
+    },
+    {
+      "id": "TC0319",
+      "query": "下午茶",
+      "excel_row": 320,
+      "category": "time",
+      "time_terms": [
+        "下午"
+      ],
+      "place_terms": [],
+      "reason": "下午茶含时段词下午"
+    },
+    {
+      "id": "TC0333",
+      "query": "寿司郎",
+      "excel_row": 334,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "寿司郎"
+      ],
+      "reason": "寿司郎为具名餐饮品牌/门店"
+    },
+    {
+      "id": "TC0372",
+      "query": "海底捞",
+      "excel_row": 373,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "海底捞"
+      ],
+      "reason": "海底捞为具名餐饮品牌/门店，属具名地点内容查询"
+    },
+    {
+      "id": "TC0394",
+      "query": "盛御囍宴",
+      "excel_row": 395,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "盛御囍宴"
+      ],
+      "reason": "盛御囍宴为具名场所/机构"
+    },
+    {
+      "id": "TC0409",
+      "query": "星巴克",
+      "excel_row": 410,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "星巴克"
+      ],
+      "reason": "星巴克为具名品牌/门店"
+    },
+    {
+      "id": "TC0429",
+      "query": "西安小吃",
+      "excel_row": 430,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "西安"
+      ],
+      "reason": "西安为具名城市"
+    },
+    {
+      "id": "TC0430",
+      "query": "西安的肉夹馍",
+      "excel_row": 431,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "西安"
+      ],
+      "reason": "西安为具名城市"
+    },
+    {
+      "id": "TC0476",
+      "query": "2012年 赶海",
+      "excel_row": 477,
+      "category": "time",
+      "time_terms": [
+        "2012年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2012年，赶海非具名地点"
+    },
+    {
+      "id": "TC0478",
+      "query": "2018年 歌手",
+      "excel_row": 479,
+      "category": "time",
+      "time_terms": [
+        "2018年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2018年，歌手非地点"
+    },
+    {
+      "id": "TC0479",
+      "query": "2023年 福州大学",
+      "excel_row": 480,
+      "category": "both",
+      "time_terms": [
+        "2023年"
+      ],
+      "place_terms": [
+        "福州大学"
+      ],
+      "reason": "含年份2023年及具名地点福州大学"
+    },
+    {
+      "id": "TC0482",
+      "query": "2026年 乐器",
+      "excel_row": 483,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年，乐器非地点"
+    },
+    {
+      "id": "TC0483",
+      "query": "2026年 幼儿园毕业",
+      "excel_row": 484,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年，幼儿园毕业非具名地点"
+    },
+    {
+      "id": "TC0494",
+      "query": "东京歌舞伎町",
+      "excel_row": 495,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "东京歌舞伎町"
+      ],
+      "reason": "含具名地点东京歌舞伎町"
+    },
+    {
+      "id": "TC0495",
+      "query": "莞比特",
+      "excel_row": 496,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "莞比特"
+      ],
+      "reason": "莞比特为具名机构/地点名称"
+    },
+    {
+      "id": "TC0508",
+      "query": "吉隆坡",
+      "excel_row": 509,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "吉隆坡"
+      ],
+      "reason": "吉隆坡为具名城市"
+    },
+    {
+      "id": "TC0513",
+      "query": "夜晚",
+      "excel_row": 514,
+      "category": "time",
+      "time_terms": [
+        "夜晚"
+      ],
+      "place_terms": [],
+      "reason": "夜晚为时段"
+    },
+    {
+      "id": "TC0522",
+      "query": "尖沙咀",
+      "excel_row": 523,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "尖沙咀"
+      ],
+      "reason": "尖沙咀为具名地标区域"
+    },
+    {
+      "id": "TC0533",
+      "query": "李佳琦直播间",
+      "excel_row": 534,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "李佳琦直播间"
+      ],
+      "reason": "李佳琦直播间为具名机构/场所"
+    },
+    {
+      "id": "TC0534",
+      "query": "杭州",
+      "excel_row": 535,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "杭州"
+      ],
+      "reason": "杭州为具名城市"
+    },
+    {
+      "id": "TC0536",
+      "query": "棉湖 合照",
+      "excel_row": 537,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "棉湖"
+      ],
+      "reason": "棉湖为具名地名"
+    },
+    {
+      "id": "TC0542",
+      "query": "2026年 演讲",
+      "excel_row": 543,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2026年"
+    },
+    {
+      "id": "TC0543",
+      "query": "2017年宴会",
+      "excel_row": 544,
+      "category": "time",
+      "time_terms": [
+        "2017年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2017年"
+    },
+    {
+      "id": "TC0552",
+      "query": "2025年 军训照",
+      "excel_row": 553,
+      "category": "time",
+      "time_terms": [
+        "2025年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2025年"
+    },
+    {
+      "id": "TC0566",
+      "query": "2024年 周年庆",
+      "excel_row": 567,
+      "category": "time",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2024年"
+    },
+    {
+      "id": "TC0577",
+      "query": "搜下宋韵·婺州府",
+      "excel_row": 578,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "宋韵·婺州府"
+      ],
+      "reason": "含具名地点/场所宋韵·婺州府"
+    },
+    {
+      "id": "TC0582",
+      "query": "杭州嘉里中心",
+      "excel_row": 583,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "杭州嘉里中心"
+      ],
+      "reason": "杭州嘉里中心为具名商圈/地标"
+    },
+    {
+      "id": "TC0606",
+      "query": "2025年 生日",
+      "excel_row": 607,
+      "category": "time",
+      "time_terms": [
+        "2025年",
+        "生日"
+      ],
+      "place_terms": [],
+      "reason": "2025年为拍摄年份，生日为节日/事件时间"
+    },
+    {
+      "id": "TC0607",
+      "query": "找一下今年的生日照片",
+      "excel_row": 608,
+      "category": "time",
+      "time_terms": [
+        "今年"
+      ],
+      "place_terms": [],
+      "reason": "今年为相对时间"
+    },
+    {
+      "id": "TC0617",
+      "query": "2026年的老人",
+      "excel_row": 618,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "2026年为拍摄年份"
+    },
+    {
+      "id": "TC0627",
+      "query": "呼和浩特 聚餐",
+      "excel_row": 628,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "呼和浩特"
+      ],
+      "reason": "呼和浩特为具名城市"
+    },
+    {
+      "id": "TC0628",
+      "query": "成都市 毕业照",
+      "excel_row": 629,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "成都市"
+      ],
+      "reason": "成都市为具名城市"
+    },
+    {
+      "id": "TC0629",
+      "query": "拉萨 合照",
+      "excel_row": 630,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "拉萨"
+      ],
+      "reason": "拉萨为具名城市"
+    },
+    {
+      "id": "TC0653",
+      "query": "三星堆",
+      "excel_row": 654,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "三星堆"
+      ],
+      "reason": "三星堆为具名遗址/景区"
+    },
+    {
+      "id": "TC0655",
+      "query": "上海的雕像",
+      "excel_row": 656,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "上海"
+      ],
+      "reason": "上海为具名城市"
+    },
+    {
+      "id": "TC0658",
+      "query": "东莞市 电路板",
+      "excel_row": 659,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "东莞市"
+      ],
+      "reason": "东莞市为具名城市"
+    },
+    {
+      "id": "TC0689",
+      "query": "北京市 天坛公园",
+      "excel_row": 690,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "北京市",
+        "天坛公园"
+      ],
+      "reason": "北京市天坛公园为具名地点"
+    },
+    {
+      "id": "TC0691",
+      "query": "南京邮电大学",
+      "excel_row": 692,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "南京邮电大学"
+      ],
+      "reason": "南京邮电大学为具名机构"
+    },
+    {
+      "id": "TC0725",
+      "query": "广州的徽章",
+      "excel_row": 726,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "广州"
+      ],
+      "reason": "查询含具名城市广州"
+    },
+    {
+      "id": "TC0736",
+      "query": "故宫的说明牌",
+      "excel_row": 737,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "故宫"
+      ],
+      "reason": "查询含具名地标故宫"
+    },
+    {
+      "id": "TC0749",
+      "query": "武汉的武汉",
+      "excel_row": 750,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "武汉"
+      ],
+      "reason": "含具名城市武汉"
+    },
+    {
+      "id": "TC0779",
+      "query": "2012年 博物馆",
+      "excel_row": 780,
+      "category": "time",
+      "time_terms": [
+        "2012年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2012年；博物馆为泛称机构无具名"
+    },
+    {
+      "id": "TC0789",
+      "query": "2026年的试卷",
+      "excel_row": 790,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2026年"
+    },
+    {
+      "id": "TC0793",
+      "query": "王府井大街",
+      "excel_row": 794,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "王府井大街"
+      ],
+      "reason": "王府井大街为具名地点"
+    },
+    {
+      "id": "TC0797",
+      "query": "2024年的动画人物",
+      "excel_row": 798,
+      "category": "time",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2024年"
+    },
+    {
+      "id": "TC0800",
+      "query": "2026年 日历",
+      "excel_row": 801,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年"
+    },
+    {
+      "id": "TC0806",
+      "query": "2024年 中国联通Logo",
+      "excel_row": 807,
+      "category": "time",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2024年"
+    },
+    {
+      "id": "TC0807",
+      "query": "2026年的聊天界面",
+      "excel_row": 808,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年"
+    },
+    {
+      "id": "TC0808",
+      "query": "东莞市",
+      "excel_row": 809,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "东莞市"
+      ],
+      "reason": "东莞市为具名城市"
+    },
+    {
+      "id": "TC0810",
+      "query": "2026年的柱状图",
+      "excel_row": 811,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年"
+    },
+    {
+      "id": "TC0813",
+      "query": "北京",
+      "excel_row": 814,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "北京"
+      ],
+      "reason": "北京为具名城市"
+    },
+    {
+      "id": "TC0814",
+      "query": "2026年 游戏角色",
+      "excel_row": 815,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年"
+    },
+    {
+      "id": "TC0817",
+      "query": "2020年 聊天界面",
+      "excel_row": 818,
+      "category": "time",
+      "time_terms": [
+        "2020年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2020年"
+    },
+    {
+      "id": "TC0819",
+      "query": "2022年 T恤",
+      "excel_row": 820,
+      "category": "time",
+      "time_terms": [
+        "2022年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2022年"
+    },
+    {
+      "id": "TC0821",
+      "query": "2026年 柱状图",
+      "excel_row": 822,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2026年，无具名地点"
+    },
+    {
+      "id": "TC0835",
+      "query": "2024年 北京市第二十中学",
+      "excel_row": 836,
+      "category": "both",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [
+        "北京市第二十中学"
+      ],
+      "reason": "含年份2024年及具名学校地点"
+    },
+    {
+      "id": "TC0852",
+      "query": "2024年 手机截图",
+      "excel_row": 853,
+      "category": "time",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2024年，无具名地点"
+    },
+    {
+      "id": "TC0853",
+      "query": "2024年 市 酒店预订",
+      "excel_row": 854,
+      "category": "time",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2024年；市为泛称不构成具名地点"
+    },
+    {
+      "id": "TC0857",
+      "query": "惠东县 显示器",
+      "excel_row": 858,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "惠东县"
+      ],
+      "reason": "含具名区县惠东县，无时间条件"
+    },
+    {
+      "id": "TC0862",
+      "query": "2024年的游戏界面",
+      "excel_row": 863,
+      "category": "time",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2024年"
+    },
+    {
+      "id": "TC0867",
+      "query": "2022年 哈尔滨市第一医院",
+      "excel_row": 868,
+      "category": "both",
+      "time_terms": [
+        "2022年"
+      ],
+      "place_terms": [
+        "哈尔滨市第一医院"
+      ],
+      "reason": "含年份2022年及具名机构哈尔滨市第一医院"
+    },
+    {
+      "id": "TC0870",
+      "query": "2026年 彩票",
+      "excel_row": 871,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年"
+    },
+    {
+      "id": "TC0877",
+      "query": "2025年 驾驶证",
+      "excel_row": 878,
+      "category": "time",
+      "time_terms": [
+        "2025年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2025年"
+    },
+    {
+      "id": "TC0885",
+      "query": "2026年 山坡",
+      "excel_row": 886,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含年份2026年，山坡为泛称地貌"
+    },
+    {
+      "id": "TC0891",
+      "query": "天安门",
+      "excel_row": 892,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "天安门"
+      ],
+      "reason": "天安门为具名地标"
+    },
+    {
+      "id": "TC0898",
+      "query": "2026年 富士山",
+      "excel_row": 899,
+      "category": "both",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [
+        "富士山"
+      ],
+      "reason": "含年份2026年及具名地标富士山"
+    },
+    {
+      "id": "TC0904",
+      "query": "2025年 教堂",
+      "excel_row": 905,
+      "category": "time",
+      "time_terms": [
+        "2025年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2025年，教堂为泛称建筑"
+    },
+    {
+      "id": "TC0910",
+      "query": "富士山",
+      "excel_row": 911,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "富士山"
+      ],
+      "reason": "富士山为具名地标"
+    },
+    {
+      "id": "TC0916",
+      "query": "2023年在北京北京大学",
+      "excel_row": 917,
+      "category": "both",
+      "time_terms": [
+        "2023年"
+      ],
+      "place_terms": [
+        "北京",
+        "北京大学"
+      ],
+      "reason": "含拍摄年份2023年及具名地点北京、北京大学"
+    },
+    {
+      "id": "TC0918",
+      "query": "上海和道路",
+      "excel_row": 919,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "上海"
+      ],
+      "reason": "上海为具名城市，道路为泛称"
+    },
+    {
+      "id": "TC0919",
+      "query": "查找中国国旗",
+      "excel_row": 920,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "中国"
+      ],
+      "reason": "中国为具名国家"
+    },
+    {
+      "id": "TC0922",
+      "query": "2022年 大海俯瞰图",
+      "excel_row": 923,
+      "category": "time",
+      "time_terms": [
+        "2022年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2022年，大海为泛称"
+    },
+    {
+      "id": "TC0924",
+      "query": "2019年园林人物照",
+      "excel_row": 925,
+      "category": "time",
+      "time_terms": [
+        "2019年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2019年，园林为泛称"
+    },
+    {
+      "id": "TC0928",
+      "query": "王子社",
+      "excel_row": 929,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "王子社"
+      ],
+      "reason": "王子社为具名地点/机构"
+    },
+    {
+      "id": "TC0932",
+      "query": "江南水乡",
+      "excel_row": 933,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "江南"
+      ],
+      "reason": "江南为具名地域"
+    },
+    {
+      "id": "TC0934",
+      "query": "2026年的城堡",
+      "excel_row": 935,
+      "category": "time",
+      "time_terms": [
+        "2026年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2026年，城堡为泛称"
+    },
+    {
+      "id": "TC0941",
+      "query": "上海迪士尼乐园",
+      "excel_row": 942,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "上海迪士尼乐园"
+      ],
+      "reason": "具名地标上海迪士尼乐园"
+    },
+    {
+      "id": "TC0944",
+      "query": "2025年 古树",
+      "excel_row": 945,
+      "category": "time",
+      "time_terms": [
+        "2025年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2025年"
+    },
+    {
+      "id": "TC0947",
+      "query": "2023年 轮胎印",
+      "excel_row": 948,
+      "category": "time",
+      "time_terms": [
+        "2023年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2023年"
+    },
+    {
+      "id": "TC0953",
+      "query": "春节",
+      "excel_row": 954,
+      "category": "time",
+      "time_terms": [
+        "春节"
+      ],
+      "place_terms": [],
+      "reason": "春节为节日时间"
+    },
+    {
+      "id": "TC0966",
+      "query": "卡塔尔",
+      "excel_row": 967,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "卡塔尔"
+      ],
+      "reason": "国家名卡塔尔"
+    },
+    {
+      "id": "TC0968",
+      "query": "周三",
+      "excel_row": 969,
+      "category": "time",
+      "time_terms": [
+        "周三"
+      ],
+      "place_terms": [],
+      "reason": "周三为星期时段"
+    },
+    {
+      "id": "TC1002",
+      "query": "知鱼游泳中心",
+      "excel_row": 1003,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "知鱼游泳中心"
+      ],
+      "reason": "知鱼游泳中心为具名机构/场馆"
+    },
+    {
+      "id": "TC1025",
+      "query": "哈尔滨市 游泳图片",
+      "excel_row": 1026,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "哈尔滨市"
+      ],
+      "reason": "含具名城市哈尔滨市"
+    },
+    {
+      "id": "TC1040",
+      "query": "厦门植物园",
+      "excel_row": 1041,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "厦门植物园"
+      ],
+      "reason": "含具名地点厦门植物园"
+    },
+    {
+      "id": "TC1105",
+      "query": "秋季公园",
+      "excel_row": 1106,
+      "category": "both",
+      "time_terms": [
+        "秋季"
+      ],
+      "place_terms": [
+        "公园"
+      ],
+      "reason": "秋季为季节，公园为具名地点类型"
+    },
+    {
+      "id": "TC1126",
+      "query": "深圳市 世界之窗",
+      "excel_row": 1127,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "深圳市",
+        "世界之窗"
+      ],
+      "reason": "深圳市为城市，世界之窗为具名景区"
+    },
+    {
+      "id": "TC1128",
+      "query": "2024年 飞机",
+      "excel_row": 1129,
+      "category": "time",
+      "time_terms": [
+        "2024年"
+      ],
+      "place_terms": [],
+      "reason": "2024年为拍摄年份"
+    },
+    {
+      "id": "TC1148",
+      "query": "2012年 飞机",
+      "excel_row": 1149,
+      "category": "time",
+      "time_terms": [
+        "2012年"
+      ],
+      "place_terms": [],
+      "reason": "含拍摄年份2012年"
+    },
+    {
+      "id": "TC1174",
+      "query": "北京国际车展",
+      "excel_row": 1175,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "北京国际车展"
+      ],
+      "reason": "含具名展会地点"
+    },
+    {
+      "id": "TC1182",
+      "query": "夜晚街头",
+      "excel_row": 1183,
+      "category": "time",
+      "time_terms": [
+        "夜晚"
+      ],
+      "place_terms": [],
+      "reason": "夜晚为时段条件，街头为泛称"
+    },
+    {
+      "id": "TC1239",
+      "query": "알펜시아 엘림커피",
+      "excel_row": 1240,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "알펜시아 엘림커피"
+      ],
+      "reason": "韩文咖啡店名为具名地点"
+    },
+    {
+      "id": "TC1241",
+      "query": "渡月桥",
+      "excel_row": 1242,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "渡月桥"
+      ],
+      "reason": "渡月桥为具名地标"
+    },
+    {
+      "id": "TC1247",
+      "query": "武汉长江大桥",
+      "excel_row": 1248,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "武汉长江大桥"
+      ],
+      "reason": "武汉长江大桥为具名地标"
+    },
+    {
+      "id": "TC1250",
+      "query": "十七孔桥",
+      "excel_row": 1251,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "十七孔桥"
+      ],
+      "reason": "十七孔桥为具名地标"
+    },
+    {
+      "id": "TC1258",
+      "query": "任天堂世界",
+      "excel_row": 1259,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "任天堂世界"
+      ],
+      "reason": "任天堂世界为具名主题园区"
+    },
+    {
+      "id": "TC1259",
+      "query": "北京2008奥运",
+      "excel_row": 1260,
+      "category": "both",
+      "time_terms": [
+        "2008"
+      ],
+      "place_terms": [
+        "北京"
+      ],
+      "reason": "北京为具名地点，2008为年份"
+    },
+    {
+      "id": "TC1260",
+      "query": "梧桐山",
+      "excel_row": 1261,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "梧桐山"
+      ],
+      "reason": "梧桐山为具名地点"
+    },
+    {
+      "id": "TC1269",
+      "query": "2026年7月在东莞的聚餐",
+      "excel_row": 1270,
+      "category": "both",
+      "time_terms": [
+        "2026年7月"
+      ],
+      "place_terms": [
+        "东莞"
+      ],
+      "reason": "含明确年月与城市"
+    },
+    {
+      "id": "TC1273",
+      "query": "Global Hotel",
+      "excel_row": 1274,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "Global Hotel"
+      ],
+      "reason": "具名酒店名称"
+    },
+    {
+      "id": "TC1280",
+      "query": "小蛮腰",
+      "excel_row": 1281,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "小蛮腰"
+      ],
+      "reason": "广州塔别称，具名地标"
+    },
+    {
+      "id": "TC1285",
+      "query": "天门洞",
+      "excel_row": 1286,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "天门洞"
+      ],
+      "reason": "具名景点"
+    },
+    {
+      "id": "TC1287",
+      "query": "维多利亚港 烟花",
+      "excel_row": 1288,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "维多利亚港"
+      ],
+      "reason": "具名地点"
+    },
+    {
+      "id": "TC1290",
+      "query": "北京国家体育场",
+      "excel_row": 1291,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "北京国家体育场"
+      ],
+      "reason": "具名场馆"
+    },
+    {
+      "id": "TC1295",
+      "query": "香港大学",
+      "excel_row": 1296,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "香港大学"
+      ],
+      "reason": "具名机构"
+    },
+    {
+      "id": "TC1296",
+      "query": "香港中银大厦",
+      "excel_row": 1297,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "香港中银大厦"
+      ],
+      "reason": "具名地标"
+    },
+    {
+      "id": "TC1297",
+      "query": "伊丽莎白塔",
+      "excel_row": 1298,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "伊丽莎白塔"
+      ],
+      "reason": "具名地标"
+    },
+    {
+      "id": "TC1300",
+      "query": "新疆美食",
+      "excel_row": 1301,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "新疆"
+      ],
+      "reason": "含具名地区"
+    },
+    {
+      "id": "TC1302",
+      "query": "马洪羊肉泡馍",
+      "excel_row": 1303,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "马洪"
+      ],
+      "reason": "马洪为具名地名/店名指向的具体地点"
+    },
+    {
+      "id": "TC1304",
+      "query": "松山湖",
+      "excel_row": 1305,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "松山湖"
+      ],
+      "reason": "松山湖为具名地点"
+    },
+    {
+      "id": "TC1305",
+      "query": "港铁",
+      "excel_row": 1306,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "港铁"
+      ],
+      "reason": "港铁为具名机构/地标"
+    },
+    {
+      "id": "TC1306",
+      "query": "故宫午门",
+      "excel_row": 1307,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "故宫午门"
+      ],
+      "reason": "故宫午门为具名地标"
+    },
+    {
+      "id": "TC1308",
+      "query": "广州长隆",
+      "excel_row": 1309,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "广州长隆"
+      ],
+      "reason": "广州长隆为具名景区"
+    },
+    {
+      "id": "TC1311",
+      "query": "到上海的车票",
+      "excel_row": 1312,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "上海"
+      ],
+      "reason": "上海为具名城市"
+    },
+    {
+      "id": "TC1312",
+      "query": "武汉出发的车票",
+      "excel_row": 1313,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "武汉"
+      ],
+      "reason": "武汉为具名城市"
+    },
+    {
+      "id": "TC1320",
+      "query": "南京大牌档",
+      "excel_row": 1321,
+      "category": "place",
+      "time_terms": [],
+      "place_terms": [
+        "南京"
+      ],
+      "reason": "南京为具名城市"
+    }
+  ],
+  "counts": {
+    "place": 95,
+    "time": 56,
+    "both": 11
+  }
+}

@@ -1,0 +1,4262 @@
+{
+  "protocol": {
+    "version": "hybrid-v2-time-place",
+    "scope": {
+      "offset": 100,
+      "limit": 162
+    },
+    "case_batch": 10,
+    "workers": 32,
+    "reference_date": "2026-11-17",
+    "parallel_batches": 4,
+    "network_concurrency": 128,
+    "screen_images": 12,
+    "internal_verify_group": 4,
+    "verify_images_per_request": 1,
+    "text_model": "deepseek-flash",
+    "vision_model": "qwen3.8-27b",
+    "text_endpoint_sha256": "a34e2a4708ed1c61008a151688838dcf1c44d4e7f08054633e72ba7c0b16cfc1",
+    "vision_endpoint_sha256": "a6a7bcd5c4f6ed116e99058e379b3e5af0a63a457423be23518d175c529c5fe9",
+    "source_sha256": {
+      "E2E_1321cases_1w_data_v19.xlsx": "952937fb3233ae0658592461fd6fe266b3ab0c0f340f0356dc3aeec4bba43549",
+      "ES_byFileType_user10_20261117170358.xlsx": "e21d4e575c0b303398d0f3b71a086d5d39bfe54fb5d8bf19842a61c09923cca0"
+    },
+    "code_sha256": {
+      "pipeline.py": "d6788c0f5ccae702f052e585876c93c9d0082744b9fd4bc71c986fd0362ae676",
+      "run.py": "fc701302ddfafea816dd58d7c305f74f2cd1e7ddaa679e20b4905b2ed9207d9b",
+      "support.py": "0a78a34f465815e86ac4a05f7f96887f6f6d49cc994b44d0cda8697cd9d5696d",
+      "providers.py": "7d09a8be83e221cab2168bdc508d2e0cfaa34a8721e559e9bb00226d8fe6e8d1",
+      "provider_guard.py": "93553b8d6465bbaf14a6fdaad080e5d5a69a33d3fe0e9b1a7c13f1b7414313ab",
+      "metadata_search.py": "7472457f8801de6cb6669b7721f2c21b152cfbb9b8761c2d6b53757ce57ce425",
+      "rich_metadata.py": "52e1724602d2871d3c6515501cd95c8317b0540e3a01b69131bb2115d5a24836",
+      "hybrid_verify.py": "ccea5bcdef25998e309ae2c7c6be9393a3ffb428b436a5a4aec263fdaf54209b",
+      "hybrid_run.py": "b7a947d3748ea71c82725c9efbcf78535d5091714de4b4a091c1099239968fb3"
+    },
+    "metadata": {
+      "phrase_all_matches": true,
+      "bm25_peak_ratio": 0.45,
+      "fixed_top_k": false,
+      "excerpt_limit": 1200,
+      "preserve_baseline_positives": true
+    },
+    "ground_truth_used_in_inference": false,
+    "baseline": "v1 retrieval rules with Qwen VLM; same text planner as hybrid",
+    "provider_block_handling": "request-scoped inspection rejection; no image resubmission; uncertain not negative",
+    "selection": {
+      "sha256": "d78c2eb4418826cbce073a7162314464ccf8a449169f8b711380f028d12cf61a",
+      "case_ids": [
+        "TC0101",
+        "TC0103",
+        "TC0113",
+        "TC0114",
+        "TC0118",
+        "TC0120",
+        "TC0121",
+        "TC0122",
+        "TC0123",
+        "TC0124",
+        "TC0126",
+        "TC0127",
+        "TC0128",
+        "TC0129",
+        "TC0130",
+        "TC0131",
+        "TC0134",
+        "TC0142",
+        "TC0145",
+        "TC0148",
+        "TC0149",
+        "TC0150",
+        "TC0151",
+        "TC0152",
+        "TC0153",
+        "TC0154",
+        "TC0158",
+        "TC0160",
+        "TC0161",
+        "TC0173",
+        "TC0186",
+        "TC0189",
+        "TC0191",
+        "TC0192",
+        "TC0201",
+        "TC0215",
+        "TC0222",
+        "TC0255",
+        "TC0262",
+        "TC0267",
+        "TC0277",
+        "TC0283",
+        "TC0288",
+        "TC0289",
+        "TC0293",
+        "TC0297",
+        "TC0309",
+        "TC0319",
+        "TC0333",
+        "TC0372",
+        "TC0394",
+        "TC0409",
+        "TC0429",
+        "TC0430",
+        "TC0476",
+        "TC0478",
+        "TC0479",
+        "TC0482",
+        "TC0483",
+        "TC0494",
+        "TC0495",
+        "TC0508",
+        "TC0513",
+        "TC0522",
+        "TC0533",
+        "TC0534",
+        "TC0536",
+        "TC0542",
+        "TC0543",
+        "TC0552",
+        "TC0566",
+        "TC0577",
+        "TC0582",
+        "TC0606",
+        "TC0607",
+        "TC0617",
+        "TC0627",
+        "TC0628",
+        "TC0629",
+        "TC0653",
+        "TC0655",
+        "TC0658",
+        "TC0689",
+        "TC0691",
+        "TC0725",
+        "TC0736",
+        "TC0749",
+        "TC0779",
+        "TC0789",
+        "TC0793",
+        "TC0797",
+        "TC0800",
+        "TC0806",
+        "TC0807",
+        "TC0808",
+        "TC0810",
+        "TC0813",
+        "TC0814",
+        "TC0817",
+        "TC0819",
+        "TC0821",
+        "TC0835",
+        "TC0852",
+        "TC0853",
+        "TC0857",
+        "TC0862",
+        "TC0867",
+        "TC0870",
+        "TC0877",
+        "TC0885",
+        "TC0891",
+        "TC0898",
+        "TC0904",
+        "TC0910",
+        "TC0916",
+        "TC0918",
+        "TC0919",
+        "TC0922",
+        "TC0924",
+        "TC0928",
+        "TC0932",
+        "TC0934",
+        "TC0941",
+        "TC0944",
+        "TC0947",
+        "TC0953",
+        "TC0966",
+        "TC0968",
+        "TC1002",
+        "TC1025",
+        "TC1040",
+        "TC1105",
+        "TC1126",
+        "TC1128",
+        "TC1148",
+        "TC1174",
+        "TC1182",
+        "TC1239",
+        "TC1241",
+        "TC1247",
+        "TC1250",
+        "TC1258",
+        "TC1259",
+        "TC1260",
+        "TC1269",
+        "TC1273",
+        "TC1280",
+        "TC1285",
+        "TC1287",
+        "TC1290",
+        "TC1295",
+        "TC1296",
+        "TC1297",
+        "TC1300",
+        "TC1302",
+        "TC1304",
+        "TC1305",
+        "TC1306",
+        "TC1308",
+        "TC1311",
+        "TC1312",
+        "TC1320"
+      ],
+      "counts": {
+        "place": 95,
+        "time": 56,
+        "both": 11
+      }
+    }
+  },
+  "prediction_files": {
+    "batch-001-010\\visual-v1\\predictions.json": "f3db748e4ea04ec386fde4823965c4d9866fd3d83fa994647081511b6222804a",
+    "batch-001-010\\hybrid-v2\\predictions.json": "10a76895c17953ac77686a73beeadb7aa054412720f60fbfe591457fb5f08758",
+    "batch-011-020\\visual-v1\\predictions.json": "f7b5b0c55d347cc3eadecef688414d40b72d374ebaca1e128b0964547dc925f4",
+    "batch-011-020\\hybrid-v2\\predictions.json": "b08ea6af97c8b526e2c90bab8ae8abf8b234a27648cccee5f4c2a62a9e086adc",
+    "batch-021-030\\visual-v1\\predictions.json": "a9c480d830e7585e8f521aadcad945fdb435501f3a31ecabb9afc2c9f74c2049",
+    "batch-021-030\\hybrid-v2\\predictions.json": "95e67b0e1c34c1b55185d69f8a3697db6a5beb78453e8b3d154e0733bc369649",
+    "batch-031-040\\visual-v1\\predictions.json": "7c998d24661b175c0a152b4063604068a16e1dad7bd5b1e6da754d1e0714a75f",
+    "batch-031-040\\hybrid-v2\\predictions.json": "2752fe6937b2f4e13078e815737877f59a20b7a9cb86ad7726180d5476bf4099",
+    "batch-041-050\\visual-v1\\predictions.json": "4846a55136e601ac0f1ffc1eb89d160e6db936d3edff07300717ac1cfff83696",
+    "batch-041-050\\hybrid-v2\\predictions.json": "41b687407c6377dad89fec51789983fe3f35bc17a4fefede734837017369e5d6",
+    "batch-051-060\\visual-v1\\predictions.json": "7073b0bc77caf899fb138c4b844970c4ef4181e75efcd9a85d9b73253264a951",
+    "batch-051-060\\hybrid-v2\\predictions.json": "b500b276906ffbbfd7266daf0ff10adbc5c396f92e662ab5787a5eac4dacc278",
+    "batch-061-070\\visual-v1\\predictions.json": "4eb922d34cd7d7bbc3cba825e87b4a6651bef8c3f66bf1d08fdecff9486500f0",
+    "batch-061-070\\hybrid-v2\\predictions.json": "56bb08e74a3ffd530253a6066a11489bd07958ac626ea69eb292278d8805373f",
+    "batch-071-080\\visual-v1\\predictions.json": "7ab73ebd74cfaa8ec83a08fea9b7f7cc8f3e3f3616b7bdb4cdb6f3efdb4ff5fd",
+    "batch-071-080\\hybrid-v2\\predictions.json": "e3fe2baf396df06c632c613032834746feef2433eb3a90340ffca2dc92231084",
+    "batch-081-090\\visual-v1\\predictions.json": "a9b596f9c0ff6d21ffe54bdc168c897f89957136346778f4e9d6572810c8b5dd",
+    "batch-081-090\\hybrid-v2\\predictions.json": "400f30acb5c4a7bbed78bd66b2efef775a9b9adf8f1a10a43cedaee99fc6ffd8",
+    "batch-091-100\\visual-v1\\predictions.json": "abb687e65d8778fcf9d7555656c66b5168cb6b68c503acadc8ead6c7466208e7",
+    "batch-091-100\\hybrid-v2\\predictions.json": "0aa4156c549382acbe578669a7ac623f66db0a885e971b6b4ca9c2497dca48ca",
+    "batch-101-110\\visual-v1\\predictions.json": "b3b2d6cba3278168cb200e339d26dde645572533fe49cbc9876d53e935ceb4b2",
+    "batch-101-110\\hybrid-v2\\predictions.json": "c10c48a1a07656375d74e262687e8d099cbed70db5abdef9da05eb2150e045d8",
+    "batch-111-120\\visual-v1\\predictions.json": "b311e25132801b4a6fb7087c0225281fdab4de40df875e5012f35d134479392a",
+    "batch-111-120\\hybrid-v2\\predictions.json": "8bfdd160f199e8d3c7518397b2679a5775ba57dd931dd98855f62e3c32a0b415",
+    "batch-121-130\\visual-v1\\predictions.json": "15d928966faceff8c587f2b6241924540698f75d3e2b252ca1b96ca7e537c66f",
+    "batch-121-130\\hybrid-v2\\predictions.json": "70afe39fb2ea7df33be8160129b0d3caea6cab543a05a854bd29635bf3d90dd9",
+    "batch-131-140\\visual-v1\\predictions.json": "e826951953a3e93783f9ab4fa65ad41ff339a1a1ff4176bd7c601503efd23b1f",
+    "batch-131-140\\hybrid-v2\\predictions.json": "480488234ea78aecd0b44fe4172acbc2a9fc18836efd42aef280837258f99dfd",
+    "batch-141-150\\visual-v1\\predictions.json": "ac1d7baef3ee2db533fbfd87946f61f2245b8a71c5ca0e3129cc46039030ad96",
+    "batch-141-150\\hybrid-v2\\predictions.json": "9859cc21d3b7dca3263d4dab41a40c861639a4817055b5e3abfd30bdaaf9f922",
+    "batch-151-160\\visual-v1\\predictions.json": "21647911e35c68ffa0ceb51bcda7180b445a04fbd3f781f240dfb1689d21f7a2",
+    "batch-151-160\\hybrid-v2\\predictions.json": "6cd2b7c0b37e2bc0e4bb419f7c7a999f46717271320cc3551ae535166d324504",
+    "batch-161-162\\visual-v1\\predictions.json": "508640c08d389349c47266bb8f6270cace788c81132c11ab6993129bffac8674",
+    "batch-161-162\\hybrid-v2\\predictions.json": "3efb36a86b927d08bb8e004eca6559849d3d4b38eeb423b023cb0e933df0cbec"
+  },
+  "scope_selection": {
+    "version": "time-place-selection-v2",
+    "selection": "all eligible",
+    "query_source_sha256": "90c71072f6ff6489981b3159444840848c64a6dbf806fda8ea449c2956897efa",
+    "labels_used": false,
+    "cases": [
+      {
+        "id": "TC0101",
+        "query": "广州动物园",
+        "excel_row": 102,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "广州动物园"
+        ],
+        "reason": "广州动物园为具名地点"
+      },
+      {
+        "id": "TC0103",
+        "query": "悉尼歌剧院",
+        "excel_row": 104,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "悉尼歌剧院"
+        ],
+        "reason": "悉尼歌剧院为具名地标"
+      },
+      {
+        "id": "TC0113",
+        "query": "长隆",
+        "excel_row": 114,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "长隆"
+        ],
+        "reason": "长隆为具名景区/品牌"
+      },
+      {
+        "id": "TC0114",
+        "query": "拉萨",
+        "excel_row": 115,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "拉萨"
+        ],
+        "reason": "拉萨为具名城市"
+      },
+      {
+        "id": "TC0118",
+        "query": "搜下圣索菲亚大教堂",
+        "excel_row": 119,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "圣索菲亚大教堂"
+        ],
+        "reason": "圣索菲亚大教堂为具名地标"
+      },
+      {
+        "id": "TC0120",
+        "query": "暑假",
+        "excel_row": 121,
+        "category": "time",
+        "time_terms": [
+          "暑假"
+        ],
+        "place_terms": [],
+        "reason": "暑假为相对时段"
+      },
+      {
+        "id": "TC0121",
+        "query": "寒假",
+        "excel_row": 122,
+        "category": "time",
+        "time_terms": [
+          "寒假"
+        ],
+        "place_terms": [],
+        "reason": "寒假为相对时段"
+      },
+      {
+        "id": "TC0122",
+        "query": "国庆",
+        "excel_row": 123,
+        "category": "time",
+        "time_terms": [
+          "国庆"
+        ],
+        "place_terms": [],
+        "reason": "国庆为节日"
+      },
+      {
+        "id": "TC0123",
+        "query": "中秋",
+        "excel_row": 124,
+        "category": "time",
+        "time_terms": [
+          "中秋"
+        ],
+        "place_terms": [],
+        "reason": "中秋为节日"
+      },
+      {
+        "id": "TC0124",
+        "query": "故宫博物院",
+        "excel_row": 125,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "故宫博物院"
+        ],
+        "reason": "故宫博物院为具名机构/地标"
+      },
+      {
+        "id": "TC0126",
+        "query": "圣心大教堂",
+        "excel_row": 127,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "圣心大教堂"
+        ],
+        "reason": "圣心大教堂为具名地标"
+      },
+      {
+        "id": "TC0127",
+        "query": "开学",
+        "excel_row": 128,
+        "category": "time",
+        "time_terms": [
+          "开学"
+        ],
+        "place_terms": [],
+        "reason": "开学为相对时段"
+      },
+      {
+        "id": "TC0128",
+        "query": "新年",
+        "excel_row": 129,
+        "category": "time",
+        "time_terms": [
+          "新年"
+        ],
+        "place_terms": [],
+        "reason": "新年为节日"
+      },
+      {
+        "id": "TC0129",
+        "query": "无锡",
+        "excel_row": 130,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "无锡"
+        ],
+        "reason": "无锡为具名城市"
+      },
+      {
+        "id": "TC0130",
+        "query": "日本",
+        "excel_row": 131,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "日本"
+        ],
+        "reason": "日本为国家"
+      },
+      {
+        "id": "TC0131",
+        "query": "时代广场",
+        "excel_row": 132,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "时代广场"
+        ],
+        "reason": "时代广场为具名地标"
+      },
+      {
+        "id": "TC0134",
+        "query": "查找大雁塔",
+        "excel_row": 135,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "大雁塔"
+        ],
+        "reason": "大雁塔为具名地标"
+      },
+      {
+        "id": "TC0142",
+        "query": "红旗和天安门",
+        "excel_row": 143,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "天安门"
+        ],
+        "reason": "天安门为具名地标"
+      },
+      {
+        "id": "TC0145",
+        "query": "绍兴",
+        "excel_row": 146,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "绍兴"
+        ],
+        "reason": "绍兴为具名城市"
+      },
+      {
+        "id": "TC0148",
+        "query": "2012年 宫殿",
+        "excel_row": 149,
+        "category": "time",
+        "time_terms": [
+          "2012年"
+        ],
+        "place_terms": [],
+        "reason": "2012年为拍摄年份，宫殿为泛称"
+      },
+      {
+        "id": "TC0149",
+        "query": "2026年 摩天轮",
+        "excel_row": 150,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "2026年为拍摄年份，摩天轮为物体"
+      },
+      {
+        "id": "TC0150",
+        "query": "2023年 南京中山陵",
+        "excel_row": 151,
+        "category": "both",
+        "time_terms": [
+          "2023年"
+        ],
+        "place_terms": [
+          "南京中山陵"
+        ],
+        "reason": "2023年为年份，南京中山陵为具名地点"
+      },
+      {
+        "id": "TC0151",
+        "query": "2023年 音乐厅",
+        "excel_row": 152,
+        "category": "time",
+        "time_terms": [
+          "2023年"
+        ],
+        "place_terms": [],
+        "reason": "2023年为年份，音乐厅为泛称机构"
+      },
+      {
+        "id": "TC0152",
+        "query": "2013 水井",
+        "excel_row": 153,
+        "category": "time",
+        "time_terms": [
+          "2013"
+        ],
+        "place_terms": [],
+        "reason": "2013为年份，水井为物体"
+      },
+      {
+        "id": "TC0153",
+        "query": "2024年 北京大学",
+        "excel_row": 154,
+        "category": "both",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [
+          "北京大学"
+        ],
+        "reason": "2024年为年份，北京大学为具名机构"
+      },
+      {
+        "id": "TC0154",
+        "query": "莫高窟",
+        "excel_row": 155,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "莫高窟"
+        ],
+        "reason": "莫高窟为具名景区"
+      },
+      {
+        "id": "TC0158",
+        "query": "重庆",
+        "excel_row": 159,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "重庆"
+        ],
+        "reason": "重庆为具名城市"
+      },
+      {
+        "id": "TC0160",
+        "query": "祈年殿",
+        "excel_row": 161,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "祈年殿"
+        ],
+        "reason": "祈年殿为具名地标"
+      },
+      {
+        "id": "TC0161",
+        "query": "颐和园和湖",
+        "excel_row": 162,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "颐和园"
+        ],
+        "reason": "颐和园为具名景区"
+      },
+      {
+        "id": "TC0173",
+        "query": "天坛",
+        "excel_row": 174,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "天坛"
+        ],
+        "reason": "天坛为具名地标"
+      },
+      {
+        "id": "TC0186",
+        "query": "维多利亚港",
+        "excel_row": 187,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "维多利亚港"
+        ],
+        "reason": "维多利亚港为具名地标"
+      },
+      {
+        "id": "TC0189",
+        "query": "东京",
+        "excel_row": 190,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "东京"
+        ],
+        "reason": "东京为具名城市"
+      },
+      {
+        "id": "TC0191",
+        "query": "故宫",
+        "excel_row": 192,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "故宫"
+        ],
+        "reason": "故宫为具名地标"
+      },
+      {
+        "id": "TC0192",
+        "query": "上海陆家嘴",
+        "excel_row": 193,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "上海陆家嘴"
+        ],
+        "reason": "上海陆家嘴为具名地点"
+      },
+      {
+        "id": "TC0201",
+        "query": "万圣节",
+        "excel_row": 202,
+        "category": "time",
+        "time_terms": [
+          "万圣节"
+        ],
+        "place_terms": [],
+        "reason": "万圣节为节日，属时间条件"
+      },
+      {
+        "id": "TC0215",
+        "query": "南京 手办",
+        "excel_row": 216,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "南京"
+        ],
+        "reason": "南京为具名城市"
+      },
+      {
+        "id": "TC0222",
+        "query": "埃菲尔铁塔",
+        "excel_row": 223,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "埃菲尔铁塔"
+        ],
+        "reason": "埃菲尔铁塔为具名地标"
+      },
+      {
+        "id": "TC0255",
+        "query": "新宿",
+        "excel_row": 256,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "新宿"
+        ],
+        "reason": "新宿为具名地区"
+      },
+      {
+        "id": "TC0262",
+        "query": "湖北",
+        "excel_row": 263,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "湖北"
+        ],
+        "reason": "湖北为省级具名地点"
+      },
+      {
+        "id": "TC0267",
+        "query": "红色的迪士尼乐园",
+        "excel_row": 268,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "迪士尼乐园"
+        ],
+        "reason": "迪士尼乐园为具名地标"
+      },
+      {
+        "id": "TC0277",
+        "query": "在三亚的烟花",
+        "excel_row": 278,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "三亚"
+        ],
+        "reason": "三亚为具名城市"
+      },
+      {
+        "id": "TC0283",
+        "query": "2026年 喷泉",
+        "excel_row": 284,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "2026年为拍摄年份"
+      },
+      {
+        "id": "TC0288",
+        "query": "摩天轮 香港",
+        "excel_row": 289,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "香港"
+        ],
+        "reason": "香港为具名地区"
+      },
+      {
+        "id": "TC0289",
+        "query": "2026年 烤肉串",
+        "excel_row": 290,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "2026年为拍摄年份"
+      },
+      {
+        "id": "TC0293",
+        "query": "2023年 维多利亚港",
+        "excel_row": 294,
+        "category": "both",
+        "time_terms": [
+          "2023年"
+        ],
+        "place_terms": [
+          "维多利亚港"
+        ],
+        "reason": "2023年为年份，维多利亚港为具名地标"
+      },
+      {
+        "id": "TC0297",
+        "query": "2023年在市拍的烟花",
+        "excel_row": 298,
+        "category": "time",
+        "time_terms": [
+          "2023年"
+        ],
+        "place_terms": [],
+        "reason": "2023年为年份；市为泛称无具名地点"
+      },
+      {
+        "id": "TC0309",
+        "query": "2019年的马里奥玩偶",
+        "excel_row": 310,
+        "category": "time",
+        "time_terms": [
+          "2019年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2019年"
+      },
+      {
+        "id": "TC0319",
+        "query": "下午茶",
+        "excel_row": 320,
+        "category": "time",
+        "time_terms": [
+          "下午"
+        ],
+        "place_terms": [],
+        "reason": "下午茶含时段词下午"
+      },
+      {
+        "id": "TC0333",
+        "query": "寿司郎",
+        "excel_row": 334,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "寿司郎"
+        ],
+        "reason": "寿司郎为具名餐饮品牌/门店"
+      },
+      {
+        "id": "TC0372",
+        "query": "海底捞",
+        "excel_row": 373,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "海底捞"
+        ],
+        "reason": "海底捞为具名餐饮品牌/门店，属具名地点内容查询"
+      },
+      {
+        "id": "TC0394",
+        "query": "盛御囍宴",
+        "excel_row": 395,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "盛御囍宴"
+        ],
+        "reason": "盛御囍宴为具名场所/机构"
+      },
+      {
+        "id": "TC0409",
+        "query": "星巴克",
+        "excel_row": 410,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "星巴克"
+        ],
+        "reason": "星巴克为具名品牌/门店"
+      },
+      {
+        "id": "TC0429",
+        "query": "西安小吃",
+        "excel_row": 430,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "西安"
+        ],
+        "reason": "西安为具名城市"
+      },
+      {
+        "id": "TC0430",
+        "query": "西安的肉夹馍",
+        "excel_row": 431,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "西安"
+        ],
+        "reason": "西安为具名城市"
+      },
+      {
+        "id": "TC0476",
+        "query": "2012年 赶海",
+        "excel_row": 477,
+        "category": "time",
+        "time_terms": [
+          "2012年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2012年，赶海非具名地点"
+      },
+      {
+        "id": "TC0478",
+        "query": "2018年 歌手",
+        "excel_row": 479,
+        "category": "time",
+        "time_terms": [
+          "2018年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2018年，歌手非地点"
+      },
+      {
+        "id": "TC0479",
+        "query": "2023年 福州大学",
+        "excel_row": 480,
+        "category": "both",
+        "time_terms": [
+          "2023年"
+        ],
+        "place_terms": [
+          "福州大学"
+        ],
+        "reason": "含年份2023年及具名地点福州大学"
+      },
+      {
+        "id": "TC0482",
+        "query": "2026年 乐器",
+        "excel_row": 483,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年，乐器非地点"
+      },
+      {
+        "id": "TC0483",
+        "query": "2026年 幼儿园毕业",
+        "excel_row": 484,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年，幼儿园毕业非具名地点"
+      },
+      {
+        "id": "TC0494",
+        "query": "东京歌舞伎町",
+        "excel_row": 495,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "东京歌舞伎町"
+        ],
+        "reason": "含具名地点东京歌舞伎町"
+      },
+      {
+        "id": "TC0495",
+        "query": "莞比特",
+        "excel_row": 496,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "莞比特"
+        ],
+        "reason": "莞比特为具名机构/地点名称"
+      },
+      {
+        "id": "TC0508",
+        "query": "吉隆坡",
+        "excel_row": 509,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "吉隆坡"
+        ],
+        "reason": "吉隆坡为具名城市"
+      },
+      {
+        "id": "TC0513",
+        "query": "夜晚",
+        "excel_row": 514,
+        "category": "time",
+        "time_terms": [
+          "夜晚"
+        ],
+        "place_terms": [],
+        "reason": "夜晚为时段"
+      },
+      {
+        "id": "TC0522",
+        "query": "尖沙咀",
+        "excel_row": 523,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "尖沙咀"
+        ],
+        "reason": "尖沙咀为具名地标区域"
+      },
+      {
+        "id": "TC0533",
+        "query": "李佳琦直播间",
+        "excel_row": 534,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "李佳琦直播间"
+        ],
+        "reason": "李佳琦直播间为具名机构/场所"
+      },
+      {
+        "id": "TC0534",
+        "query": "杭州",
+        "excel_row": 535,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "杭州"
+        ],
+        "reason": "杭州为具名城市"
+      },
+      {
+        "id": "TC0536",
+        "query": "棉湖 合照",
+        "excel_row": 537,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "棉湖"
+        ],
+        "reason": "棉湖为具名地名"
+      },
+      {
+        "id": "TC0542",
+        "query": "2026年 演讲",
+        "excel_row": 543,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2026年"
+      },
+      {
+        "id": "TC0543",
+        "query": "2017年宴会",
+        "excel_row": 544,
+        "category": "time",
+        "time_terms": [
+          "2017年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2017年"
+      },
+      {
+        "id": "TC0552",
+        "query": "2025年 军训照",
+        "excel_row": 553,
+        "category": "time",
+        "time_terms": [
+          "2025年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2025年"
+      },
+      {
+        "id": "TC0566",
+        "query": "2024年 周年庆",
+        "excel_row": 567,
+        "category": "time",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2024年"
+      },
+      {
+        "id": "TC0577",
+        "query": "搜下宋韵·婺州府",
+        "excel_row": 578,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "宋韵·婺州府"
+        ],
+        "reason": "含具名地点/场所宋韵·婺州府"
+      },
+      {
+        "id": "TC0582",
+        "query": "杭州嘉里中心",
+        "excel_row": 583,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "杭州嘉里中心"
+        ],
+        "reason": "杭州嘉里中心为具名商圈/地标"
+      },
+      {
+        "id": "TC0606",
+        "query": "2025年 生日",
+        "excel_row": 607,
+        "category": "time",
+        "time_terms": [
+          "2025年",
+          "生日"
+        ],
+        "place_terms": [],
+        "reason": "2025年为拍摄年份，生日为节日/事件时间"
+      },
+      {
+        "id": "TC0607",
+        "query": "找一下今年的生日照片",
+        "excel_row": 608,
+        "category": "time",
+        "time_terms": [
+          "今年"
+        ],
+        "place_terms": [],
+        "reason": "今年为相对时间"
+      },
+      {
+        "id": "TC0617",
+        "query": "2026年的老人",
+        "excel_row": 618,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "2026年为拍摄年份"
+      },
+      {
+        "id": "TC0627",
+        "query": "呼和浩特 聚餐",
+        "excel_row": 628,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "呼和浩特"
+        ],
+        "reason": "呼和浩特为具名城市"
+      },
+      {
+        "id": "TC0628",
+        "query": "成都市 毕业照",
+        "excel_row": 629,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "成都市"
+        ],
+        "reason": "成都市为具名城市"
+      },
+      {
+        "id": "TC0629",
+        "query": "拉萨 合照",
+        "excel_row": 630,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "拉萨"
+        ],
+        "reason": "拉萨为具名城市"
+      },
+      {
+        "id": "TC0653",
+        "query": "三星堆",
+        "excel_row": 654,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "三星堆"
+        ],
+        "reason": "三星堆为具名遗址/景区"
+      },
+      {
+        "id": "TC0655",
+        "query": "上海的雕像",
+        "excel_row": 656,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "上海"
+        ],
+        "reason": "上海为具名城市"
+      },
+      {
+        "id": "TC0658",
+        "query": "东莞市 电路板",
+        "excel_row": 659,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "东莞市"
+        ],
+        "reason": "东莞市为具名城市"
+      },
+      {
+        "id": "TC0689",
+        "query": "北京市 天坛公园",
+        "excel_row": 690,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "北京市",
+          "天坛公园"
+        ],
+        "reason": "北京市天坛公园为具名地点"
+      },
+      {
+        "id": "TC0691",
+        "query": "南京邮电大学",
+        "excel_row": 692,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "南京邮电大学"
+        ],
+        "reason": "南京邮电大学为具名机构"
+      },
+      {
+        "id": "TC0725",
+        "query": "广州的徽章",
+        "excel_row": 726,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "广州"
+        ],
+        "reason": "查询含具名城市广州"
+      },
+      {
+        "id": "TC0736",
+        "query": "故宫的说明牌",
+        "excel_row": 737,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "故宫"
+        ],
+        "reason": "查询含具名地标故宫"
+      },
+      {
+        "id": "TC0749",
+        "query": "武汉的武汉",
+        "excel_row": 750,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "武汉"
+        ],
+        "reason": "含具名城市武汉"
+      },
+      {
+        "id": "TC0779",
+        "query": "2012年 博物馆",
+        "excel_row": 780,
+        "category": "time",
+        "time_terms": [
+          "2012年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2012年；博物馆为泛称机构无具名"
+      },
+      {
+        "id": "TC0789",
+        "query": "2026年的试卷",
+        "excel_row": 790,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2026年"
+      },
+      {
+        "id": "TC0793",
+        "query": "王府井大街",
+        "excel_row": 794,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "王府井大街"
+        ],
+        "reason": "王府井大街为具名地点"
+      },
+      {
+        "id": "TC0797",
+        "query": "2024年的动画人物",
+        "excel_row": 798,
+        "category": "time",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2024年"
+      },
+      {
+        "id": "TC0800",
+        "query": "2026年 日历",
+        "excel_row": 801,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年"
+      },
+      {
+        "id": "TC0806",
+        "query": "2024年 中国联通Logo",
+        "excel_row": 807,
+        "category": "time",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2024年"
+      },
+      {
+        "id": "TC0807",
+        "query": "2026年的聊天界面",
+        "excel_row": 808,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年"
+      },
+      {
+        "id": "TC0808",
+        "query": "东莞市",
+        "excel_row": 809,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "东莞市"
+        ],
+        "reason": "东莞市为具名城市"
+      },
+      {
+        "id": "TC0810",
+        "query": "2026年的柱状图",
+        "excel_row": 811,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年"
+      },
+      {
+        "id": "TC0813",
+        "query": "北京",
+        "excel_row": 814,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "北京"
+        ],
+        "reason": "北京为具名城市"
+      },
+      {
+        "id": "TC0814",
+        "query": "2026年 游戏角色",
+        "excel_row": 815,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年"
+      },
+      {
+        "id": "TC0817",
+        "query": "2020年 聊天界面",
+        "excel_row": 818,
+        "category": "time",
+        "time_terms": [
+          "2020年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2020年"
+      },
+      {
+        "id": "TC0819",
+        "query": "2022年 T恤",
+        "excel_row": 820,
+        "category": "time",
+        "time_terms": [
+          "2022年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2022年"
+      },
+      {
+        "id": "TC0821",
+        "query": "2026年 柱状图",
+        "excel_row": 822,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2026年，无具名地点"
+      },
+      {
+        "id": "TC0835",
+        "query": "2024年 北京市第二十中学",
+        "excel_row": 836,
+        "category": "both",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [
+          "北京市第二十中学"
+        ],
+        "reason": "含年份2024年及具名学校地点"
+      },
+      {
+        "id": "TC0852",
+        "query": "2024年 手机截图",
+        "excel_row": 853,
+        "category": "time",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2024年，无具名地点"
+      },
+      {
+        "id": "TC0853",
+        "query": "2024年 市 酒店预订",
+        "excel_row": 854,
+        "category": "time",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2024年；市为泛称不构成具名地点"
+      },
+      {
+        "id": "TC0857",
+        "query": "惠东县 显示器",
+        "excel_row": 858,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "惠东县"
+        ],
+        "reason": "含具名区县惠东县，无时间条件"
+      },
+      {
+        "id": "TC0862",
+        "query": "2024年的游戏界面",
+        "excel_row": 863,
+        "category": "time",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2024年"
+      },
+      {
+        "id": "TC0867",
+        "query": "2022年 哈尔滨市第一医院",
+        "excel_row": 868,
+        "category": "both",
+        "time_terms": [
+          "2022年"
+        ],
+        "place_terms": [
+          "哈尔滨市第一医院"
+        ],
+        "reason": "含年份2022年及具名机构哈尔滨市第一医院"
+      },
+      {
+        "id": "TC0870",
+        "query": "2026年 彩票",
+        "excel_row": 871,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年"
+      },
+      {
+        "id": "TC0877",
+        "query": "2025年 驾驶证",
+        "excel_row": 878,
+        "category": "time",
+        "time_terms": [
+          "2025年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2025年"
+      },
+      {
+        "id": "TC0885",
+        "query": "2026年 山坡",
+        "excel_row": 886,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含年份2026年，山坡为泛称地貌"
+      },
+      {
+        "id": "TC0891",
+        "query": "天安门",
+        "excel_row": 892,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "天安门"
+        ],
+        "reason": "天安门为具名地标"
+      },
+      {
+        "id": "TC0898",
+        "query": "2026年 富士山",
+        "excel_row": 899,
+        "category": "both",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [
+          "富士山"
+        ],
+        "reason": "含年份2026年及具名地标富士山"
+      },
+      {
+        "id": "TC0904",
+        "query": "2025年 教堂",
+        "excel_row": 905,
+        "category": "time",
+        "time_terms": [
+          "2025年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2025年，教堂为泛称建筑"
+      },
+      {
+        "id": "TC0910",
+        "query": "富士山",
+        "excel_row": 911,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "富士山"
+        ],
+        "reason": "富士山为具名地标"
+      },
+      {
+        "id": "TC0916",
+        "query": "2023年在北京北京大学",
+        "excel_row": 917,
+        "category": "both",
+        "time_terms": [
+          "2023年"
+        ],
+        "place_terms": [
+          "北京",
+          "北京大学"
+        ],
+        "reason": "含拍摄年份2023年及具名地点北京、北京大学"
+      },
+      {
+        "id": "TC0918",
+        "query": "上海和道路",
+        "excel_row": 919,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "上海"
+        ],
+        "reason": "上海为具名城市，道路为泛称"
+      },
+      {
+        "id": "TC0919",
+        "query": "查找中国国旗",
+        "excel_row": 920,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "中国"
+        ],
+        "reason": "中国为具名国家"
+      },
+      {
+        "id": "TC0922",
+        "query": "2022年 大海俯瞰图",
+        "excel_row": 923,
+        "category": "time",
+        "time_terms": [
+          "2022年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2022年，大海为泛称"
+      },
+      {
+        "id": "TC0924",
+        "query": "2019年园林人物照",
+        "excel_row": 925,
+        "category": "time",
+        "time_terms": [
+          "2019年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2019年，园林为泛称"
+      },
+      {
+        "id": "TC0928",
+        "query": "王子社",
+        "excel_row": 929,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "王子社"
+        ],
+        "reason": "王子社为具名地点/机构"
+      },
+      {
+        "id": "TC0932",
+        "query": "江南水乡",
+        "excel_row": 933,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "江南"
+        ],
+        "reason": "江南为具名地域"
+      },
+      {
+        "id": "TC0934",
+        "query": "2026年的城堡",
+        "excel_row": 935,
+        "category": "time",
+        "time_terms": [
+          "2026年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2026年，城堡为泛称"
+      },
+      {
+        "id": "TC0941",
+        "query": "上海迪士尼乐园",
+        "excel_row": 942,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "上海迪士尼乐园"
+        ],
+        "reason": "具名地标上海迪士尼乐园"
+      },
+      {
+        "id": "TC0944",
+        "query": "2025年 古树",
+        "excel_row": 945,
+        "category": "time",
+        "time_terms": [
+          "2025年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2025年"
+      },
+      {
+        "id": "TC0947",
+        "query": "2023年 轮胎印",
+        "excel_row": 948,
+        "category": "time",
+        "time_terms": [
+          "2023年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2023年"
+      },
+      {
+        "id": "TC0953",
+        "query": "春节",
+        "excel_row": 954,
+        "category": "time",
+        "time_terms": [
+          "春节"
+        ],
+        "place_terms": [],
+        "reason": "春节为节日时间"
+      },
+      {
+        "id": "TC0966",
+        "query": "卡塔尔",
+        "excel_row": 967,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "卡塔尔"
+        ],
+        "reason": "国家名卡塔尔"
+      },
+      {
+        "id": "TC0968",
+        "query": "周三",
+        "excel_row": 969,
+        "category": "time",
+        "time_terms": [
+          "周三"
+        ],
+        "place_terms": [],
+        "reason": "周三为星期时段"
+      },
+      {
+        "id": "TC1002",
+        "query": "知鱼游泳中心",
+        "excel_row": 1003,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "知鱼游泳中心"
+        ],
+        "reason": "知鱼游泳中心为具名机构/场馆"
+      },
+      {
+        "id": "TC1025",
+        "query": "哈尔滨市 游泳图片",
+        "excel_row": 1026,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "哈尔滨市"
+        ],
+        "reason": "含具名城市哈尔滨市"
+      },
+      {
+        "id": "TC1040",
+        "query": "厦门植物园",
+        "excel_row": 1041,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "厦门植物园"
+        ],
+        "reason": "含具名地点厦门植物园"
+      },
+      {
+        "id": "TC1105",
+        "query": "秋季公园",
+        "excel_row": 1106,
+        "category": "both",
+        "time_terms": [
+          "秋季"
+        ],
+        "place_terms": [
+          "公园"
+        ],
+        "reason": "秋季为季节，公园为具名地点类型"
+      },
+      {
+        "id": "TC1126",
+        "query": "深圳市 世界之窗",
+        "excel_row": 1127,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "深圳市",
+          "世界之窗"
+        ],
+        "reason": "深圳市为城市，世界之窗为具名景区"
+      },
+      {
+        "id": "TC1128",
+        "query": "2024年 飞机",
+        "excel_row": 1129,
+        "category": "time",
+        "time_terms": [
+          "2024年"
+        ],
+        "place_terms": [],
+        "reason": "2024年为拍摄年份"
+      },
+      {
+        "id": "TC1148",
+        "query": "2012年 飞机",
+        "excel_row": 1149,
+        "category": "time",
+        "time_terms": [
+          "2012年"
+        ],
+        "place_terms": [],
+        "reason": "含拍摄年份2012年"
+      },
+      {
+        "id": "TC1174",
+        "query": "北京国际车展",
+        "excel_row": 1175,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "北京国际车展"
+        ],
+        "reason": "含具名展会地点"
+      },
+      {
+        "id": "TC1182",
+        "query": "夜晚街头",
+        "excel_row": 1183,
+        "category": "time",
+        "time_terms": [
+          "夜晚"
+        ],
+        "place_terms": [],
+        "reason": "夜晚为时段条件，街头为泛称"
+      },
+      {
+        "id": "TC1239",
+        "query": "알펜시아 엘림커피",
+        "excel_row": 1240,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "알펜시아 엘림커피"
+        ],
+        "reason": "韩文咖啡店名为具名地点"
+      },
+      {
+        "id": "TC1241",
+        "query": "渡月桥",
+        "excel_row": 1242,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "渡月桥"
+        ],
+        "reason": "渡月桥为具名地标"
+      },
+      {
+        "id": "TC1247",
+        "query": "武汉长江大桥",
+        "excel_row": 1248,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "武汉长江大桥"
+        ],
+        "reason": "武汉长江大桥为具名地标"
+      },
+      {
+        "id": "TC1250",
+        "query": "十七孔桥",
+        "excel_row": 1251,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "十七孔桥"
+        ],
+        "reason": "十七孔桥为具名地标"
+      },
+      {
+        "id": "TC1258",
+        "query": "任天堂世界",
+        "excel_row": 1259,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "任天堂世界"
+        ],
+        "reason": "任天堂世界为具名主题园区"
+      },
+      {
+        "id": "TC1259",
+        "query": "北京2008奥运",
+        "excel_row": 1260,
+        "category": "both",
+        "time_terms": [
+          "2008"
+        ],
+        "place_terms": [
+          "北京"
+        ],
+        "reason": "北京为具名地点，2008为年份"
+      },
+      {
+        "id": "TC1260",
+        "query": "梧桐山",
+        "excel_row": 1261,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "梧桐山"
+        ],
+        "reason": "梧桐山为具名地点"
+      },
+      {
+        "id": "TC1269",
+        "query": "2026年7月在东莞的聚餐",
+        "excel_row": 1270,
+        "category": "both",
+        "time_terms": [
+          "2026年7月"
+        ],
+        "place_terms": [
+          "东莞"
+        ],
+        "reason": "含明确年月与城市"
+      },
+      {
+        "id": "TC1273",
+        "query": "Global Hotel",
+        "excel_row": 1274,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "Global Hotel"
+        ],
+        "reason": "具名酒店名称"
+      },
+      {
+        "id": "TC1280",
+        "query": "小蛮腰",
+        "excel_row": 1281,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "小蛮腰"
+        ],
+        "reason": "广州塔别称，具名地标"
+      },
+      {
+        "id": "TC1285",
+        "query": "天门洞",
+        "excel_row": 1286,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "天门洞"
+        ],
+        "reason": "具名景点"
+      },
+      {
+        "id": "TC1287",
+        "query": "维多利亚港 烟花",
+        "excel_row": 1288,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "维多利亚港"
+        ],
+        "reason": "具名地点"
+      },
+      {
+        "id": "TC1290",
+        "query": "北京国家体育场",
+        "excel_row": 1291,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "北京国家体育场"
+        ],
+        "reason": "具名场馆"
+      },
+      {
+        "id": "TC1295",
+        "query": "香港大学",
+        "excel_row": 1296,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "香港大学"
+        ],
+        "reason": "具名机构"
+      },
+      {
+        "id": "TC1296",
+        "query": "香港中银大厦",
+        "excel_row": 1297,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "香港中银大厦"
+        ],
+        "reason": "具名地标"
+      },
+      {
+        "id": "TC1297",
+        "query": "伊丽莎白塔",
+        "excel_row": 1298,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "伊丽莎白塔"
+        ],
+        "reason": "具名地标"
+      },
+      {
+        "id": "TC1300",
+        "query": "新疆美食",
+        "excel_row": 1301,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "新疆"
+        ],
+        "reason": "含具名地区"
+      },
+      {
+        "id": "TC1302",
+        "query": "马洪羊肉泡馍",
+        "excel_row": 1303,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "马洪"
+        ],
+        "reason": "马洪为具名地名/店名指向的具体地点"
+      },
+      {
+        "id": "TC1304",
+        "query": "松山湖",
+        "excel_row": 1305,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "松山湖"
+        ],
+        "reason": "松山湖为具名地点"
+      },
+      {
+        "id": "TC1305",
+        "query": "港铁",
+        "excel_row": 1306,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "港铁"
+        ],
+        "reason": "港铁为具名机构/地标"
+      },
+      {
+        "id": "TC1306",
+        "query": "故宫午门",
+        "excel_row": 1307,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "故宫午门"
+        ],
+        "reason": "故宫午门为具名地标"
+      },
+      {
+        "id": "TC1308",
+        "query": "广州长隆",
+        "excel_row": 1309,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "广州长隆"
+        ],
+        "reason": "广州长隆为具名景区"
+      },
+      {
+        "id": "TC1311",
+        "query": "到上海的车票",
+        "excel_row": 1312,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "上海"
+        ],
+        "reason": "上海为具名城市"
+      },
+      {
+        "id": "TC1312",
+        "query": "武汉出发的车票",
+        "excel_row": 1313,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "武汉"
+        ],
+        "reason": "武汉为具名城市"
+      },
+      {
+        "id": "TC1320",
+        "query": "南京大牌档",
+        "excel_row": 1321,
+        "category": "place",
+        "time_terms": [],
+        "place_terms": [
+          "南京"
+        ],
+        "reason": "南京为具名城市"
+      }
+    ],
+    "counts": {
+      "place": 95,
+      "time": 56,
+      "both": 11
+    }
+  },
+  "calls_by_stage": {
+    "metadata-plan": 17,
+    "route": 17,
+    "screen": 8905,
+    "verify-metadata-single": 13692,
+    "verify-schema-retry-single": 180,
+    "verify-schema-retry-single-identity-repair-1": 17,
+    "verify-schema-retry-single-identity-repair-2": 8,
+    "verify-single": 16715,
+    "verify-single-identity-repair-1": 902,
+    "verify-single-identity-repair-2": 259,
+    "screen-id-repair-1": 9,
+    "screen-schema-retry": 23,
+    "verify-metadata": 5,
+    "verify-metadata-single-identity-repair-1": 2,
+    "route-schema-retry-1": 2,
+    "verify": 3,
+    "metadata-plan-retry": 1
+  },
+  "successful_response_usage": {
+    "deepseek": {
+      "prompt_tokens": 41307,
+      "completion_tokens": 32087,
+      "total_tokens": 73394
+    },
+    "qwen": {
+      "prompt_tokens": 67057977,
+      "completion_tokens": 3989390,
+      "total_tokens": 71047367
+    }
+  },
+  "environment": {
+    "python": "3.14.6",
+    "system": "Windows",
+    "dependencies": {
+      "Pillow": "13.0.0",
+      "openpyxl": "3.1.5",
+      "pillow-heif": "1.8.1",
+      "rawpy": "0.28.0"
+    }
+  },
+  "metadata_field_nonempty_rows": {
+    "tagIds": 10096,
+    "shootingTime": 10674,
+    "country": 2218,
+    "province": 2218,
+    "city": 2216,
+    "business_terms": 551,
+    "place_terms": 1269
+  },
+  "recovered_fid_stages": {
+    "directory_not_searched": 934,
+    "coarse_screen_miss": 335,
+    "baseline_uncertain": 53,
+    "baseline_visual_rejection": 16,
+    "provider_blocked_visual": 2
+  },
+  "missed_fid_stages": {
+    "final_uncertain": 397,
+    "visual_candidate_not_confirmed": 304,
+    "not_in_either_candidate_pool": 1790,
+    "metadata_candidate_not_confirmed": 511,
+    "unmapped_local_fid": 102
+  },
+  "unmapped_known_fid_relations": 102,
+  "provider_blocks": {
+    "blocked_image_ids": [
+      "I01775",
+      "I03635",
+      "I03636",
+      "I03637",
+      "I03638",
+      "I03639",
+      "I03640",
+      "I03641",
+      "I03642",
+      "I03643",
+      "I03644",
+      "I03645",
+      "I03646",
+      "I03957",
+      "I04208",
+      "I04373",
+      "I04376",
+      "I09121",
+      "I09122",
+      "I09123",
+      "I09124",
+      "I09125",
+      "I09126",
+      "I09127",
+      "I09128",
+      "I09129",
+      "I09130",
+      "I09131",
+      "I09132"
+    ],
+    "events": [
+      {
+        "image_ids": [
+          "I09121",
+          "I09122",
+          "I09123",
+          "I09124",
+          "I09125",
+          "I09126",
+          "I09127",
+          "I09128",
+          "I09129",
+          "I09130",
+          "I09131",
+          "I09132"
+        ],
+        "stage": "diagnostic-confirmed-data_inspection_failed",
+        "media": "image",
+        "provider": "qwen",
+        "time": 1794924915.7499592,
+        "action": "no resubmission; uncertain, not negative"
+      },
+      {
+        "image_ids": [
+          "I03635",
+          "I03636",
+          "I03637",
+          "I03638",
+          "I03639",
+          "I03640",
+          "I03641",
+          "I03642",
+          "I03643",
+          "I03644",
+          "I03645",
+          "I03646"
+        ],
+        "stage": "screen",
+        "media": "image",
+        "provider": "qwen",
+        "time": 1794926111.5787146,
+        "action": "no resubmission; uncertain, not negative"
+      },
+      {
+        "image_ids": [
+          "I03957"
+        ],
+        "stage": "verify-single",
+        "media": "image",
+        "provider": "qwen",
+        "time": 1794926272.7867208,
+        "action": "no resubmission; uncertain, not negative"
+      },
+      {
+        "image_ids": [
+          "I04208"
+        ],
+        "stage": "verify-single",
+        "media": "image",
+        "provider": "qwen",
+        "time": 1794926421.9404418,
+        "action": "no resubmission; uncertain, not negative"
+      },
+      {
+        "image_ids": [
+          "I04376"
+        ],
+        "stage": "verify-single",
+        "media": "image",
+        "provider": "qwen",
+        "time": 1794926458.145001,
+        "action": "no resubmission; uncertain, not negative"
+      },
+      {
+        "image_ids": [
+          "I01775"
+        ],
+        "stage": "verify-metadata-single",
+        "media": "image",
+        "provider": "qwen",
+        "time": 1794927316.3580906,
+        "action": "no resubmission; uncertain, not negative"
+      },
+      {
+        "image_ids": [
+          "I04373"
+        ],
+        "stage": "verify-single",
+        "media": "image",
+        "provider": "qwen",
+        "time": 1794927775.8766458,
+        "action": "no resubmission; uncertain, not negative"
+      }
+    ],
+    "processed_reports": [],
+    "policy": "An image rejection of a composite conservatively blocks every constituent image; blocked images are not resubmitted."
+  },
+  "provider_blocked_uncertain_pairs": {
+    "baseline": 1078,
+    "hybrid": 1106
+  },
+  "schema_abstentions": {
+    "records": [
+      {
+        "stage": "verify-single",
+        "image_id": "I02557",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "092d81c904f06860b088f8b6ffb4785106adc6cb4db761945fd7e4e348eca20a",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02377",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "7fecd9ee8b6122b8a04635cff74e7e777bcad0d193534d7b3ee26b9affc45a2f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08896",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "2c592fb7c19c565cf7e41905ebc4b3383b04d1329cebab5e792f149633d9f0b9",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09531",
+        "case_ids": [
+          "TC0121"
+        ],
+        "prompt_sha256": "46018a65f3435e6a333224aa385d724fd3c2c04db6a1d3d0de41215ecb4df23f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09735",
+        "case_ids": [
+          "TC0121"
+        ],
+        "prompt_sha256": "9e647cf3250abe4c19c1bdf01dabfbeb8efa286fc3dec4f226c0b2a6f6a4d94f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02257",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "e73761911bd9fc1e191f9f2de7c0cb3b179089343b2ce69aa7cfc09ec3b1de2b",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02167",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "ce5d6e33511f7b9dd5c4455c572ff574b8f27a1e4d9de04b2b0834098e87b24b",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09726",
+        "case_ids": [
+          "TC0121"
+        ],
+        "prompt_sha256": "0e2f17c173a53383958a93106471d0767b9faba2b2976aed43758a87b8c01197",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07998",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "56cd7e6ff2a127c5be84435f4520f0f4f592b0e835cc10136eb4bba5417902da",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01252",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "7a2d849545970b47d6bb98619db534cacea24ec01244f11db9257bbd00c4ba84",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01312",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "bdefc5e515d9a8a264f3b0d38cbcb1c91f90ea7fe8274366f8d63fd49294c577",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08427",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "d2bd3283043900f577d278d9c004c10663752867293622580e7b8ffbb4acca30",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08898",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "896c7187056b7e8d7331b1f7f29611210dfff714d258c63b21953586823b8fbd",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08921",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "fa8ca82d297bfcee07a61832fbe9cb3dd081167a4ca731f042aed30f4dafa301",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I10039",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "758529a0593de084c8848ebf3b00f4830051abd6d5bb00bbf35f106b599d677d",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03045",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "071b0523a455d26be8e7ede6bf5a91acfa18b4c467d36625f8f93621f9b82a70",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01286",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "855df19db985add512ff6395cad98f6b95a387a4ece232b64db045adecf6f962",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08405",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "9db26306c471a3bb16830a4645c9e84139f826f6b8713e6e85ae724bf73a199d",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02565",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "0ee89d16f2382026b241f3c704730d6903410e36439306f6276bf0d7631f99b5",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08364",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "8c857229a391a6d6135c63ba16aa37a331a15c60b1e78015e256fd0b9de36baf",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09043",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "f9ff99a96ba2868ee4d46728df72b01cd4b525fd58714424c6b569aac24c4b60",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08595",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "e4e3d594c2e9218757812ba22206aed02290c33c253a7076f5b4f765e41435be",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02879",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "a306dc4249153294d66f2ae316a7046f5ed168376e8b95afe228b2fad5a88f09",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08750",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "a5c2270be134aea0e0370f96d4d5ec074e8e4b93a8e220b3085d58fd8788a4bc",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08436",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "d2800bbef44efcefc43e499209d06d08b429416d4420a22d20a1769ee4e1a51f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09730",
+        "case_ids": [
+          "TC0121"
+        ],
+        "prompt_sha256": "33d0bde27051ecd61764981d1d95a128a1a82e96fc7f7da50813ce60a2f79c27",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02476",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "8799945c98e4ad0cbd602e116fb323d02c334a711da49a1d94861bf865b5a80c",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03131",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "1f624afc3327fb25c32ca58f39f0a29a00476617425cefac8004b98d6d592a24",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03240",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "6ee971da7e72080bc58aaa8d13b83724aeb78a7955b345b20d1553923a4a2155",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08995",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "f478f445252a1c4ab47c1b2aacef6cab82f8f66a3a37fa5c977577a0db4dc8ab",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09842",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "71893b3a47feab22b41e58b7ed65afd583cbad02a9740aa8b454575ec6411ae6",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02478",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "ed868f2083336ffbf728870120001b811bb591199f31b71ac5f80562b2e61400",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08760",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "5cab5bef74801bb8e1bd5677d1ada7f4c6ed00e2cededd3036235abbb36a40c3",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08492",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "342c199c15916f7381870c73315279a8264c6e10a30863c43ec953425ce92372",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02738",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "dce04ba5c23a283a4226f89d4a462db70a3a0100cea72b4ce9ba7d260b1e0f04",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03037",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "fd7219832dd58f4d1799188ad59eec92bc7ae439fc0e02e23c4e22e883b8daff",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09088",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "88b2e0790942a90820975d09a218c37d4264b08782cbda04088fd56a527fc419",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02020",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "7246e61de4e972548a58cc0468b16025c9decb192ef926ac2970c9b47c3b78c4",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02471",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "4ad70f09b683ce8de547a8a96e7728ec89c5451134652adac0f009ded5e95189",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08085",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "3cd91c74418b3a1e7f007fa999c55ac6dfe5a6c4770c1d943bb5bc36e2277f62",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04629",
+        "case_ids": [
+          "TC0122"
+        ],
+        "prompt_sha256": "51a8759f9ea1f755798b4270532dc602506d6cf4e523f05f1dfc55bef5c14c10",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02432",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "1c7a9dda27945afd491375547028368cf977924d35fad4cdf22147cc377b5d56",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03041",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "4222b20174f622e31b6d7328b3229c65590833be1f640e9b7d9eeb9b0572a9d5",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08147",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "fc59dbcd37dfabcd13ca23f5087fdbf8231604a965b9d76a11c62fc8794ec551",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08400",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "42689b9daec0a6921693cd3f15b4223568b2fb7c2522c55627d32733c3043957",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07887",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "c2988e139e71a74f89ba23881a230e3ea2b6d4c04fc4cce15994a08e28c4fe1a",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02970",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "c9b2a54a997dc4ac54fb1b02dd78599161fe57fdbe5fa996ecc7daf94803b533",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08443",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "4f131fd059a785a01ef2c30c868f917b8e6a47cf3cf699b02adf035ce953d185",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03791",
+        "case_ids": [
+          "TC0114"
+        ],
+        "prompt_sha256": "e28546e1aa38f44e6cd0793e75f9b8d70030a0dee2d87b901eef2e7d20b80622",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08862",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "ae064acfb7bd1fa319d0025783c0a5aa5331af5e14eec4b251bdedd61a8fcc57",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01902",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "8ca2195a9aaaac5a7a38994744c8295b3e94caa14bc420b55c1610ac501cc214",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07904",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "fcf187e3c1e9d0c129163b16e73d50b0a397698e399c8065790c6fff26e35128",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01833",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "67e132c3727c619bcccbe797ed1e320fa1f1b4e1a0dd5adad27f87b172f216b8",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02445",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "6a32ddc977fdf5d0900a55f5c6506c772aafe5e7391231d5e5bdb3951c7b4d9d",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01813",
+        "case_ids": [
+          "TC0113"
+        ],
+        "prompt_sha256": "eae22d4ebe976576b908a73b05c08f236d9efac3f6ace26ea615959942adc49c",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08761",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "4263180ae658957aa3f2a389c9d38086548ba9561be1e68decdb1eea006a5c51",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02480",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "c00fdfcf2210c78a9df3727d3e8fc9a75b091fc3563619086f6d9d7c5342a332",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02503",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "47041a2e2b7af83691ffd3c24b3bad85d316402abcd97ac98d33ad0d56bd8da7",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07790",
+        "case_ids": [
+          "TC0122"
+        ],
+        "prompt_sha256": "0bd0cf21e709792e042d51fb7955da78ed1aac0ef88fbb0aab926cdeeb700c73",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02500",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "a3c39765b4ef24820bbc0771b6150441533f5802263e0883ff0f1fe399b54a7f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08644",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "b4eddf575ab8fab1e45f727af243041263284cc9a374a6ad4c083078fc5a4e3b",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07898",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "33b82758640c0d6ab7c282179791782ff40d7e9a4c9855043cc51e8f1502a71e",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02050",
+        "case_ids": [
+          "TC0121"
+        ],
+        "prompt_sha256": "dc7aae2a9c548de16563e32ef15ed330b22f6e4ae7238fbad256b0b29aabf097",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01967",
+        "case_ids": [
+          "TC0121"
+        ],
+        "prompt_sha256": "763cffc2ee68d431dbb7d0b61a08e8587d43bf6afaa300c4ba4cecf1972fe540",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01703",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "12ab26627fe000a1b73ad6697d157a6ca6501b48564294f5da4d4f826845f591",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08754",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "e56eaba2f32d7109eea38bd8099eedfcfcc5f2024b9823fc30aea2934990c012",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08008",
+        "case_ids": [
+          "TC0120"
+        ],
+        "prompt_sha256": "6058bd17447455d0bbad4b9ee0d0f09562801ce8996ca4cb6d79b71ff636cab0",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02488",
+        "case_ids": [
+          "TC0113"
+        ],
+        "prompt_sha256": "2f085af4657fd8c3d59c8646cb573cf7c77751550fc093655404f8fc4c25354e",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02481",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "dd98aa3cc862fe22455abd0c154b281cf12464a373c84806a64cf361774e1e7b",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02496",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "d9e7b361dfbc2ff01d4a5ccd24eff3e7655acdc1162caa15ffa2caefb402a507",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02419",
+        "case_ids": [
+          "TC0101"
+        ],
+        "prompt_sha256": "8efe7e5ce196c4fa0b29c4123bfced1ad76fe93d64212983bf61dca4f6ea8da3",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05475",
+        "case_ids": [
+          "TC0127"
+        ],
+        "prompt_sha256": "8ca3f1db0032b89db42b6905f6365356faa942d9c5d4164b9acb0037c752f297",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01802",
+        "case_ids": [
+          "TC0151"
+        ],
+        "prompt_sha256": "d3dcdd45f93ecedbc7fefc1e4186d4655b7c4bec3557eec6efce58ffba97985c",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04503",
+        "case_ids": [
+          "TC0151"
+        ],
+        "prompt_sha256": "6b86db8125473e097f6c29206f6564d0f62b0f4e58646bcdc4c132466b2cb123",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04873",
+        "case_ids": [
+          "TC0151"
+        ],
+        "prompt_sha256": "210c7cd567c18c926aed7e24310f8631e74577c1870d10ee54724e53c213e48c",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01665",
+        "case_ids": [
+          "TC0151"
+        ],
+        "prompt_sha256": "5a1d96a6e4d35c908ee6c92fe12af035e4831992d1c0603025482c5c9febe652",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03279",
+        "case_ids": [
+          "TC0215"
+        ],
+        "prompt_sha256": "698bb32bfe0e455117bf060487adf8faa06106249a822c3e4f7321ce3c7252ae",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03379",
+        "case_ids": [
+          "TC0215"
+        ],
+        "prompt_sha256": "3ea4e050db1b2db9ee8e6ce253933894b91d7e36bceb9d643e82752b13cffd25",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03666",
+        "case_ids": [
+          "TC0215"
+        ],
+        "prompt_sha256": "72a4b62e4a3b384d4689f7509e841f41feef478f39c9fbf56f5a1e160670946c",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03852",
+        "case_ids": [
+          "TC0191"
+        ],
+        "prompt_sha256": "818491c7247c5f8d340a82322255de1f23d3105a19e269ffe4d5f58775df7e62",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03370",
+        "case_ids": [
+          "TC0215"
+        ],
+        "prompt_sha256": "c0dfe42fe6960e6962dd057d24523acd2cd651dfed1f583adf3c63e27f8f6c80",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09993",
+        "case_ids": [
+          "TC0262"
+        ],
+        "prompt_sha256": "18df1b09bb1fe2eeb9771dc756e90ece8f20a6d1c0db084278267f8b3263232e",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03619",
+        "case_ids": [
+          "TC0215"
+        ],
+        "prompt_sha256": "49d12154348d5a3962127ba417da7018113a0175f87f5d2088fe82a7de1258c5",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03831",
+        "case_ids": [
+          "TC0186"
+        ],
+        "prompt_sha256": "0445420ba2a7b56218ecb34bba87edf5f53918166ef70f2da39e405a6aff30ec",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07705",
+        "case_ids": [
+          "TC0297"
+        ],
+        "prompt_sha256": "2d76e80283dacdbbc82d13f8c0ac77303fe51bb3ddd1fddae6ca26e4ed2cede3",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08465",
+        "case_ids": [
+          "TC0319"
+        ],
+        "prompt_sha256": "d73fe5cc4c6525772306f289fdfb4a9174d411f71326bc674201e7b24fa97d6f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I10112",
+        "case_ids": [
+          "TC0293"
+        ],
+        "prompt_sha256": "cd1bc69476c9c7de6b435803b22184a99fafb20c4f5db5890e52e55b7e0343a8",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08761",
+        "case_ids": [
+          "TC0319"
+        ],
+        "prompt_sha256": "e93f0028e2328f4790176237333b09bd9816fa8702f07a2baf13536ccf86fc70",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08503",
+        "case_ids": [
+          "TC0319"
+        ],
+        "prompt_sha256": "da2f70e443d9dbd505cd0179bae05b7da818d7cfa73661b140e2fa1945edaf58",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08744",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "89e0759465eff7269140248b0b640043b88c3617664779aef00d469ea00c5542",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08623",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "7bd9d0d959c9cff72d275b5b5cf628f8c656a7afd6bd847bada07e97e2de4772",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01650",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "44613e13456e41b401dc19e9b9616df15480e2213b6a41bba360ca9cc7bf3d52",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02077",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "21f7aa9f7d2d4f191240ee71b6582cff28b7382848376e93248a1dbd0e97f84d",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08193",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "3d523c9feaabffab9ea34f951f0fdb0f0ecf156d81fc75d03015f707eae1231d",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08705",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "ef6d5eb61d703dee6adf29d8b67c30623cb3f1101ea1a4afa15a316a923eb1d4",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08703",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "98a3311b83e884f8be002d6576f732c5801b4e4c1c8e21a8a91f52aca3f362b5",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01586",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "cbd97027d4f7a71a22e5d54fbc18267438e31f942720dfaa31bc1bfc47b2b1cf",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01258",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "8b976b89d6d08c734c55e4c946712efd83361618664b29f26b9d860ff3e8b384",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01407",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "ed25dc7ff2eeb8dd3fb61a0e7ced68bb2a15b5afde6247663e1d0b6d6e5fd6f4",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I02099",
+        "case_ids": [
+          "TC0394"
+        ],
+        "prompt_sha256": "aa9600ab9bbefeafb4fe7ab691922248cb2efcb0456f7b93bcdaeebca3b67fef",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08959",
+        "case_ids": [
+          "TC0543"
+        ],
+        "prompt_sha256": "bfa39327ba5f9b45ab6ad53bfc50d39dcfd3e51c6912283d9414b02ddf06420c",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08538",
+        "case_ids": [
+          "TC0543"
+        ],
+        "prompt_sha256": "edfc7766d76b5aae0560ef6851f1c1f5a4dcae7c8d588ce9a57716d8b5700695",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07961",
+        "case_ids": [
+          "TC0543"
+        ],
+        "prompt_sha256": "c4a1f3bfcc7e280bbf9b65d19e60ed6395320adbf87d8d5726d7f40054a3d6ef",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08908",
+        "case_ids": [
+          "TC0543"
+        ],
+        "prompt_sha256": "ad014e41bc2113b9f5e1837131f2e7bc251fe6df9d7691825a524fb778c22a0a",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07529",
+        "case_ids": [
+          "TC0513"
+        ],
+        "prompt_sha256": "cf4943c936df660ec2c61492f5504ce284af8bcbe36c9825ebbcfaf1424c7f16",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08690",
+        "case_ids": [
+          "TC0543"
+        ],
+        "prompt_sha256": "8061351f272be8fde3a2687b4accb569e55499ca0ba317e3b5563943050d5f5a",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03983",
+        "case_ids": [
+          "TC0582"
+        ],
+        "prompt_sha256": "fd2e8ee18029850bec6fc1f0bdca68886f1b965f3f36825ea9fc40535171b642",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01537",
+        "case_ids": [
+          "TC0627"
+        ],
+        "prompt_sha256": "2e79da78b20f5dd076a4146e808b0af03eb5cf943746a246ca241362a1779882",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05006",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "3d4221f16a822dbb0e6fac4d9f4a5946efc65657cba09a0f8eae9487d58c9d46",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03708",
+        "case_ids": [
+          "TC0655"
+        ],
+        "prompt_sha256": "0bbd0ddf6898f5df5aecb08d507d16e51252a25271a4e5a571cfd509e149c402",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03810",
+        "case_ids": [
+          "TC0655"
+        ],
+        "prompt_sha256": "bd1951fa197dd1ffa527fddab7853c22ce9ce3eb2d79bfc944d7be9b1a623223",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05300",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "fd92a2bb2feb621450e4cdc93d8a9538fbea1e06f0d49d2650f0c8b12f399a7b",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05032",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "2d2ff9e15b977c67b4b13f93ca692d57d42bdc7571c48eada0b61cfcc372e65c",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07642",
+        "case_ids": [
+          "TC0655"
+        ],
+        "prompt_sha256": "a5858fcd460f49b78f8026f6fe387f3048f3830af13758b2f94dcd0ba05bb385",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09834",
+        "case_ids": [
+          "TC0779"
+        ],
+        "prompt_sha256": "7d8ff41d91a61baf10c4b490244a2a9930529e8782cbc538d080cfe3fabe0fa8",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05419",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "78f3f8afb2a5e73f3b3aa5826cace097ac065b9dd2dd182ebdaf592de468a3b5",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05330",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "90fc9f0dfc6f0177c873b5a14916cd66ed15c7733b81ec0591254940601513df",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05206",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "8f6cd2ba89d9fc8d5b491d25757ba6dd98c9ef4df9512419fdec5b5f7c9cccb9",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03727",
+        "case_ids": [
+          "TC0655"
+        ],
+        "prompt_sha256": "25a03f09ed4f7a968a7fde16cc7e37059936c0ca54ecbf069e46c0c954888257",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05384",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "220f1ba0f52b34d2ad84fe14dccf2c910204d429e9bdd45788149e22a91bd01a",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07351",
+        "case_ids": [
+          "TC0655"
+        ],
+        "prompt_sha256": "b8e73d6f64276881eea78812857a60d5fb84c5aaad3ce6553fdd6a24fa08be90",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07335",
+        "case_ids": [
+          "TC0655"
+        ],
+        "prompt_sha256": "b295868af171611d468b7d4625cfd22f2c87f759db19e213933c1897fb045511",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04751",
+        "case_ids": [
+          "TC0749"
+        ],
+        "prompt_sha256": "d44f0212d149791e7d36685419854a2adbb8c284c829cd44c5a7151950967170",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05817",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "be9e49cd89ddc2d68f760ebe410c8f0a6c0210b0258e031ea02eaa43d34db55b",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05014",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "e895e5e13de02346c14830c0b5bdb5de5c71648368f79a7c53af9cc992ace949",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05030",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "c4d4342764984742c3acaa98e6ff52604feb8a412d63e9b28ee9a38f9f4fda4b",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05461",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "0e7baf8a42f0bcce95de4229e2c534d95062ec5a8aeb76d2c6965d02224522ad",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05229",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "81ddd2ef9b91aa7b617d044c7e9310c76cb4be9a78ed4805749d78b4292dfcaa",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04466",
+        "case_ids": [
+          "TC0736"
+        ],
+        "prompt_sha256": "9bb959ca3576b1e7fa6af9255f7adba26f5c071e82311efc7bd67fc3f6114731",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04575",
+        "case_ids": [
+          "TC0749"
+        ],
+        "prompt_sha256": "79cfaa071dded2d49498a98168169ff3d59dea25ee2f51ecc444988a95f97338",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07252",
+        "case_ids": [
+          "TC0655"
+        ],
+        "prompt_sha256": "e36604c4ac8a66978b2e7a564b378383d23b5c89b94bd132377071bee1f5afb9",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05205",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "bf430b43a95e47976285de0a18950d3af7aa568d85aa4ebcbf449f2b15226b66",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05245",
+        "case_ids": [
+          "TC0789"
+        ],
+        "prompt_sha256": "adebcdcf385830857fa36bcbb2a82e9479d81659117ff2c2793c1db863381403",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I03730",
+        "case_ids": [
+          "TC0808"
+        ],
+        "prompt_sha256": "e9fcc9878c28d962e1df3058c55dc3df63a0bcb648994b33f49137d7cf67d6aa",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01797",
+        "case_ids": [
+          "TC0819"
+        ],
+        "prompt_sha256": "303fc8a57a930bfc2b6816ebccfb715ef82a39e2fe9fe331af319a35d770fe66",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05675",
+        "case_ids": [
+          "TC0853"
+        ],
+        "prompt_sha256": "02d7dc6aa717ed00ceb8494a45fa326356cc7e74b3d94782731d7ef5a36a78cc",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05494",
+        "case_ids": [
+          "TC0835"
+        ],
+        "prompt_sha256": "27b617fd7441c3140dd71a63e6610c40b754d5222cac8b3b4931ae4fc389f283",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05023",
+        "case_ids": [
+          "TC0835"
+        ],
+        "prompt_sha256": "64e506af8aa4d9e2224c9fd7d1d174136dde200b4a42871f1de6e4d92bbb47ff",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05764",
+        "case_ids": [
+          "TC0835"
+        ],
+        "prompt_sha256": "9308a409878c6d6a1659f497f2ea3217309d6e305741344f42943ba40d575e3f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01052",
+        "case_ids": [
+          "TC0918"
+        ],
+        "prompt_sha256": "858ea9f03bf99ace4dcbca42e8118039b90cd73b97b19be9cb9e03c1be0b5c70",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04292",
+        "case_ids": [
+          "TC0928"
+        ],
+        "prompt_sha256": "8431008a5ca5e5c7328f72802b8ab6b1812acb717d337491f39ed9882fefa83e",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06260",
+        "case_ids": [
+          "TC0944"
+        ],
+        "prompt_sha256": "6a9dbcf4e60416e75708d6b867b8d0104633e59fbdff41bab97f95d1eabff336",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06163",
+        "case_ids": [
+          "TC0944"
+        ],
+        "prompt_sha256": "d18d4888ee9fbf80ed92d4eaf5d97b58992def41f7fa8f8627221aa78a958446",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04837",
+        "case_ids": [
+          "TC0934"
+        ],
+        "prompt_sha256": "bf0b1cb7a02ae8e400c244c701b85dc1435678d5d0eed385deaacd11ab11fbc9",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07788",
+        "case_ids": [
+          "TC0953"
+        ],
+        "prompt_sha256": "18f207364cb47a8978dbc077d769fe488854528d6f2a29b8568b7122b394d215",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06095",
+        "case_ids": [
+          "TC0944"
+        ],
+        "prompt_sha256": "d011343e237b43d15ac0b8eff8eae338cb49e447a08381e421a33d8d7d9e75f0",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I01068",
+        "case_ids": [
+          "TC0947"
+        ],
+        "prompt_sha256": "0384c5dd92cf42a270ff3dbe90edc8b995f08805752373ef66a3392a83b9aa09",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06795",
+        "case_ids": [
+          "TC0944"
+        ],
+        "prompt_sha256": "ea2058f66ea03cd56247c99140d85e9dc66c744a707bde2fd0f89321bc3cedba",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09235",
+        "case_ids": [
+          "TC0932"
+        ],
+        "prompt_sha256": "bac0fc0f5725b227277f1f4d8aad710a1b52924dade25914f0ec3ae043b0999f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05568",
+        "case_ids": [
+          "TC0968"
+        ],
+        "prompt_sha256": "bf84e290eac3eace5501a02ff308aab986ec3d8e7f64dd79095379d263d6f94e",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04044",
+        "case_ids": [
+          "TC0932"
+        ],
+        "prompt_sha256": "a3748dabc4bfacb3b7f809a2c46c77fd2a1426140a35764f00cacb73d2f7bbbd",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07194",
+        "case_ids": [
+          "TC0953"
+        ],
+        "prompt_sha256": "8b3db9cc4b987b5fd4d8929be7abe534524eb6c50e84d00eee6014b0baf7d208",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07790",
+        "case_ids": [
+          "TC0953"
+        ],
+        "prompt_sha256": "afa16e9999e85a1cc50d8a4ef901d5680422a832430993ae58b7ada38c3660f5",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04020",
+        "case_ids": [
+          "TC0932"
+        ],
+        "prompt_sha256": "5b79b8d602bf59b4a956197aa1f0942b8b812bf1eee26497ffdebbf898ad6582",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I10107",
+        "case_ids": [
+          "TC0932"
+        ],
+        "prompt_sha256": "879fa7671921667ef52172c26e523b2f2360f4cb275e76e41b0a4122ae03912f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05160",
+        "case_ids": [
+          "TC0968"
+        ],
+        "prompt_sha256": "20e18b3e8fcb491cb8c44f8c50de23ae4a98c58aee79e019d06972b353cded92",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05984",
+        "case_ids": [
+          "TC0968"
+        ],
+        "prompt_sha256": "29206ef0b5897def06d24d577c40d034369f07752f92b664ad37be10b141d285",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07208",
+        "case_ids": [
+          "TC0953"
+        ],
+        "prompt_sha256": "c0ff763ed443bd6b78c77c681cdf488db80851597e3108209105ad31d67b0b69",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05242",
+        "case_ids": [
+          "TC0968"
+        ],
+        "prompt_sha256": "b7e77f042cdd6a67cebbbe7a80362a983128a11c4f08314e48e605c302858726",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05161",
+        "case_ids": [
+          "TC0968"
+        ],
+        "prompt_sha256": "67b453a40a085eefe66bf550e82995df6e0cf1e3d3cce055b04c695d7814e8e4",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08966",
+        "case_ids": [
+          "TC1239"
+        ],
+        "prompt_sha256": "52d69d6a316ed59174ff950a09620cf8d499c9db640b4b59c830c6a9492cd589",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06944",
+        "case_ids": [
+          "TC1105"
+        ],
+        "prompt_sha256": "09bd6f8e596dc216c28b7dceb8943e12829c391a41332a0a64938bc668ef577e",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06099",
+        "case_ids": [
+          "TC1040"
+        ],
+        "prompt_sha256": "8e3bda75a9d35451466659d981849ec5e4da9db58ac0298f7b2443cf219e2953",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09053",
+        "case_ids": [
+          "TC1239"
+        ],
+        "prompt_sha256": "d1e2e4e23d22ef564f2b22ec753e586a37d0da96bb3686dec3e591064f148a4a",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I04767",
+        "case_ids": [
+          "TC1182"
+        ],
+        "prompt_sha256": "08091aa5dc72b360d9ae38827dd232519f12e608034816ba5e65d834370ff4da",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I09001",
+        "case_ids": [
+          "TC1239"
+        ],
+        "prompt_sha256": "bda52b5cb4d50e51a0e5524d0f103de68269c0ca9e83985c98d34b976d16a8a4",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06462",
+        "case_ids": [
+          "TC1040"
+        ],
+        "prompt_sha256": "7257bc1c4ad60e659c1cb28f5b856e66c0055094dd9cd2f1aec7856d3a2dedbd",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07093",
+        "case_ids": [
+          "TC1040"
+        ],
+        "prompt_sha256": "a6be30a4abb6d01e954e46d1814ae63092679d0c5eab56174725e510fa0b4bf9",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I06858",
+        "case_ids": [
+          "TC1105"
+        ],
+        "prompt_sha256": "7b3466f2b12c2c72fb50e5cbda8339705fd7722a05c63c06fbc480bc8134d22a",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I08378",
+        "case_ids": [
+          "TC1269"
+        ],
+        "prompt_sha256": "67fd16d46cb61569a6458543d05c93d336ee698f8d5f59ab6a53ad0620c61691",
+        "logical_response_limit": 3,
+        "kind": "schema",
+        "action": "uncertain after bounded media/response repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I10023",
+        "case_ids": [
+          "TC1285"
+        ],
+        "prompt_sha256": "5a7d78bab4151c6042b1410b233567d4afe714061e1085af91f897ef25f4dd33",
+        "logical_response_limit": 3,
+        "kind": "schema",
+        "action": "uncertain after bounded media/response repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I07982",
+        "case_ids": [
+          "TC1269"
+        ],
+        "prompt_sha256": "ff56f165afe0c9b2bc7a9a3330400cd12c778a8c0b482310d8dd68295fbdf631",
+        "logical_response_limit": 3,
+        "kind": "schema",
+        "action": "uncertain after bounded media/response repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05666",
+        "case_ids": [
+          "TC1273"
+        ],
+        "prompt_sha256": "2ac51ea8086d11b418c7fe118009ce306111f797cbca3aa0da48362e774c5437",
+        "logical_response_limit": 3,
+        "kind": "schema",
+        "action": "uncertain after bounded media/response repair; no relevance judgment accepted"
+      },
+      {
+        "stage": "verify-single",
+        "image_id": "I05713",
+        "case_ids": [
+          "TC1312"
+        ],
+        "prompt_sha256": "7f98d42009fae5ac6444cbc492737f82f7e9a832730021f5b8390fb00a60151f",
+        "logical_response_limit": 3,
+        "action": "uncertain after bounded schema repair; no relevance judgment accepted"
+      }
+    ],
+    "final_uncertain_pairs": {
+      "baseline": 174,
+      "hybrid": 146
+    }
+  },
+  "provider_generation_errors": [
+    {
+      "stage": "verify-single-identity-repair-2",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "bcd82badc0fbe821166453710c0be609b220f940e71d4b5d547b149922aa3b37"
+      ],
+      "attempt": 1,
+      "action": "bounded retry; no relevance judgment"
+    },
+    {
+      "stage": "verify-single-identity-repair-2",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "bcd82badc0fbe821166453710c0be609b220f940e71d4b5d547b149922aa3b37"
+      ],
+      "source": "read-only inspection of retained completed-exception traceback",
+      "time": 1794927645.8095875,
+      "action": "classified as output-generation failure; no input rejection"
+    },
+    {
+      "stage": "verify-single",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "9d9fa32dc6f0d787f1bdd58d6af237c2da33a1971eea806a141f80a4c78be12f"
+      ],
+      "attempt": 1,
+      "action": "bounded retry; no relevance judgment"
+    },
+    {
+      "stage": "verify-single",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "9d9fa32dc6f0d787f1bdd58d6af237c2da33a1971eea806a141f80a4c78be12f"
+      ],
+      "attempt": 2,
+      "action": "bounded retry; no relevance judgment"
+    },
+    {
+      "stage": "verify-single",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "3a237842d5b3999e6c9ba07a4a85fd6c11a249eca039b403bdf96b5cf7da8890"
+      ],
+      "attempt": 1,
+      "action": "bounded retry; no relevance judgment"
+    },
+    {
+      "stage": "verify-single",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "3a237842d5b3999e6c9ba07a4a85fd6c11a249eca039b403bdf96b5cf7da8890"
+      ],
+      "attempt": 2,
+      "action": "bounded retry; no relevance judgment"
+    },
+    {
+      "stage": "verify-single-identity-repair-2",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "b90ff85e8509805cfc751db431d13cc5c933fef3b624aa7ddc46e62667670deb"
+      ],
+      "attempt": 1,
+      "action": "bounded retry; no relevance judgment"
+    },
+    {
+      "stage": "verify-single",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "b7f459f708f27c88edb4bcfe8eff830f2d0f8f55d832f0913cbd7680d56ce47c"
+      ],
+      "attempt": 1,
+      "action": "bounded retry; no relevance judgment"
+    },
+    {
+      "stage": "verify-single",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "aborted_json_generation",
+      "input_image_hashes": [
+        "7dd9f4a1cd96beb48c6d125c19e6590c74dbfb4094a5564781dd524759db0276"
+      ],
+      "attempt": 1,
+      "action": "bounded retry; no relevance judgment"
+    }
+  ],
+  "provider_media_errors": [
+    {
+      "stage": "verify-single",
+      "http_status": 400,
+      "error_code": "invalid_parameter_error",
+      "kind": "data_uri_parse_failure",
+      "input_image_hashes": [
+        "da2f0bf115da91327f9cc1167ebe3e9c77ee7daf5da324825bd762074113f5b6"
+      ],
+      "source": "read-only retained-exception diagnostic; JPEG verified and previously accepted in other batches",
+      "recorded_at": 1794933034.8714597,
+      "action": "bounded retry of unchanged client-constructed data URI"
+    }
+  ],
+  "media_abstentions": {
+    "records": [],
+    "final_uncertain_pairs": {
+      "baseline": 0,
+      "hybrid": 0
+    }
+  },
+  "limitations": [
+    "Both arms use Qwen; this is a retrieval/workflow comparison, not a DeepSeek versus Qwen model benchmark.",
+    "Hybrid preserves baseline positives by construction; this guarantees nondecreasing positive-only recall, not precision.",
+    "Structured metadata can confirm pure time/location queries without a VLM; visual constraints still require image review.",
+    "Provider cache usage excludes probes, interrupted scope runs and responses not saved successfully.",
+    "No photos, original fids, captions, GPS coordinates or private service endpoints are published."
+  ],
+  "screen_id_infrastructure_repairs": {
+    "kind": "ID schema/readability repair",
+    "ground_truth_used": false,
+    "semantic_rules_changed": false,
+    "helper_sha256": "2a6b09939c2d526f246851cfd4333d775cc938f6f3d03a540229582ed6ad3e36",
+    "repairs": [
+      {
+        "batch": "batch-011-020",
+        "screen_file": "bd42466d-00264.json",
+        "failed_cache": "qwen-screen-schema-retry-e599a67658ec0bd010bb94d2e3c2b9e7107bc1fee0f9ebbdd8ed82872bd18e22.json",
+        "repair_image_sha256": "eec83b5387d79acdd0fd4078c3e1cc600cc4572e5e9fb252f69b41010caed38f",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794923883.82828,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-051-060",
+        "screen_file": "036091af-00744.json",
+        "failed_cache": "qwen-screen-schema-retry-d6bf5122bf1302e2e9ac0739ece24cd0d236a261d3440926b73ae87fe285206d.json",
+        "repair_image_sha256": "7d5f81d317acb1dea2c00cd209b2761c68bccf96f238e88b6d09df474cf7eeab",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794927506.0441203,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-061-070",
+        "screen_file": "036091af-00744.json",
+        "failed_cache": "qwen-screen-schema-retry-47ad14d01a2019cc723a122890eb162af926987788ae0389f9c1e0be1b4dd82c.json",
+        "repair_image_sha256": "7d5f81d317acb1dea2c00cd209b2761c68bccf96f238e88b6d09df474cf7eeab",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794927903.6570158,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-091-100",
+        "screen_file": "bd42466d-00408.json",
+        "failed_cache": "qwen-screen-schema-retry-eab2e23fe9a1c9ac2f9dd0b9aa338a682116da4b589d39c6392a87528bde0c0f.json",
+        "repair_image_sha256": "396b4dd11bf8b671d64f1f205ed6acafc6da8290e17e3d56cdedb0a36759253f",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794929586.768465,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-101-110",
+        "screen_file": "4891bb91-00492.json",
+        "failed_cache": "qwen-screen-schema-retry-8b75d87b97dd9c7f8154e517007ccb733a2c5083ca0fa728f9ee7acc0efaa7a2.json",
+        "repair_image_sha256": "6345d2b4722f9560ec8edecae3140df642bfc4f55202d295309e5fbe91a41a81",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794929842.1996937,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-111-120",
+        "screen_file": "bd42466d-00276.json",
+        "failed_cache": "qwen-screen-schema-retry-04060cdc01521b39b4010e52e1b2bc717f7c00bdfa33c559851ff080f8341ae8.json",
+        "repair_image_sha256": "8ad59fb32cf9248039a9816b284e8a9433632396c9b0f07ef1c5db87ba16e2b1",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794930121.0305786,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-121-130",
+        "screen_file": "bd42466d-00156.json",
+        "failed_cache": "qwen-screen-schema-retry-4c64afc98544d884b6106303ec5c09463153a753de1e7bb7122fd50a3cccd8e5.json",
+        "repair_image_sha256": "5348bb8133d8fb34148bd8186d8602091ec2faaf6fe33588f764323d4e72ae1d",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794930909.6040046,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-141-150",
+        "screen_file": "036091af-00744.json",
+        "failed_cache": "qwen-screen-schema-retry-854d632aca4690dcc128b042e2826da63726e0fede53b3d4faa51b179de592c3.json",
+        "repair_image_sha256": "7d5f81d317acb1dea2c00cd209b2761c68bccf96f238e88b6d09df474cf7eeab",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794931488.7590895,
+        "status": "repaired"
+      },
+      {
+        "batch": "batch-151-160",
+        "screen_file": "57f78ba1-00768.json",
+        "failed_cache": "qwen-screen-schema-retry-266b88509be27cb27817a0bff9bae14c29e0f4310f211b98ca7dbfef16d27f15.json",
+        "repair_image_sha256": "2ab05fc07e5b831fb9826bc4a461241141af5635db5e3f402feb8b1d0e8c080e",
+        "labels_used": false,
+        "semantic_rules_changed": false,
+        "identifier_font_size": 22,
+        "time": 1794932375.3436053,
+        "status": "repaired"
+      }
+    ]
+  }
+}

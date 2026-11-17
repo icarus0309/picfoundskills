@@ -1,0 +1,13 @@
+{
+  "time": 1794924915.151455,
+  "reason": "Image content inspection failures must not stop the entire provider session or turn unreviewed images negative.",
+  "changed_modules": [
+    "hybrid_run.py",
+    "provider_guard.py",
+    "providers.py"
+  ],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "previous_protocol_sha256": "c1daad9d874d8524789fb8fd7d763f21766ca3afd6a22e2821dfbb67ebdcd5f2",
+  "new_protocol_sha256": "9c6f4d084766788e0b28bf7afe1f7885ceba110001d7d8585480ba277474ec36"
+}

@@ -1,5 +1,68 @@
 # 安装与运行
 
+## V2 混合检索入口
+
+V2 在视觉候选之外检索全库已有描述、OCR 和结构化元信息。文本规划使用 DeepSeek，视觉复核通过独立 Qwen 配置调用。以下流程会同时生成同一视觉后端下的 V1 基线和 V2 融合预测；共享视觉分支，不重复执行两套完整视觉调用。
+
+私有配置文件示例，密钥文件路径相对配置文件所在目录解析：
+
+```json
+{"base_url":"https://<workspace>.cn-beijing.maas.aliyuncs.com/compatible-mode/v1","model":"qwen3.8-27b","key_file":"qwen.key"}
+```
+
+DeepSeek 文本规划密钥默认位于数据根目录 `.secrets/deepseek.key`，也可使用 `--llm-key-file` 指定。不要把真实密钥直接放在配置 JSON、命令行或版本库中。
+
+```powershell
+python -m pip install -r skills/image-case-retrieval/scripts/requirements.txt
+python skills/image-case-retrieval/scripts/hybrid_run.py --root ./private-data --out ./runs/hybrid-demo --offset 0 --limit 10 --vlm-config ./private-data/.secrets/qwen.json
+python skills/image-case-retrieval/scripts/score_completed.py --root ./private-data --out ./runs/hybrid-demo
+```
+
+`hybrid_run.py` 仅推理；`score_completed.py` 要求整个选定队列完成并通过预测哈希校验后，才读取 D 列评分。不要在其他批次尚未完成时提前查看答案并调整条件。
+
+时间同时读取 `tagIds` 年份与 `shootingTime`，地点读取 `country`、`province`、`city`、`business_terms`、`place_terms`。纯时间或地点查询只有在全部结构化条件明确满足、且无额外视觉条件时直接确认；对象、颜色、关系及未解析的时间条件仍需图像复核。缺失或冲突信息不自动视为不相关。
+
+### 时间与地点条件队列
+
+仅根据 A/B 列对第 101 条之后的查询分类，并选取所有符合条件的用例：
+
+```powershell
+python tools/select_spatiotemporal_cases.py classify --root ./private-data --out ./runs/selection --start-offset 100
+python tools/select_spatiotemporal_cases.py select --root ./private-data --out ./runs/selection --all
+```
+
+将生成的 `selected_cases.json` 交给混合入口，同时将 `--limit` 设置为文件中的实际用例数量：
+
+```powershell
+python skills/image-case-retrieval/scripts/hybrid_run.py --root ./private-data --out ./runs/time-place --cases-file ./runs/selection/selected_cases.json --offset 100 --limit 162 --vlm-config ./private-data/.secrets/qwen.json --as-of-date 2026-11-17
+```
+
+162 是当前数据在既定条件分类规则下的数量，不是其他数据集的固定参数。`--cases-file` 的查询必须与 A/B 列一致。相对时间以 `--as-of-date` 为基准，写入冻结协议；复现历史实验时使用同一基准日期。
+
+### V2 缓存、输出与服务商拦截
+
+根目录保存 `protocol.json`、输入清单、富元信息、`frozen_code/` 和最终 `prediction_completion.json`。每个 `batch-*/` 下包含共享 `cache/`、`visual-v1/`、`hybrid-v2/`，两个方法目录分别保存预测、矩阵和封存文件；`metadata_candidates.json` 记录扩展候选来源。
+
+相同参数和输出目录可续跑。输入、范围、模型、端点或方法变更时使用新目录；执行基础设施修复也须保存旧快照及变更记录。`--thumbnail-cache` 可复用已有 `thumbs/`，但其父目录的图片清单必须与当前数据完全一致。
+
+图像审核 `data_inspection_failed` 不作为会话鉴权错误或图片负例处理。被拦截图片不再发送给该服务；拼图被拦截时保守登记全部组成图片，无法得到的视觉结论为待核实。结构化字段本身满足纯时间/地点条件时可以由元信息确认，不能据此声称模型已识别被拦截画面。其他非重试 HTTP 错误仍停止该 API 会话。
+
+单图响应校正两次仍有编号、覆盖或状态格式错误时，按原始输入登记技术性弃判，保存于批次 `schema_abstentions/`，关系为待核实。不能从冲突响应中挑选有利结果，也不能当作不相关；基线和混合流程采用相同规则。
+
+拼图编号异常经普通校正仍失败时，使用随 Skill 提供的辅助脚本，随后用相同主命令续跑。脚本只重新筛选已有失败响应对应的图批，增大编号并明确格子映射，保留原缓存与审计记录，不改变语义条件。`--watch` 可在另一进程中等待失败图批；被服务商图像审核拦截的内容不会重新提交。
+
+```powershell
+python skills/image-case-retrieval/scripts/repair_screen_identifiers.py --root ./private-data --out ./runs/time-place --vlm-config ./private-data/.secrets/qwen.json --watch
+```
+
+完整本地看图页可在推理后生成；该文件带私有图片路径，不应直接发布：
+
+```powershell
+python tools/build_private_hybrid_gallery.py --root ./private-data --out ./runs/hybrid-demo --thumbnail-cache ./runs/hybrid-demo/thumbs
+```
+
+下面保留 V1 独立入口的说明，便于复核历史方法和单批输出。
+
 ## 环境与安装
 
 运行需要 Python 3.12 或更新版本及可访问的 DeepSeek 视觉接口。所需 Python 库列于 `skills/image-case-retrieval/scripts/requirements.txt`。

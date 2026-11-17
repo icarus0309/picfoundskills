@@ -1,0 +1,12 @@
+{
+  "time": 1794926148.2196777,
+  "reason": "Retry single-image review responses with duplicate or invented image IDs using the same image and query conditions; no status is fabricated or selected to favor recall.",
+  "changed_modules": [
+    "providers.py"
+  ],
+  "ground_truth_used": false,
+  "relevance_criteria_changed": false,
+  "runtime_changes": {},
+  "previous_protocol_sha256": "dca6a6773999e8a9b7d476d724e81dad228bd094c049b73b60f466995d8c2f92",
+  "new_protocol_sha256": "c48f9a3ccbb1061233bf38b23cda507e81f01c7af82c7d2a6edf6a98357ce0ce"
+}
