@@ -1,0 +1,92 @@
+{
+  "development_001_010": {
+    "cases": 10,
+    "without_ground_truth": 0,
+    "skill": {
+      "hit_cases": 9,
+      "evaluated_cases": 10,
+      "hit_rate": 0.9,
+      "known_fid_hits": 329,
+      "known_fid_total": 842,
+      "returned_pairs": 447
+    },
+    "codex": {
+      "hit_cases": 10,
+      "evaluated_cases": 10,
+      "hit_rate": 1.0,
+      "known_fid_hits": 107,
+      "known_fid_total": 842,
+      "returned_pairs": 111
+    }
+  },
+  "holdout_011_100": {
+    "cases": 90,
+    "without_ground_truth": 0,
+    "skill": {
+      "hit_cases": 87,
+      "evaluated_cases": 90,
+      "hit_rate": 0.9666666666666667,
+      "known_fid_hits": 2746,
+      "known_fid_total": 5414,
+      "returned_pairs": 7212
+    },
+    "codex": {
+      "hit_cases": 84,
+      "evaluated_cases": 90,
+      "hit_rate": 0.9333333333333333,
+      "known_fid_hits": 238,
+      "known_fid_total": 5414,
+      "returned_pairs": 251
+    }
+  },
+  "combined_001_100": {
+    "cases": 100,
+    "without_ground_truth": 0,
+    "skill": {
+      "hit_cases": 96,
+      "evaluated_cases": 100,
+      "hit_rate": 0.96,
+      "known_fid_hits": 3075,
+      "known_fid_total": 6256,
+      "returned_pairs": 7659
+    },
+    "codex": {
+      "hit_cases": 94,
+      "evaluated_cases": 100,
+      "hit_rate": 0.94,
+      "known_fid_hits": 345,
+      "known_fid_total": 6256,
+      "returned_pairs": 362
+    }
+  },
+  "holdout_usage": {
+    "prompt_tokens": 15086161,
+    "completion_tokens": 1071522,
+    "total_tokens": 16157683
+  },
+  "holdout_successful_calls": {
+    "route": 9,
+    "screen": 3528,
+    "verify": 3096,
+    "verify-schema-retry": 2
+  },
+  "own_review": {
+    "scope": [
+      11,
+      100
+    ],
+    "ground_truth_read_before_seal": false,
+    "prediction_sha256": "70f2059bc192d7e6c23da9b218ec040c9358b382d6843f92664b252d8e1ec1bf",
+    "candidate_manifest_sha256": "1e7de664ea01b17e4d0fe38d936c7c8fad151121a2595cf1a3c44b9f39128b2a",
+    "reviewed_case_image_pairs": 334,
+    "reviewed_unique_images": 267,
+    "positive_pairs": 251
+  },
+  "limitations": [
+    "Accuracy means at least one supplied positive fid retrieved, not precision.",
+    "Codex is a metadata-assisted direct visual sample, not exhaustive inspection.",
+    "Date constraints use supplied shootingTime; this may not equal actual capture date.",
+    "New rows contain semantic paraphrases of development queries.",
+    "Only first 100 cases were run; other cases remain unrun."
+  ]
+}

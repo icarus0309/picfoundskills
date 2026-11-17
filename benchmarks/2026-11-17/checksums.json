@@ -1,0 +1,19 @@
+{
+  "files": {
+    "codex_candidate_rules.json": "10c5a3efd470ec6da7e8eebc943fc9bd086450b06cc416d2550a9eb2c883cf12",
+    "data/benchmark.json": "22234f46aefc416f1f70a2b658eab1c95b57e7aa05c980b9b6addf14c0ed6e7c",
+    "data/cases_100.csv": "98709363ef7b96e60ecb0fcfa923e5bf4eff261704999177fe138aeefb3498ea",
+    "data/codex_decisions_001_010.json": "cee376b3813b11ffe4b036d0ce262fd5ff57b1a7dc6d63e31392cd6a6b02aa31",
+    "data/codex_decisions_011_100.json": "70f2059bc192d7e6c23da9b218ec040c9358b382d6843f92664b252d8e1ec1bf",
+    "data/codex_matrix_100.csv": "f25059c4878a0f3abe91588706bd8ec1ee4bd26fbc037a4ed343d82894131076",
+    "data/skill_matrix_100.csv": "b56a265a7d40626b7edeb1ea0ada60573771e9073378c15977ac737d3b08c76b",
+    "frozen/cohort.py": "345c219b8ecc34e8f92669db953c57ac6e6267b9de35f4a68efcae88f60a687a",
+    "frozen/evaluator.py": "ef3e6d8df889561bbfdca16e63d630f7143e0bc003e0ebc4a6c8b26335c809ed",
+    "frozen/pipeline.py": "7f8042ecfd2ffd2eb17a9b6fba905c78400faff3dd93aac584673ade78b1ac31",
+    "frozen/support.py": "654a011664b4aa301fdb20ef11d9eadac519966947263757979d13b920b22e0d",
+    "provenance.json": "6c15c37a32dea5999548a07e8d817778f6ed4e36647b0770789c16b6460615a9",
+    "summary.json": "740bb3dd90958c7a10bb79adc106223f63606fb0580acd14c4af1927a99993bb",
+    "comparison-100.xlsx": "dd86cd761c48f2d3a34c332fa740019886a738c8f8ab28466d6e76740c2dca1c"
+  },
+  "scope": "All published benchmark artifacts except this checksum manifest."
+}

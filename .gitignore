@@ -1,0 +1,11 @@
+.secrets/
+.env
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+runs/
+outputs/
+private-data/
+*.tmp
+.DS_Store
