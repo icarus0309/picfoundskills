@@ -777,5 +777,18 @@
     }
   },
   "review_rows": 172,
-  "predictions_sha256": "5a2493c81facad018c888257a968420792f80eddd6c662540afb8b7c4daf61cb"
+  "predictions_sha256": "5a2493c81facad018c888257a968420792f80eddd6c662540afb8b7c4daf61cb",
+  "shared_output_diagnostic": {
+    "case_ids": [
+      "TC0023",
+      "TC0054"
+    ],
+    "reference_counts": [
+      305,
+      281
+    ],
+    "intersection": 218,
+    "same_output_optimal_k": 293,
+    "max_min_precision_coverage_if_identical_results": 0.8720136518771331
+  }
 }

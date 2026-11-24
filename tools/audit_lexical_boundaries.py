@@ -24,7 +24,7 @@ def write_csv(path, header, rows):
         w.writerows(rows)
 
 
-def audit(root, run, out):
+def audit(root, run, out, compare_cases=None):
     choice = p.read_json(run / "choice.json")
     mode = choice["chosen"]
     model = run / ("fit-" + mode)
@@ -131,9 +131,30 @@ def audit(root, run, out):
         ["ticket", "case_id", "image_id", "original_status"],
         key,
     )
+    extra = {}
+    if compare_cases:
+        a, b = compare_cases
+        common = len(ref[a] & ref[b])
+        size = len(ref[a]) + len(ref[b])
+        if not size:
+            raise ValueError("Reference lists are empty")
+
+        def balanced(k):
+            hits = 2 * min(k, common) + max(0, k - common)
+            return min(hits / (2 * k), hits / size)
+
+        best = max(range(1, len(ref[a] | ref[b]) + 1), key=balanced)
+        extra["shared_output_diagnostic"] = dict(
+            case_ids=[a, b],
+            reference_counts=[len(ref[a]), len(ref[b])],
+            intersection=common,
+            same_output_optimal_k=best,
+            max_min_precision_coverage_if_identical_results=balanced(best),
+        )
     p.write_json(
         out / "diagnostic.json",
         dict(
+            **extra,
             mode=mode,
             extra_categories=dict(categories),
             threshold_sweep=outcomes,
@@ -148,5 +169,6 @@ if __name__ == "__main__":
     cli = argparse.ArgumentParser(description=__doc__)
     for k in ("root", "run", "out"):
         cli.add_argument("--" + k, type=Path, required=True)
+    cli.add_argument("--compare-case-ids", nargs=2, metavar=("FIRST", "SECOND"))
     a = cli.parse_args()
-    audit(a.root, a.run, a.out)
+    audit(a.root, a.run, a.out, a.compare_case_ids)
