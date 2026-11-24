@@ -4,11 +4,11 @@
 
 ## 全库倒排检索与学习排序
 
-新增无需向量索引的检索入口，随包提供训练好的排序器。按主题留出 155 条查询，其中 153 条可按 F 列计分。全库候选覆盖 96.40%，最终精确率 62.02%、覆盖率 59.96%。具名场馆可选用逐组地点证据核验。完整报告给出与旧版的同批对比、五组消融、盲审及追加 37 条用例的比较。[评测报告](docs/evaluation-lexical-ranker.md) · [使用方法](skills/image-case-retrieval/references/lexical-ranker.md) · [匿名逐案结果](benchmarks/lexical-ranker/cases.csv)
+仓库随包提供无需向量索引的检索排序器。按主题留出的 155 条查询中，153 条有高权重图片可计分。以 v20 修订标注复评，全库候选覆盖率为 96.37%，最终精确率为 61.80%，覆盖率为 60.12%，F1 为 60.95%。具名场馆可选用逐组地点证据核验。[修订标注与能力复评](docs/evaluation-label-revision-v20.md) · [原实验报告（v19）](docs/evaluation-lexical-ranker.md) · [使用方法](skills/image-case-retrieval/references/lexical-ranker.md) · [逐用例计数（v20）](benchmarks/lexical-ranker/cases-v20.csv)
 
 ## 高权重图片检索复测
 
-以“高权重预期fid”为参考，每个清单外返回计一次多找。前 10 条精确率从同事 DeepSeek 融合运行的 50.25% 提高到 79.44%，覆盖率从 77.24% 到 77.43%。固定规则用于随后 10 条时，精确率为 55.52%，覆盖率为 84.50%。本轮尚未通过两项指标均达 90% 的验收。[完整报告](docs/evaluation-high-weight.md) · [运行说明](skills/image-case-retrieval/references/high-weight.md)
+按 v20 高权重清单复评，前 10 条中，外部 DeepSeek 融合运行的精确率为 49.24%，覆盖率为 79.23%。上一版高权重检索的精确率为 79.04%，覆盖率为 80.65%。后者在第 11–20 条的精确率为 55.64%，覆盖率为 84.84%。每张清单外返回计一次多找。[修订后对比](docs/evaluation-label-revision-v20.md) · [原始评测（v19）](docs/evaluation-high-weight.md) · [运行说明](skills/image-case-retrieval/references/high-weight.md)
 
 ## 时间与地点查询
 
