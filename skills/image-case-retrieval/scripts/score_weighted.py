@@ -10,8 +10,8 @@ import pipeline as p
 from weighted_retrieval import CASES, INDEX, sha
 
 
-def label_sets(root, cases, header="高权重预期fid"):
-    book = openpyxl.load_workbook(root / CASES, read_only=True, data_only=True)
+def label_sets(root, cases, header="高权重预期fid", workbook=None):
+    book = openpyxl.load_workbook(workbook or root / CASES, read_only=True, data_only=True)
     try:
         rows = iter(book.worksheets[0].values)
         headers = [str(x or "").strip().casefold() for x in next(rows)]

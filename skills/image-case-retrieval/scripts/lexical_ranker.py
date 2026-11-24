@@ -43,7 +43,7 @@ def check_gallery(gallery, protocol):
     return inv, meta
 
 
-def fit_rows(directory, manifest, qids, labels, mapping, ids):
+def fit_rows(directory, manifest, qids, labels, mapping, ids, mine_semantic=False):
     rows = []
     grades = []
     weights = []
@@ -80,6 +80,28 @@ def fit_rows(directory, manifest, qids, labels, mapping, ids):
             + x[:, columns.index("instance_title")]
             + 0.2 * x[:, columns.index("bm25")]
         )
+        if mine_semantic:
+            # Mine unlisted photos with strong independent text or image evidence.
+            # Reciprocal ranks make the channels comparable across queries.
+            channels = [order] + [
+                x[:, columns.index(c)]
+                for c in (
+                    "semantic_query_abstract",
+                    "semantic_query_strongest_tag",
+                    "pixel_query",
+                )
+            ]
+            fused = np.zeros(len(unknown))
+            for channel in channels:
+                values = channel[unknown]
+                if len(values):
+                    # Equal scores receive equal ranks, including empty evidence.
+                    ranks = len(values) - np.searchsorted(
+                        np.sort(values), values, side="right"
+                    )
+                    fused += 1 / (20 + ranks)
+            order = order.copy()
+            order[unknown] = fused
         hard = unknown[np.argsort(-order[unknown], kind="stable")[:limit]]
         rest = np.setdiff1d(unknown, hard)
         rng = np.random.default_rng(
@@ -204,17 +226,33 @@ def train(args):
         args.plans
     ):
         raise ValueError("Split, plans and features do not match")
+    if "projection_index" in m["protocol"]:
+        proof = args.features / "projection_mode.json"
+        record = p.read_json(proof) if proof.is_file() else {}
+        if (
+            not record.get("cross_fit")
+            or record.get("split") != sha(args.split)
+            or record.get("manifest") != sha(args.features / "manifest.json")
+        ):
+            raise ValueError(
+                "Projection training requires cross-fitted features for this split"
+            )
     train_ids = split["train"]
     cal_ids = split["calibration"]
     if set(train_ids) & set(cal_ids) or set(split["test"]) & (
         set(train_ids) | set(cal_ids)
     ):
         raise ValueError("Overlapping split")
+    workbook = (
+        getattr(args, "reference_workbook", None)
+        or args.root / "E2E_1321cases_1w_data_v19.xlsx"
+    )
     ident = {
         "split": sha(args.split),
         "features": sha(args.features / "manifest.json"),
-        "workbook": sha(args.root / "E2E_1321cases_1w_data_v19.xlsx"),
+        "workbook": sha(workbook),
         "training_code": sha(Path(__file__)),
+        "mine_semantic": getattr(args, "mine_semantic", False),
     }
     lock = dest / "training_inputs.json"
     if lock.exists() and p.read_json(lock) != ident:
@@ -225,8 +263,16 @@ def train(args):
         raise ValueError("Source image index changed")
     mapping = file_ids(args.root, inv)
     training = {q: plans[q]["query"] for q in train_ids}
-    labels = [label_sets(args.root, training, header) for header in HEADERS]
-    x, y, w, groups, stats = fit_rows(args.features, m, train_ids, labels, mapping, ids)
+    labels = [label_sets(args.root, training, header, workbook) for header in HEADERS]
+    x, y, w, groups, stats = fit_rows(
+        args.features,
+        m,
+        train_ids,
+        labels,
+        mapping,
+        ids,
+        getattr(args, "mine_semantic", False),
+    )
     models = []
     print("Training observations:", stats, flush=True)
     for name in KINDS:
@@ -258,7 +304,7 @@ def train(args):
     volume = count_model(args.features, m, labels[0])
     (dest / "count.txt").write_bytes(volume.model_to_string().encode("utf-8"))
     validation = {q: plans[q]["query"] for q in cal_ids}
-    ref = label_sets(args.root, validation)
+    ref = label_sets(args.root, validation, workbook=workbook)
     expected = sum(map(len, ref.values()))
     decision = []
     for nt in ITERATIONS:
@@ -299,6 +345,11 @@ def train(args):
             "columns": m["columns"],
             "decision": winner,
             "weights": weights,
+            **(
+                {"feedback_index": m["protocol"]["feedback_index"]}
+                if "feedback_index" in m["protocol"]
+                else {}
+            ),
             "feature_encoder": m["protocol"]["encoder"],
             "visual_enrichment": bool(m["protocol"]["facts"]),
             "contrast": bool(m["protocol"].get("contrast")),
@@ -321,6 +372,8 @@ def train(args):
 def predict(args):
     m, ids = read_features(args.features)
     spec = p.read_json(args.model / "model.json")
+    if spec.get("feedback_index") != m["protocol"].get("feedback_index"):
+        raise ValueError("Private feedback bank differs from the fitted model")
     if (
         spec["columns"] != m["columns"]
         or spec["feature_encoder"] != m["protocol"]["encoder"]
@@ -485,7 +538,9 @@ def score(args):
         for key in ("queries", "ranker", "literal", "candidates")
     ):
         raise ValueError("Incomplete prediction scope")
-    labels = label_sets(args.root, pred["queries"])
+    labels = label_sets(
+        args.root, pred["queries"], workbook=getattr(args, "reference_workbook", None)
+    )
     mapping = file_ids(args.root, p.read_json(args.gallery / "inventory.json"))
     results = {
         method: measure(labels, mapping, {q: set(v) for q, v in pred[method].items()})
@@ -506,6 +561,10 @@ if __name__ == "__main__":
         sub = subs.add_parser(name)
         for k in keys:
             sub.add_argument("--" + k, type=Path, required=True)
+        if name in ("fit", "score"):
+            sub.add_argument("--reference-workbook", type=Path)
+        if name == "fit":
+            sub.add_argument("--mine-semantic", action="store_true")
         if name == "predict":
             for key in ("split", "contrast", "facts"):
                 sub.add_argument("--" + key, type=Path)

@@ -7,6 +7,10 @@ description: 根据自然语言用例检索本地图片，融合已有描述、O
 
 将查询工作簿与本地图片库建立关联，输出相关图片、证据、矩阵和可复查页面。扩展说明见 [数据与运行文档](https://github.com/icarus0309/picfoundskills/blob/main/docs/usage.md)；独立安装的核心接口以本文件和 `scripts/` 为准。
 
+## 多模态精排与单图复核
+
+按 F 列高权重清单交付图片时，先建立全库候选，再按已校准的模型比较查询与标题、摘要、标签或像素。直接运行新查询用 `scripts/lexical_search.py`，附加向量索引和随包模型按[多模态运行指南](references/semantic-reranking.md)配置。控制多找时同时报告微平均精确率、F 列覆盖率及实际多找数。随新图文模型默认核对具名场馆证据。需要提高覆盖时，对新查询命令同时传入 `--photo-root` 和 `--review-config`，可运行已经校准的 Qwen 复核流程。若需独立审查边界图片，可用 `scripts/boundary_review.py` 封存逐图判读，再应用固定决策。[实测结果与上线范围](https://github.com/icarus0309/picfoundskills/blob/main/docs/evaluation-multimodal-v20.md)
+
 ## 全库检索与高权重排序
 
 按主题留出评测或要求尽量避免 embedding 时，可使用全库倒排索引和随包提供的轻量排序器。新查询入口为 `scripts/lexical_search.py`，按需一次性补充视觉事实。每个返回结果带有证据字段。已有视觉复核方法也保留作对照。[运行方法、训练和复测](references/lexical-ranker.md)

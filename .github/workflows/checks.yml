@@ -18,3 +18,5 @@ jobs:
         run: python -X utf8 tools/verify_hybrid_report.py
       - name: Verify lexical retrieval counts
         run: python -X utf8 tools/lexical_benchmark.py verify
+      - name: Verify multimodal retrieval counts
+        run: python -X utf8 tools/verify_semantic_report.py

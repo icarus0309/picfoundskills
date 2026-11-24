@@ -1,0 +1,11 @@
+{
+  "target": "dccfebc1b48b9216d4e852118622d1653433f6bda49e682a453d695df05014e3",
+  "scout": "c784cac74ca83ff49ab3cb389f78c47eb6b0a547316645c8e1556eb3b49e7973",
+  "review_depth": 12,
+  "depth": 12,
+  "drop": 0,
+  "add": 3,
+  "version": 1,
+  "scout_directory": "../text-ranker",
+  "require_venue_evidence": true
+}

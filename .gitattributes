@@ -3,3 +3,9 @@
 benchmarks/** -text
 skills/image-case-retrieval/assets/lexical-ranker/** -text whitespace=cr-at-eol
 skills/image-case-retrieval/assets/lexical-ranker/*.txt binary
+skills/image-case-retrieval/assets/semantic-ranker/** -text whitespace=cr-at-eol
+skills/image-case-retrieval/assets/semantic-ranker/*.txt binary
+skills/image-case-retrieval/assets/text-ranker/** -text whitespace=cr-at-eol
+skills/image-case-retrieval/assets/text-ranker/*.txt binary
+# The published feature encoder fingerprint includes the original terminal newline sequence.
+skills/image-case-retrieval/scripts/semantic_features.py whitespace=trailing-space,-blank-at-eof
