@@ -7,6 +7,10 @@ description: 根据自然语言用例检索本地图片，融合已有描述、O
 
 将查询工作簿与本地图片库建立关联，输出相关图片、证据、矩阵和可复查页面。扩展说明见 [数据与运行文档](https://github.com/icarus0309/picfoundskills/blob/main/docs/usage.md)；独立安装的核心接口以本文件和 `scripts/` 为准。
 
+## 全库检索与高权重排序
+
+按主题留出评测或要求尽量避免 embedding 时，可使用全库倒排索引和随包提供的轻量排序器。新查询入口为 `scripts/lexical_search.py`，按需一次性补充视觉事实。每个返回结果带有证据字段。已有视觉复核方法也保留作对照。[运行方法、训练和复测](references/lexical-ranker.md)
+
 ## 高权重检索
 
 要求按“高权重预期fid”评分、扩大找图覆盖并处罚多找时，使用 `weighted_retrieval.py` 与 `score_weighted.py`。评分按表头识别高权重列，本地 v19 在 F 列。每张返回的清单外图片均计入精确率分母。默认历史 V1/V2 报表仍按 D 列复现。[高权重检索命令、证据来源与评测口径](references/high-weight.md)
@@ -37,7 +41,7 @@ python scripts/score_completed.py --root <数据根目录> --out <输出目录>
 
 `run.py` 保留 V1 单批入口；`hybrid_run.py` 在同一 VLM 下生成 V1 视觉策略和 V2 混合策略的成对预测。两种方法共享已完成的视觉分支，不能当作独立双倍调用计算成本。
 
-## 检索约束
+## V1/V2 检索约束
 
 1. 推理只读取用例 A/B 列；D 列及其他答案列不进入目录规划、筛选、复核或候选规则。
 2. 清点图片与非图片。HEIC/HEIF 由 pillow-heif 解码，LIVP 提取静态图，ARW/DNG 使用 rawpy。解码失败保留 `E`，不能转为负例。

@@ -27,7 +27,7 @@ def write_json(path, obj):
     try:tmp.replace(path)
     finally:tmp.unlink(missing_ok=True)
 
-def read_json(path): return json.loads(Path(path).read_text(encoding='utf-8'))
+def read_json(path): return json.loads(Path(path).read_text(encoding='utf-8-sig'))
 
 def read_cases(root):
     book=openpyxl.load_workbook(root/'E2E_1321cases_1w_data_v19.xlsx',read_only=True,data_only=True)
@@ -35,7 +35,7 @@ def read_cases(root):
     cases=[{'id':str(a),'query':str(b),'excel_row':i} for i,(a,b) in enumerate(book.worksheets[0].iter_rows(min_row=2,max_col=2,values_only=True),2) if a and b]
     book.close(); return cases
 
-def inventory(root,out):
+def inventory(root,out,include_cases=True):
     photos=[];excluded=[]
     for p in sorted((root/'图片').rglob('*')):
         if not p.is_file():continue
@@ -43,7 +43,7 @@ def inventory(root,out):
         if p.suffix.lower() in PHOTO:photos.append(row)
         else:excluded.append({'path':row['path'],'reason':'not_still_image'})
     descriptions={p.parent.name:p.read_text(encoding='utf-8-sig',errors='replace') for p in (root/'图片').rglob('*.txt')}
-    obj={'version':VERSION,'cases':read_cases(root),'images':photos,'excluded':excluded,'directory_descriptions':descriptions}
+    obj={'version':VERSION,'cases':read_cases(root) if include_cases else [],'images':photos,'excluded':excluded,'directory_descriptions':descriptions}
     write_json(out/'inventory.json',obj)
     print(json.dumps({'images':len(photos),'cases':len(obj['cases']),'excluded':len(excluded),'directories':dict(collections.Counter(p['directory'] for p in photos))},ensure_ascii=False),flush=True)
     return obj

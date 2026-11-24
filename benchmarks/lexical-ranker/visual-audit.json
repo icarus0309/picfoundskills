@@ -1,0 +1,107 @@
+[
+  {
+    "ticket": "R01",
+    "query": "鱼特写",
+    "error": "missed",
+    "decision": "否",
+    "reason": "整缸远景，鱼占比小"
+  },
+  {
+    "ticket": "R02",
+    "query": "动物园",
+    "error": "extra",
+    "decision": "待定",
+    "reason": "熊和人工水池可见，场馆身份缺少直接依据"
+  },
+  {
+    "ticket": "R03",
+    "query": "大门",
+    "error": "missed",
+    "decision": "是",
+    "reason": "凯旋门主体清楚，属于纪念性门式建筑"
+  },
+  {
+    "ticket": "R04",
+    "query": "海洋世界",
+    "error": "extra",
+    "decision": "待定",
+    "reason": "以生态动物园拼图为主，水下画面仅占一小格"
+  },
+  {
+    "ticket": "R05",
+    "query": "动物园",
+    "error": "missed",
+    "decision": "是",
+    "reason": "有游客在围栏边喂养动物的展区"
+  },
+  {
+    "ticket": "R06",
+    "query": "大门",
+    "error": "extra",
+    "decision": "是",
+    "reason": "婚礼装饰的入口，打开的铁门和通道可见"
+  },
+  {
+    "ticket": "R07",
+    "query": "鱼特写",
+    "error": "missed",
+    "decision": "否",
+    "reason": "餐桌上的汤锅"
+  },
+  {
+    "ticket": "R08",
+    "query": "鱼特写",
+    "error": "extra",
+    "decision": "否",
+    "reason": "人像为主体，鱼缸为背景"
+  },
+  {
+    "ticket": "R09",
+    "query": "鱼特写",
+    "error": "extra",
+    "decision": "否",
+    "reason": "清晰主体是龟，鱼只在前景模糊出现"
+  },
+  {
+    "ticket": "R10",
+    "query": "动物园",
+    "error": "missed",
+    "decision": "待定",
+    "reason": "火烈鸟在人工管理的绿地，场馆身份待确认"
+  },
+  {
+    "ticket": "R11",
+    "query": "海洋世界",
+    "error": "missed",
+    "decision": "是",
+    "reason": "隔玻璃可见水下鱼群和缸内布景"
+  },
+  {
+    "ticket": "R12",
+    "query": "海洋世界",
+    "error": "extra",
+    "decision": "否",
+    "reason": "水禽池塘及亭子，没有可见的海洋展区特征"
+  },
+  {
+    "ticket": "R13",
+    "query": "海洋世界",
+    "error": "missed",
+    "decision": "是",
+    "reason": "室内企鹅展馆有人工岩壁、水池和照明"
+  },
+  {
+    "ticket": "R14",
+    "query": "动物园",
+    "error": "extra",
+    "decision": "待定",
+    "reason": "火烈鸟在人工管理的绿地，场馆身份待确认"
+  },
+  {
+    "ticket": "R15",
+    "query": "大门",
+    "error": "missed",
+    "decision": "是",
+    "reason": "鸟居正面构成画面主体"
+  }
+]

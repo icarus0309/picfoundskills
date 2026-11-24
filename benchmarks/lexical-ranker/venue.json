@@ -1,0 +1,912 @@
+{
+  "rule": "venue kind with explicit place groups; at least one written alias from each group",
+  "new_split": {
+    "train": 955,
+    "calibration": 156,
+    "test": 37
+  },
+  "refit_split_sha256": "45d09f5511503d6f98fe9edc09eea42afa0657d5b1a830fcd5e6a98c270a360b",
+  "additional_without_rule": {
+    "total": {
+      "tp": 288,
+      "fp": 59,
+      "fn": 271,
+      "precision": 0.829971181556196,
+      "coverage": 0.5152057245080501,
+      "f1": 0.6357615894039735,
+      "labeled_cases": 37,
+      "unscored_cases": 0,
+      "hit_cases": 36
+    },
+    "cases": {
+      "TC0103": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "coverage": 0.6666666666666666,
+        "f1": 0.8,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC0114": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.6,
+        "coverage": 0.75,
+        "f1": 0.6666666666666666,
+        "unmapped_fids": 0,
+        "reference_fids": 4
+      },
+      "TC0124": {
+        "tp": 14,
+        "fp": 1,
+        "fn": 20,
+        "precision": 0.9333333333333333,
+        "coverage": 0.4117647058823529,
+        "f1": 0.5714285714285714,
+        "unmapped_fids": 1,
+        "reference_fids": 34
+      },
+      "TC0126": {
+        "tp": 1,
+        "fp": 3,
+        "fn": 5,
+        "precision": 0.25,
+        "coverage": 0.16666666666666666,
+        "f1": 0.2,
+        "unmapped_fids": 0,
+        "reference_fids": 6
+      },
+      "TC0131": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "coverage": 0.75,
+        "f1": 0.8571428571428571,
+        "unmapped_fids": 0,
+        "reference_fids": 8
+      },
+      "TC0150": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.0,
+        "coverage": 0.0,
+        "f1": 0.0,
+        "unmapped_fids": 1,
+        "reference_fids": 5
+      },
+      "TC0153": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 12,
+        "precision": 0.6,
+        "coverage": 0.2,
+        "f1": 0.3,
+        "unmapped_fids": 0,
+        "reference_fids": 15
+      },
+      "TC0154": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 15,
+        "precision": 1.0,
+        "coverage": 0.11764705882352941,
+        "f1": 0.21052631578947367,
+        "unmapped_fids": 2,
+        "reference_fids": 17
+      },
+      "TC0158": {
+        "tp": 23,
+        "fp": 5,
+        "fn": 48,
+        "precision": 0.8214285714285714,
+        "coverage": 0.323943661971831,
+        "f1": 0.46464646464646464,
+        "unmapped_fids": 1,
+        "reference_fids": 71
+      },
+      "TC0160": {
+        "tp": 24,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.96,
+        "coverage": 1.0,
+        "f1": 0.9795918367346939,
+        "unmapped_fids": 0,
+        "reference_fids": 24
+      },
+      "TC0173": {
+        "tp": 24,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.9230769230769231,
+        "coverage": 0.8571428571428571,
+        "f1": 0.8888888888888888,
+        "unmapped_fids": 0,
+        "reference_fids": 28
+      },
+      "TC0186": {
+        "tp": 31,
+        "fp": 1,
+        "fn": 8,
+        "precision": 0.96875,
+        "coverage": 0.7948717948717948,
+        "f1": 0.8732394366197183,
+        "unmapped_fids": 0,
+        "reference_fids": 39
+      },
+      "TC0189": {
+        "tp": 17,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.9444444444444444,
+        "coverage": 0.7727272727272727,
+        "f1": 0.85,
+        "unmapped_fids": 0,
+        "reference_fids": 22
+      },
+      "TC0191": {
+        "tp": 23,
+        "fp": 1,
+        "fn": 29,
+        "precision": 0.9583333333333334,
+        "coverage": 0.4423076923076923,
+        "f1": 0.6052631578947368,
+        "unmapped_fids": 0,
+        "reference_fids": 52
+      },
+      "TC0192": {
+        "tp": 27,
+        "fp": 2,
+        "fn": 7,
+        "precision": 0.9310344827586207,
+        "coverage": 0.7941176470588235,
+        "f1": 0.8571428571428571,
+        "unmapped_fids": 0,
+        "reference_fids": 34
+      },
+      "TC0494": {
+        "tp": 2,
+        "fp": 11,
+        "fn": 2,
+        "precision": 0.15384615384615385,
+        "coverage": 0.5,
+        "f1": 0.23529411764705882,
+        "unmapped_fids": 0,
+        "reference_fids": 4
+      },
+      "TC0522": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 13,
+        "precision": 1.0,
+        "coverage": 0.1875,
+        "f1": 0.3157894736842105,
+        "unmapped_fids": 0,
+        "reference_fids": 16
+      },
+      "TC0582": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 4,
+        "precision": 1.0,
+        "coverage": 0.5,
+        "f1": 0.6666666666666666,
+        "unmapped_fids": 0,
+        "reference_fids": 8
+      },
+      "TC0689": {
+        "tp": 15,
+        "fp": 11,
+        "fn": 2,
+        "precision": 0.5769230769230769,
+        "coverage": 0.8823529411764706,
+        "f1": 0.6976744186046512,
+        "unmapped_fids": 0,
+        "reference_fids": 17
+      },
+      "TC0691": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 5
+      },
+      "TC0793": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "coverage": 0.5,
+        "f1": 0.6666666666666666,
+        "unmapped_fids": 0,
+        "reference_fids": 2
+      },
+      "TC0835": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC0867": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC0916": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 13,
+        "precision": 0.5,
+        "coverage": 0.13333333333333333,
+        "f1": 0.21052631578947367,
+        "unmapped_fids": 0,
+        "reference_fids": 15
+      },
+      "TC0941": {
+        "tp": 14,
+        "fp": 5,
+        "fn": 15,
+        "precision": 0.7368421052631579,
+        "coverage": 0.4827586206896552,
+        "f1": 0.5833333333333334,
+        "unmapped_fids": 0,
+        "reference_fids": 29
+      },
+      "TC0966": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 2
+      },
+      "TC1040": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC1126": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC1174": {
+        "tp": 3,
+        "fp": 6,
+        "fn": 4,
+        "precision": 0.3333333333333333,
+        "coverage": 0.42857142857142855,
+        "f1": 0.375,
+        "unmapped_fids": 0,
+        "reference_fids": 7
+      },
+      "TC1239": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC1260": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 18,
+        "precision": 1.0,
+        "coverage": 0.05263157894736842,
+        "f1": 0.1,
+        "unmapped_fids": 0,
+        "reference_fids": 19
+      },
+      "TC1280": {
+        "tp": 8,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.8888888888888888,
+        "coverage": 0.8,
+        "f1": 0.8421052631578947,
+        "unmapped_fids": 0,
+        "reference_fids": 10
+      },
+      "TC1285": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 7,
+        "precision": 1.0,
+        "coverage": 0.2222222222222222,
+        "f1": 0.36363636363636365,
+        "unmapped_fids": 0,
+        "reference_fids": 9
+      },
+      "TC1290": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC1295": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.75,
+        "coverage": 1.0,
+        "f1": 0.8571428571428571,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC1304": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 28,
+        "precision": 1.0,
+        "coverage": 0.28205128205128205,
+        "f1": 0.44,
+        "unmapped_fids": 0,
+        "reference_fids": 39
+      },
+      "TC1320": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 2
+      }
+    }
+  },
+  "additional_with_rule": {
+    "total": {
+      "tp": 286,
+      "fp": 48,
+      "fn": 273,
+      "precision": 0.8562874251497006,
+      "coverage": 0.5116279069767442,
+      "f1": 0.6405375139977604,
+      "labeled_cases": 37,
+      "unscored_cases": 0,
+      "hit_cases": 35
+    },
+    "cases": {
+      "TC0103": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "coverage": 0.6666666666666666,
+        "f1": 0.8,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC0114": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.6,
+        "coverage": 0.75,
+        "f1": 0.6666666666666666,
+        "unmapped_fids": 0,
+        "reference_fids": 4
+      },
+      "TC0124": {
+        "tp": 14,
+        "fp": 1,
+        "fn": 20,
+        "precision": 0.9333333333333333,
+        "coverage": 0.4117647058823529,
+        "f1": 0.5714285714285714,
+        "unmapped_fids": 1,
+        "reference_fids": 34
+      },
+      "TC0126": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 5,
+        "precision": 1.0,
+        "coverage": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "unmapped_fids": 0,
+        "reference_fids": 6
+      },
+      "TC0131": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "coverage": 0.75,
+        "f1": 0.8571428571428571,
+        "unmapped_fids": 0,
+        "reference_fids": 8
+      },
+      "TC0150": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.0,
+        "coverage": 0.0,
+        "f1": 0.0,
+        "unmapped_fids": 1,
+        "reference_fids": 5
+      },
+      "TC0153": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 12,
+        "precision": 0.6,
+        "coverage": 0.2,
+        "f1": 0.3,
+        "unmapped_fids": 0,
+        "reference_fids": 15
+      },
+      "TC0154": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 15,
+        "precision": 1.0,
+        "coverage": 0.11764705882352941,
+        "f1": 0.21052631578947367,
+        "unmapped_fids": 2,
+        "reference_fids": 17
+      },
+      "TC0158": {
+        "tp": 23,
+        "fp": 5,
+        "fn": 48,
+        "precision": 0.8214285714285714,
+        "coverage": 0.323943661971831,
+        "f1": 0.46464646464646464,
+        "unmapped_fids": 1,
+        "reference_fids": 71
+      },
+      "TC0160": {
+        "tp": 24,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.96,
+        "coverage": 1.0,
+        "f1": 0.9795918367346939,
+        "unmapped_fids": 0,
+        "reference_fids": 24
+      },
+      "TC0173": {
+        "tp": 24,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.9230769230769231,
+        "coverage": 0.8571428571428571,
+        "f1": 0.8888888888888888,
+        "unmapped_fids": 0,
+        "reference_fids": 28
+      },
+      "TC0186": {
+        "tp": 31,
+        "fp": 1,
+        "fn": 8,
+        "precision": 0.96875,
+        "coverage": 0.7948717948717948,
+        "f1": 0.8732394366197183,
+        "unmapped_fids": 0,
+        "reference_fids": 39
+      },
+      "TC0189": {
+        "tp": 17,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.9444444444444444,
+        "coverage": 0.7727272727272727,
+        "f1": 0.85,
+        "unmapped_fids": 0,
+        "reference_fids": 22
+      },
+      "TC0191": {
+        "tp": 23,
+        "fp": 1,
+        "fn": 29,
+        "precision": 0.9583333333333334,
+        "coverage": 0.4423076923076923,
+        "f1": 0.6052631578947368,
+        "unmapped_fids": 0,
+        "reference_fids": 52
+      },
+      "TC0192": {
+        "tp": 27,
+        "fp": 2,
+        "fn": 7,
+        "precision": 0.9310344827586207,
+        "coverage": 0.7941176470588235,
+        "f1": 0.8571428571428571,
+        "unmapped_fids": 0,
+        "reference_fids": 34
+      },
+      "TC0494": {
+        "tp": 2,
+        "fp": 11,
+        "fn": 2,
+        "precision": 0.15384615384615385,
+        "coverage": 0.5,
+        "f1": 0.23529411764705882,
+        "unmapped_fids": 0,
+        "reference_fids": 4
+      },
+      "TC0522": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 13,
+        "precision": 1.0,
+        "coverage": 0.1875,
+        "f1": 0.3157894736842105,
+        "unmapped_fids": 0,
+        "reference_fids": 16
+      },
+      "TC0582": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 4,
+        "precision": 1.0,
+        "coverage": 0.5,
+        "f1": 0.6666666666666666,
+        "unmapped_fids": 0,
+        "reference_fids": 8
+      },
+      "TC0689": {
+        "tp": 14,
+        "fp": 10,
+        "fn": 3,
+        "precision": 0.5833333333333334,
+        "coverage": 0.8235294117647058,
+        "f1": 0.6829268292682927,
+        "unmapped_fids": 0,
+        "reference_fids": 17
+      },
+      "TC0691": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 5
+      },
+      "TC0793": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "coverage": 0.5,
+        "f1": 0.6666666666666666,
+        "unmapped_fids": 0,
+        "reference_fids": 2
+      },
+      "TC0835": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC0867": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC0916": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 13,
+        "precision": 0.6666666666666666,
+        "coverage": 0.13333333333333333,
+        "f1": 0.2222222222222222,
+        "unmapped_fids": 0,
+        "reference_fids": 15
+      },
+      "TC0941": {
+        "tp": 14,
+        "fp": 5,
+        "fn": 15,
+        "precision": 0.7368421052631579,
+        "coverage": 0.4827586206896552,
+        "f1": 0.5833333333333334,
+        "unmapped_fids": 0,
+        "reference_fids": 29
+      },
+      "TC0966": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 2
+      },
+      "TC1040": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC1126": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC1174": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 4,
+        "precision": 1.0,
+        "coverage": 0.42857142857142855,
+        "f1": 0.6,
+        "unmapped_fids": 0,
+        "reference_fids": 7
+      },
+      "TC1239": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC1260": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 19,
+        "precision": null,
+        "coverage": 0.0,
+        "f1": 0.0,
+        "unmapped_fids": 0,
+        "reference_fids": 19
+      },
+      "TC1280": {
+        "tp": 8,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.8888888888888888,
+        "coverage": 0.8,
+        "f1": 0.8421052631578947,
+        "unmapped_fids": 0,
+        "reference_fids": 10
+      },
+      "TC1285": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 7,
+        "precision": 1.0,
+        "coverage": 0.2222222222222222,
+        "f1": 0.36363636363636365,
+        "unmapped_fids": 0,
+        "reference_fids": 9
+      },
+      "TC1290": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 1
+      },
+      "TC1295": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.75,
+        "coverage": 1.0,
+        "f1": 0.8571428571428571,
+        "unmapped_fids": 0,
+        "reference_fids": 3
+      },
+      "TC1304": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 28,
+        "precision": 1.0,
+        "coverage": 0.28205128205128205,
+        "f1": 0.44,
+        "unmapped_fids": 0,
+        "reference_fids": 39
+      },
+      "TC1320": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "coverage": 1.0,
+        "f1": 1.0,
+        "unmapped_fids": 0,
+        "reference_fids": 2
+      }
+    }
+  },
+  "diagnostic_155": {
+    "tp": 2767,
+    "fp": 1434,
+    "fn": 1866,
+    "precision": 0.6586527017376815,
+    "coverage": 0.5972372113101662,
+    "f1": 0.6264432872990717,
+    "labeled_cases": 153,
+    "unscored_cases": 2,
+    "hit_cases": 145
+  },
+  "diagnostic_venue_cases": {
+    "TC0027": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "f1": 1.0,
+      "unmapped_fids": 0,
+      "reference_fids": 2
+    },
+    "TC0041": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "f1": 1.0,
+      "unmapped_fids": 0,
+      "reference_fids": 2
+    },
+    "TC0071": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "coverage": 1.0,
+      "f1": 1.0,
+      "unmapped_fids": 0,
+      "reference_fids": 2
+    },
+    "TC0080": {
+      "tp": 3,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.75,
+      "coverage": 0.75,
+      "f1": 0.75,
+      "unmapped_fids": 0,
+      "reference_fids": 4
+    },
+    "TC0101": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 21,
+      "precision": 1.0,
+      "coverage": 0.25,
+      "f1": 0.4,
+      "unmapped_fids": 0,
+      "reference_fids": 28
+    },
+    "TC0113": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 47,
+      "precision": 1.0,
+      "coverage": 0.0784313725490196,
+      "f1": 0.14545454545454545,
+      "unmapped_fids": 0,
+      "reference_fids": 51
+    },
+    "TC0479": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.3333333333333333,
+      "coverage": 1.0,
+      "f1": 0.5,
+      "unmapped_fids": 0,
+      "reference_fids": 1
+    },
+    "TC0891": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "coverage": 0.875,
+      "f1": 0.9333333333333333,
+      "unmapped_fids": 0,
+      "reference_fids": 8
+    },
+    "TC1241": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "coverage": 0.5,
+      "f1": 0.6666666666666666,
+      "unmapped_fids": 0,
+      "reference_fids": 2
+    },
+    "TC1247": {
+      "tp": 0,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.0,
+      "coverage": null,
+      "f1": 0.0,
+      "unmapped_fids": 0,
+      "reference_fids": 0
+    },
+    "TC1306": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "coverage": 0.5714285714285714,
+      "f1": 0.7272727272727273,
+      "unmapped_fids": 0,
+      "reference_fids": 7
+    },
+    "TC1308": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 24,
+      "precision": 1.0,
+      "coverage": 0.07692307692307693,
+      "f1": 0.14285714285714285,
+      "unmapped_fids": 0,
+      "reference_fids": 26
+    }
+  }
+}

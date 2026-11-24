@@ -16,3 +16,5 @@ jobs:
       - run: python -X utf8 tools/verify_report.py
       - name: Verify time and location comparison
         run: python -X utf8 tools/verify_hybrid_report.py
+      - name: Verify lexical retrieval counts
+        run: python -X utf8 tools/lexical_benchmark.py verify

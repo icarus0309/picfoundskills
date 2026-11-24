@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.xlsx -text
 benchmarks/** -text
+skills/image-case-retrieval/assets/lexical-ranker/** -text whitespace=cr-at-eol
+skills/image-case-retrieval/assets/lexical-ranker/*.txt binary

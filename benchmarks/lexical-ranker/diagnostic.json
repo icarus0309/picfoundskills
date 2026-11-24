@@ -1,0 +1,781 @@
+{
+  "mode": "visual-album",
+  "extra_categories": {
+    "low": 275,
+    "unlisted": 1371,
+    "explicit_negative": 55
+  },
+  "threshold_sweep": {
+    "max_coverage_at_90_precision": 0.28556011223829053,
+    "max_precision_at_90_coverage": 0.13891294211683208
+  },
+  "errors": {
+    "TC0001": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 2
+    },
+    "TC0002": {
+      "extra": 11,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0003": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0004": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 27
+    },
+    "TC0005": {
+      "extra": 1,
+      "missed_before_rank": 1,
+      "missed_at_rank": 93
+    },
+    "TC0006": {
+      "extra": 2,
+      "missed_before_rank": 19,
+      "missed_at_rank": 23
+    },
+    "TC0007": {
+      "extra": 1,
+      "missed_before_rank": 1,
+      "missed_at_rank": 2
+    },
+    "TC0008": {
+      "extra": 17,
+      "missed_before_rank": 2,
+      "missed_at_rank": 2
+    },
+    "TC0009": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0010": {
+      "extra": 8,
+      "missed_before_rank": 0,
+      "missed_at_rank": 25
+    },
+    "TC0011": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 6
+    },
+    "TC0012": {
+      "extra": 23,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0013": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0014": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 14
+    },
+    "TC0015": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0016": {
+      "extra": 7,
+      "missed_before_rank": 2,
+      "missed_at_rank": 0
+    },
+    "TC0017": {
+      "extra": 9,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0018": {
+      "extra": 10,
+      "missed_before_rank": 0,
+      "missed_at_rank": 15
+    },
+    "TC0019": {
+      "extra": 9,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0020": {
+      "extra": 135,
+      "missed_before_rank": 0,
+      "missed_at_rank": 19
+    },
+    "TC0021": {
+      "extra": 7,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0022": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0023": {
+      "extra": 450,
+      "missed_before_rank": 6,
+      "missed_at_rank": 65
+    },
+    "TC0024": {
+      "extra": 46,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0025": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 2
+    },
+    "TC0026": {
+      "extra": 6,
+      "missed_before_rank": 0,
+      "missed_at_rank": 2
+    },
+    "TC0027": {
+      "extra": 29,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0030": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 6
+    },
+    "TC0031": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0032": {
+      "extra": 24,
+      "missed_before_rank": 0,
+      "missed_at_rank": 7
+    },
+    "TC0034": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0035": {
+      "extra": 4,
+      "missed_before_rank": 2,
+      "missed_at_rank": 9
+    },
+    "TC0036": {
+      "extra": 7,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0037": {
+      "extra": 40,
+      "missed_before_rank": 5,
+      "missed_at_rank": 39
+    },
+    "TC0038": {
+      "extra": 4,
+      "missed_before_rank": 2,
+      "missed_at_rank": 27
+    },
+    "TC0040": {
+      "extra": 6,
+      "missed_before_rank": 0,
+      "missed_at_rank": 9
+    },
+    "TC0041": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0042": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0043": {
+      "extra": 7,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0044": {
+      "extra": 4,
+      "missed_before_rank": 0,
+      "missed_at_rank": 2
+    },
+    "TC0045": {
+      "extra": 4,
+      "missed_before_rank": 10,
+      "missed_at_rank": 13
+    },
+    "TC0046": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 0
+    },
+    "TC0047": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0048": {
+      "extra": 15,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0049": {
+      "extra": 15,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0051": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 0
+    },
+    "TC0052": {
+      "extra": 6,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0053": {
+      "extra": 3,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0054": {
+      "extra": 160,
+      "missed_before_rank": 3,
+      "missed_at_rank": 179
+    },
+    "TC0055": {
+      "extra": 8,
+      "missed_before_rank": 0,
+      "missed_at_rank": 5
+    },
+    "TC0056": {
+      "extra": 4,
+      "missed_before_rank": 0,
+      "missed_at_rank": 11
+    },
+    "TC0057": {
+      "extra": 3,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0058": {
+      "extra": 26,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0059": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 5
+    },
+    "TC0061": {
+      "extra": 9,
+      "missed_before_rank": 0,
+      "missed_at_rank": 7
+    },
+    "TC0062": {
+      "extra": 4,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0063": {
+      "extra": 4,
+      "missed_before_rank": 1,
+      "missed_at_rank": 1
+    },
+    "TC0064": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0065": {
+      "extra": 3,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0066": {
+      "extra": 1,
+      "missed_before_rank": 1,
+      "missed_at_rank": 2
+    },
+    "TC0067": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0068": {
+      "extra": 5,
+      "missed_before_rank": 0,
+      "missed_at_rank": 2
+    },
+    "TC0070": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0071": {
+      "extra": 207,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0072": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0073": {
+      "extra": 7,
+      "missed_before_rank": 0,
+      "missed_at_rank": 163
+    },
+    "TC0074": {
+      "extra": 4,
+      "missed_before_rank": 0,
+      "missed_at_rank": 57
+    },
+    "TC0075": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0076": {
+      "extra": 20,
+      "missed_before_rank": 0,
+      "missed_at_rank": 2
+    },
+    "TC0077": {
+      "extra": 2,
+      "missed_before_rank": 3,
+      "missed_at_rank": 7
+    },
+    "TC0078": {
+      "extra": 26,
+      "missed_before_rank": 7,
+      "missed_at_rank": 10
+    },
+    "TC0080": {
+      "extra": 8,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0081": {
+      "extra": 2,
+      "missed_before_rank": 1,
+      "missed_at_rank": 1
+    },
+    "TC0082": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0083": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0084": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 50
+    },
+    "TC0085": {
+      "extra": 29,
+      "missed_before_rank": 2,
+      "missed_at_rank": 42
+    },
+    "TC0086": {
+      "extra": 0,
+      "missed_before_rank": 2,
+      "missed_at_rank": 21
+    },
+    "TC0087": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 24
+    },
+    "TC0088": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0089": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0090": {
+      "extra": 11,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0091": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 5
+    },
+    "TC0092": {
+      "extra": 0,
+      "missed_before_rank": 2,
+      "missed_at_rank": 0
+    },
+    "TC0094": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 10
+    },
+    "TC0095": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 3
+    },
+    "TC0096": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 26
+    },
+    "TC0097": {
+      "extra": 11,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0100": {
+      "extra": 2,
+      "missed_before_rank": 1,
+      "missed_at_rank": 0
+    },
+    "TC0101": {
+      "extra": 21,
+      "missed_before_rank": 0,
+      "missed_at_rank": 11
+    },
+    "TC0106": {
+      "extra": 1,
+      "missed_before_rank": 6,
+      "missed_at_rank": 4
+    },
+    "TC0107": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 2
+    },
+    "TC0108": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0109": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 9
+    },
+    "TC0110": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 6
+    },
+    "TC0111": {
+      "extra": 0,
+      "missed_before_rank": 3,
+      "missed_at_rank": 38
+    },
+    "TC0112": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0113": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 46
+    },
+    "TC0138": {
+      "extra": 1,
+      "missed_before_rank": 6,
+      "missed_at_rank": 13
+    },
+    "TC0184": {
+      "extra": 4,
+      "missed_before_rank": 0,
+      "missed_at_rank": 20
+    },
+    "TC0190": {
+      "extra": 39,
+      "missed_before_rank": 0,
+      "missed_at_rank": 51
+    },
+    "TC0193": {
+      "extra": 10,
+      "missed_before_rank": 5,
+      "missed_at_rank": 8
+    },
+    "TC0199": {
+      "extra": 12,
+      "missed_before_rank": 0,
+      "missed_at_rank": 11
+    },
+    "TC0203": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0210": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0216": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 14
+    },
+    "TC0220": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0225": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0226": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0231": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0233": {
+      "extra": 4,
+      "missed_before_rank": 35,
+      "missed_at_rank": 67
+    },
+    "TC0253": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0257": {
+      "extra": 0,
+      "missed_before_rank": 2,
+      "missed_at_rank": 0
+    },
+    "TC0258": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 11
+    },
+    "TC0264": {
+      "extra": 4,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0273": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0280": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 13
+    },
+    "TC0290": {
+      "extra": 0,
+      "missed_before_rank": 2,
+      "missed_at_rank": 9
+    },
+    "TC0356": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 66
+    },
+    "TC0427": {
+      "extra": 13,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0453": {
+      "extra": 3,
+      "missed_before_rank": 1,
+      "missed_at_rank": 0
+    },
+    "TC0474": {
+      "extra": 7,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC0479": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0482": {
+      "extra": 10,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0507": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 15
+    },
+    "TC0523": {
+      "extra": 9,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0620": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC0744": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 12
+    },
+    "TC0753": {
+      "extra": 0,
+      "missed_before_rank": 1,
+      "missed_at_rank": 0
+    },
+    "TC0761": {
+      "extra": 1,
+      "missed_before_rank": 1,
+      "missed_at_rank": 0
+    },
+    "TC0776": {
+      "extra": 3,
+      "missed_before_rank": 4,
+      "missed_at_rank": 3
+    },
+    "TC0778": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC0891": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC0978": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC1055": {
+      "extra": 8,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC1072": {
+      "extra": 12,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC1106": {
+      "extra": 2,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC1123": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC1194": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 12
+    },
+    "TC1208": {
+      "extra": 11,
+      "missed_before_rank": 14,
+      "missed_at_rank": 49
+    },
+    "TC1227": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 5
+    },
+    "TC1230": {
+      "extra": 4,
+      "missed_before_rank": 0,
+      "missed_at_rank": 8
+    },
+    "TC1241": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC1242": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC1245": {
+      "extra": 3,
+      "missed_before_rank": 0,
+      "missed_at_rank": 1
+    },
+    "TC1246": {
+      "extra": 8,
+      "missed_before_rank": 0,
+      "missed_at_rank": 23
+    },
+    "TC1248": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 4
+    },
+    "TC1250": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 9
+    },
+    "TC1252": {
+      "extra": 0,
+      "missed_before_rank": 2,
+      "missed_at_rank": 0
+    },
+    "TC1261": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 0
+    },
+    "TC1306": {
+      "extra": 0,
+      "missed_before_rank": 0,
+      "missed_at_rank": 3
+    },
+    "TC1308": {
+      "extra": 1,
+      "missed_before_rank": 0,
+      "missed_at_rank": 24
+    },
+    "TC1321": {
+      "extra": 4,
+      "missed_before_rank": 2,
+      "missed_at_rank": 2
+    }
+  },
+  "review_rows": 172,
+  "predictions_sha256": "5a2493c81facad018c888257a968420792f80eddd6c662540afb8b7c4daf61cb"
+}

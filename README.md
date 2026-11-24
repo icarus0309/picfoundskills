@@ -2,6 +2,10 @@
 
 融合本地图片已有描述、OCR、拍摄时间、地点元信息与视觉检索的可复用 Skill。默认使用 DeepSeek 规划检索条件，使用 Qwen 复核图像，并输出可续跑、可追溯的用例—图片关联矩阵。
 
+## 全库倒排检索与学习排序
+
+新增无需向量索引的检索入口，随包提供训练好的排序器。按主题留出 155 条查询，其中 153 条可按 F 列计分。全库候选覆盖 96.40%，最终精确率 62.02%、覆盖率 59.96%。具名场馆可选用逐组地点证据核验。完整报告给出与旧版的同批对比、五组消融、盲审及追加 37 条用例的比较。[评测报告](docs/evaluation-lexical-ranker.md) · [使用方法](skills/image-case-retrieval/references/lexical-ranker.md) · [匿名逐案结果](benchmarks/lexical-ranker/cases.csv)
+
 ## 高权重图片检索复测
 
 以“高权重预期fid”为参考，每个清单外返回计一次多找。前 10 条精确率从同事 DeepSeek 融合运行的 50.25% 提高到 79.44%，覆盖率从 77.24% 到 77.43%。固定规则用于随后 10 条时，精确率为 55.52%，覆盖率为 84.50%。本轮尚未通过两项指标均达 90% 的验收。[完整报告](docs/evaluation-high-weight.md) · [运行说明](skills/image-case-retrieval/references/high-weight.md)

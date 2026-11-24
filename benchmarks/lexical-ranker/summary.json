@@ -1,0 +1,358 @@
+{
+  "choice": {
+    "chosen": "visual-album",
+    "variants": {
+      "base": {
+        "decision": {
+          "iterations": 150,
+          "pairwise_weight": 0.5,
+          "count_adjustment": 0.5,
+          "threshold": 0.5194065438594916,
+          "precision": 0.5349401488191524,
+          "coverage": 0.5341624939428202,
+          "f1": 0.5345510385516852,
+          "tp": 3307,
+          "fp": 2875,
+          "fn": 2884
+        },
+        "model_sha256": "2eeb67d3e1bd558120be11ac7ade08369b058de1a08447c9bb882f120aac8717"
+      },
+      "profile": {
+        "decision": {
+          "iterations": 150,
+          "pairwise_weight": 1.0,
+          "count_adjustment": 0,
+          "threshold": 6.225162833749195,
+          "precision": 0.5629545821884597,
+          "coverage": 0.5625908576966564,
+          "f1": 0.5627726611730489,
+          "tp": 3483,
+          "fp": 2704,
+          "fn": 2708
+        },
+        "model_sha256": "2f6ee1fa421ec1552329118aab3e9abf9c418834edeaff3f44db837038745c20"
+      },
+      "album": {
+        "decision": {
+          "iterations": 70,
+          "pairwise_weight": 0.5,
+          "count_adjustment": 0,
+          "threshold": 1.1304744178011634,
+          "precision": 0.5598449361977064,
+          "coverage": 0.5598449361977064,
+          "f1": 0.5598449361977064,
+          "tp": 3466,
+          "fp": 2725,
+          "fn": 2725
+        },
+        "model_sha256": "d3d5978a6ac618294d72c0140475d2f431fc251bea3506bc1d9eb03c293e5055"
+      },
+      "enriched": {
+        "decision": {
+          "iterations": 150,
+          "pairwise_weight": 1.0,
+          "count_adjustment": 0,
+          "threshold": 6.251519089974471,
+          "precision": 0.5615085788280997,
+          "coverage": 0.560329510579874,
+          "f1": 0.5609184250949956,
+          "tp": 3469,
+          "fp": 2709,
+          "fn": 2722
+        },
+        "model_sha256": "bfbf39628a24e2386015c3560bbef4be8e93cd101de574d09c91105c735ed900"
+      },
+      "visual-album": {
+        "decision": {
+          "iterations": 70,
+          "pairwise_weight": 0.5,
+          "count_adjustment": 0,
+          "threshold": 1.1123912109399337,
+          "precision": 0.5626916249798289,
+          "coverage": 0.56323695687288,
+          "f1": 0.5629641588634162,
+          "tp": 3487,
+          "fp": 2710,
+          "fn": 2704
+        },
+        "model_sha256": "3ab2ae7d7b8d13690b47312d40dfa71fe61c58668b8dc63aa9289b975aea8ed0"
+      }
+    },
+    "split_sha256": "deb2c700b29889913905d288e17d953e4e3d18b078d7190de67de58f5ca02dc8"
+  },
+  "split_counts": {
+    "train": 993,
+    "calibration": 157,
+    "test": 155,
+    "purged": 16
+  },
+  "images": 10489,
+  "visual_status": {
+    "ok": 1305,
+    "blocked": 13
+  },
+  "training": {
+    "base": {
+      "high": 30993,
+      "low": 8925,
+      "negative": 7535,
+      "unlisted": 190692,
+      "train_queries": 958
+    },
+    "profile": {
+      "high": 32487,
+      "low": 10190,
+      "negative": 8638,
+      "unlisted": 212425,
+      "train_queries": 964
+    },
+    "album": {
+      "high": 32487,
+      "low": 10190,
+      "negative": 8638,
+      "unlisted": 212425,
+      "train_queries": 964
+    },
+    "enriched": {
+      "high": 34060,
+      "low": 10607,
+      "negative": 9013,
+      "unlisted": 219531,
+      "train_queries": 964
+    },
+    "visual-album": {
+      "high": 34060,
+      "low": 10607,
+      "negative": 9013,
+      "unlisted": 219531,
+      "train_queries": 964
+    }
+  },
+  "sealed_predictions": {
+    "base": "8e39da9987dd11e64ac92cca2810d698db13b7f0796915d992d02c75f1650e45",
+    "profile": "32a6d7405019becc5e4494bfec7e925f77a1dc321b2141ada30380830a7e2d0b",
+    "album": "7e63e25200533b876afb646d911c1d4d407ca7dad565058a461d52c9fddc5006",
+    "enriched": "c5065477291c2ebb0f59a9bc9b604156d042e55513884f5e429943fe56291828",
+    "visual-album": "5a2493c81facad018c888257a968420792f80eddd6c662540afb8b7c4daf61cb"
+  },
+  "results": {
+    "base": {
+      "tp": 2789,
+      "fp": 1748,
+      "fn": 1844,
+      "precision": 0.6147233854970244,
+      "coverage": 0.601985754370818,
+      "f1": 0.6082878953107961,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 147,
+      "unmapped": 39
+    },
+    "base-literal": {
+      "tp": 1592,
+      "fp": 2058,
+      "fn": 3041,
+      "precision": 0.43616438356164383,
+      "coverage": 0.343621843298079,
+      "f1": 0.38440178679222503,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 81,
+      "unmapped": 39
+    },
+    "base-candidates": {
+      "tp": 4275,
+      "fp": 154524,
+      "fn": 358,
+      "precision": 0.026920824438441047,
+      "coverage": 0.9227282538312109,
+      "f1": 0.052315336041901216,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 150,
+      "unmapped": 39
+    },
+    "profile": {
+      "tp": 2734,
+      "fp": 2049,
+      "fn": 1899,
+      "precision": 0.5716077775454735,
+      "coverage": 0.5901143967191884,
+      "f1": 0.58071367884452,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 147,
+      "unmapped": 39
+    },
+    "profile-literal": {
+      "tp": 1592,
+      "fp": 2058,
+      "fn": 3041,
+      "precision": 0.43616438356164383,
+      "coverage": 0.343621843298079,
+      "f1": 0.38440178679222503,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 81,
+      "unmapped": 39
+    },
+    "profile-candidates": {
+      "tp": 4390,
+      "fp": 221653,
+      "fn": 243,
+      "precision": 0.019421083599138217,
+      "coverage": 0.9475501834664364,
+      "f1": 0.03806204373233453,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 150,
+      "unmapped": 39
+    },
+    "album": {
+      "tp": 2709,
+      "fp": 1572,
+      "fn": 1924,
+      "precision": 0.6327960756832516,
+      "coverage": 0.5847183250593568,
+      "f1": 0.6078079425622616,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 145,
+      "unmapped": 39
+    },
+    "album-literal": {
+      "tp": 1592,
+      "fp": 2058,
+      "fn": 3041,
+      "precision": 0.43616438356164383,
+      "coverage": 0.343621843298079,
+      "f1": 0.38440178679222503,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 81,
+      "unmapped": 39
+    },
+    "album-candidates": {
+      "tp": 4390,
+      "fp": 221653,
+      "fn": 243,
+      "precision": 0.019421083599138217,
+      "coverage": 0.9475501834664364,
+      "f1": 0.03806204373233453,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 150,
+      "unmapped": 39
+    },
+    "enriched": {
+      "tp": 2688,
+      "fp": 1910,
+      "fn": 1945,
+      "precision": 0.5846020008699434,
+      "coverage": 0.5801856248650982,
+      "f1": 0.5823854403639909,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 147,
+      "unmapped": 39
+    },
+    "enriched-literal": {
+      "tp": 1592,
+      "fp": 2058,
+      "fn": 3041,
+      "precision": 0.43616438356164383,
+      "coverage": 0.343621843298079,
+      "f1": 0.38440178679222503,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 81,
+      "unmapped": 39
+    },
+    "enriched-candidates": {
+      "tp": 4466,
+      "fp": 229257,
+      "fn": 167,
+      "precision": 0.01910808949055078,
+      "coverage": 0.9639542413123247,
+      "f1": 0.03747335917702932,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 150,
+      "unmapped": 39
+    },
+    "visual-album": {
+      "tp": 2778,
+      "fp": 1701,
+      "fn": 1855,
+      "precision": 0.6202277294038848,
+      "coverage": 0.5996114828404921,
+      "f1": 0.6097453906935909,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 145,
+      "unmapped": 39
+    },
+    "visual-album-literal": {
+      "tp": 1592,
+      "fp": 2058,
+      "fn": 3041,
+      "precision": 0.43616438356164383,
+      "coverage": 0.343621843298079,
+      "f1": 0.38440178679222503,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 81,
+      "unmapped": 39
+    },
+    "visual-album-candidates": {
+      "tp": 4466,
+      "fp": 229257,
+      "fn": 167,
+      "precision": 0.01910808949055078,
+      "coverage": 0.9639542413123247,
+      "f1": 0.03747335917702932,
+      "labeled": 153,
+      "unscored": 2,
+      "hit_cases": 150,
+      "unmapped": 39
+    }
+  },
+  "subsets": {
+    "first10": {
+      "tp": 315,
+      "fp": 45,
+      "fn": 199,
+      "precision": 0.875,
+      "coverage": 0.6128404669260701,
+      "f1": 0.7208237986270023,
+      "labeled": 10,
+      "unscored": 0,
+      "hit_cases": 10,
+      "unmapped": 2
+    },
+    "second10": {
+      "tp": 479,
+      "fp": 198,
+      "fn": 63,
+      "precision": 0.707533234859675,
+      "coverage": 0.8837638376383764,
+      "f1": 0.7858900738310091,
+      "labeled": 10,
+      "unscored": 0,
+      "hit_cases": 10,
+      "unmapped": 1
+    },
+    "remaining": {
+      "tp": 1984,
+      "fp": 1458,
+      "fn": 1593,
+      "precision": 0.5764090644973853,
+      "coverage": 0.5546547386077719,
+      "f1": 0.5653226955406753,
+      "labeled": 133,
+      "unscored": 2,
+      "hit_cases": 125,
+      "unmapped": 36
+    }
+  }
+}
