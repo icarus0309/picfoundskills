@@ -1,0 +1,747 @@
+{
+  "definition": {
+    "reference": "高权重预期fid",
+    "penalty": "One FP per returned local photo outside the high-weight reference picture set; one FN per unrecovered reference fid.",
+    "acceptance_floor": 0.9
+  },
+  "selected_method": "expanded",
+  "threshold": 3,
+  "dev_grid": {
+    "expanded": [
+      {
+        "threshold": 2,
+        "tp": 477,
+        "fp": 544,
+        "fn": 37,
+        "precision": 0.4671890303623898,
+        "coverage": 0.9280155642023347,
+        "f1": 0.6214983713355049,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 2.5,
+        "tp": 433,
+        "fp": 209,
+        "fn": 81,
+        "precision": 0.6744548286604362,
+        "coverage": 0.8424124513618677,
+        "f1": 0.7491349480968859,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 3,
+        "tp": 398,
+        "fp": 103,
+        "fn": 116,
+        "precision": 0.7944111776447106,
+        "coverage": 0.77431906614786,
+        "f1": 0.7842364532019704,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 3.5,
+        "tp": 358,
+        "fp": 70,
+        "fn": 156,
+        "precision": 0.8364485981308412,
+        "coverage": 0.6964980544747081,
+        "f1": 0.7600849256900213,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 4,
+        "tp": 313,
+        "fp": 34,
+        "fn": 201,
+        "precision": 0.9020172910662824,
+        "coverage": 0.6089494163424124,
+        "f1": 0.727061556329849,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      }
+    ],
+    "ranked": [
+      {
+        "threshold": 4,
+        "tp": 466,
+        "fp": 375,
+        "fn": 48,
+        "precision": 0.5541022592152199,
+        "coverage": 0.9066147859922179,
+        "f1": 0.6878228782287823,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 5,
+        "tp": 414,
+        "fp": 180,
+        "fn": 100,
+        "precision": 0.696969696969697,
+        "coverage": 0.8054474708171206,
+        "f1": 0.7472924187725631,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 6,
+        "tp": 387,
+        "fp": 109,
+        "fn": 127,
+        "precision": 0.780241935483871,
+        "coverage": 0.7529182879377432,
+        "f1": 0.7663366336633664,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 7,
+        "tp": 325,
+        "fp": 35,
+        "fn": 189,
+        "precision": 0.9027777777777778,
+        "coverage": 0.632295719844358,
+        "f1": 0.7437070938215103,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 8,
+        "tp": 275,
+        "fp": 15,
+        "fn": 239,
+        "precision": 0.9482758620689655,
+        "coverage": 0.5350194552529183,
+        "f1": 0.6840796019900498,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      }
+    ],
+    "pixel": [
+      {
+        "threshold": 0.5,
+        "tp": 444,
+        "fp": 349,
+        "fn": 70,
+        "precision": 0.5598991172761665,
+        "coverage": 0.8638132295719845,
+        "f1": 0.6794185156847743,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 0.55,
+        "tp": 424,
+        "fp": 265,
+        "fn": 90,
+        "precision": 0.6153846153846154,
+        "coverage": 0.8249027237354085,
+        "f1": 0.7049044056525353,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 0.6,
+        "tp": 407,
+        "fp": 192,
+        "fn": 107,
+        "precision": 0.679465776293823,
+        "coverage": 0.791828793774319,
+        "f1": 0.7313566936208445,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 0.65,
+        "tp": 388,
+        "fp": 127,
+        "fn": 126,
+        "precision": 0.7533980582524272,
+        "coverage": 0.754863813229572,
+        "f1": 0.7541302235179786,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 0.7,
+        "tp": 363,
+        "fp": 80,
+        "fn": 151,
+        "precision": 0.8194130925507901,
+        "coverage": 0.7062256809338522,
+        "f1": 0.7586206896551724,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 0.75,
+        "tp": 341,
+        "fp": 56,
+        "fn": 173,
+        "precision": 0.8589420654911839,
+        "coverage": 0.6634241245136187,
+        "f1": 0.7486278814489572,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 0.8,
+        "tp": 312,
+        "fp": 43,
+        "fn": 202,
+        "precision": 0.8788732394366198,
+        "coverage": 0.6070038910505836,
+        "f1": 0.7180667433831991,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      {
+        "threshold": 0.85,
+        "tp": 274,
+        "fp": 27,
+        "fn": 240,
+        "precision": 0.9102990033222591,
+        "coverage": 0.5330739299610895,
+        "f1": 0.6723926380368098,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      }
+    ]
+  },
+  "gallery": {
+    "TC0001": {
+      "expected": 38,
+      "hits": 37,
+      "missed": 1,
+      "extra": 2,
+      "local_comparison_or_reference_status": {
+        "screen_rejected": 1,
+        "low_weight": 1,
+        "explicit_negative": 1
+      }
+    },
+    "TC0002": {
+      "expected": 29,
+      "hits": 29,
+      "missed": 0,
+      "extra": 12,
+      "local_comparison_or_reference_status": {
+        "low_weight": 7,
+        "unlisted": 5
+      }
+    },
+    "TC0003": {
+      "expected": 32,
+      "hits": 32,
+      "missed": 0,
+      "extra": 4,
+      "local_comparison_or_reference_status": {
+        "unlisted": 3,
+        "low_weight": 1
+      }
+    },
+    "TC0004": {
+      "expected": 30,
+      "hits": 30,
+      "missed": 0,
+      "extra": 38,
+      "local_comparison_or_reference_status": {
+        "unlisted": 30,
+        "low_weight": 7,
+        "explicit_negative": 1
+      }
+    },
+    "TC0005": {
+      "expected": 129,
+      "hits": 88,
+      "missed": 41,
+      "extra": 205,
+      "local_comparison_or_reference_status": {
+        "outside_route": 35,
+        "irrelevant": 1,
+        "relevant": 4,
+        "screen_rejected": 1,
+        "low_weight": 10,
+        "unlisted": 194,
+        "explicit_negative": 1
+      }
+    },
+    "TC0006": {
+      "expected": 62,
+      "hits": 14,
+      "missed": 48,
+      "extra": 30,
+      "local_comparison_or_reference_status": {
+        "relevant": 35,
+        "uncertain": 6,
+        "screen_rejected": 2,
+        "irrelevant": 4,
+        "outside_route": 1,
+        "unlisted": 24,
+        "low_weight": 4,
+        "explicit_negative": 2
+      }
+    },
+    "TC0007": {
+      "expected": 35,
+      "hits": 32,
+      "missed": 3,
+      "extra": 3,
+      "local_comparison_or_reference_status": {
+        "screen_rejected": 3,
+        "unlisted": 1,
+        "low_weight": 2
+      }
+    },
+    "TC0008": {
+      "expected": 106,
+      "hits": 106,
+      "missed": 0,
+      "extra": 20,
+      "local_comparison_or_reference_status": {
+        "unlisted": 17,
+        "low_weight": 3
+      }
+    },
+    "TC0009": {
+      "expected": 2,
+      "hits": 1,
+      "missed": 1,
+      "extra": 0,
+      "local_comparison_or_reference_status": {
+        "screen_rejected": 1
+      }
+    },
+    "TC0010": {
+      "expected": 51,
+      "hits": 28,
+      "missed": 23,
+      "extra": 79,
+      "local_comparison_or_reference_status": {
+        "screen_rejected": 12,
+        "relevant": 3,
+        "uncertain": 3,
+        "irrelevant": 4,
+        "outside_route": 1,
+        "unlisted": 56,
+        "explicit_negative": 18,
+        "low_weight": 5
+      }
+    }
+  },
+  "dev": {
+    "counts": {
+      "total": {
+        "tp": 398,
+        "fp": 103,
+        "fn": 116,
+        "precision": 0.7944111776447106,
+        "coverage": 0.77431906614786,
+        "f1": 0.7842364532019704,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      "cases": {
+        "TC0001": {
+          "tp": 29,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "coverage": 0.7631578947368421,
+          "f1": 0.8656716417910447,
+          "unmapped_fids": 0,
+          "reference_fids": 38
+        },
+        "TC0002": {
+          "tp": 27,
+          "fp": 9,
+          "fn": 2,
+          "precision": 0.75,
+          "coverage": 0.9310344827586207,
+          "f1": 0.8307692307692308,
+          "unmapped_fids": 0,
+          "reference_fids": 29
+        },
+        "TC0003": {
+          "tp": 31,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.9393939393939394,
+          "coverage": 0.96875,
+          "f1": 0.9538461538461539,
+          "unmapped_fids": 0,
+          "reference_fids": 32
+        },
+        "TC0004": {
+          "tp": 27,
+          "fp": 10,
+          "fn": 3,
+          "precision": 0.7297297297297297,
+          "coverage": 0.9,
+          "f1": 0.8059701492537313,
+          "unmapped_fids": 0,
+          "reference_fids": 30
+        },
+        "TC0005": {
+          "tp": 98,
+          "fp": 63,
+          "fn": 31,
+          "precision": 0.6086956521739131,
+          "coverage": 0.7596899224806202,
+          "f1": 0.6758620689655173,
+          "unmapped_fids": 0,
+          "reference_fids": 129
+        },
+        "TC0006": {
+          "tp": 41,
+          "fp": 3,
+          "fn": 21,
+          "precision": 0.9318181818181818,
+          "coverage": 0.6612903225806451,
+          "f1": 0.7735849056603774,
+          "unmapped_fids": 0,
+          "reference_fids": 62
+        },
+        "TC0007": {
+          "tp": 29,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.9354838709677419,
+          "coverage": 0.8285714285714286,
+          "f1": 0.8787878787878788,
+          "unmapped_fids": 0,
+          "reference_fids": 35
+        },
+        "TC0008": {
+          "tp": 96,
+          "fp": 8,
+          "fn": 10,
+          "precision": 0.9230769230769231,
+          "coverage": 0.9056603773584906,
+          "f1": 0.9142857142857143,
+          "unmapped_fids": 2,
+          "reference_fids": 106
+        },
+        "TC0009": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "coverage": 0.5,
+          "f1": 0.6666666666666666,
+          "unmapped_fids": 0,
+          "reference_fids": 2
+        },
+        "TC0010": {
+          "tp": 19,
+          "fp": 6,
+          "fn": 32,
+          "precision": 0.76,
+          "coverage": 0.37254901960784315,
+          "f1": 0.5,
+          "unmapped_fids": 0,
+          "reference_fids": 51
+        }
+      }
+    },
+    "queries": {
+      "TC0001": "火烈鸟",
+      "TC0002": "小熊猫",
+      "TC0003": "白虎",
+      "TC0004": "搜下树枝上的鸟",
+      "TC0005": "大门",
+      "TC0006": "海洋世界",
+      "TC0007": "一只白虎",
+      "TC0008": "老虎",
+      "TC0009": "2013年 小鳄鱼",
+      "TC0010": "鱼特写"
+    },
+    "source_sha256": "71db5dd5b164744eb438a263c972514b077a38b80e7734663611fedb0cc521f7",
+    "funnel": {
+      "expanded_pool": {
+        "tp": 490,
+        "fp": 5454,
+        "fn": 24,
+        "precision": 0.08243606998654104,
+        "coverage": 0.953307392996109,
+        "f1": 0.15174976772994736,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      "all_examined_including_uncaptioned": {
+        "tp": 498,
+        "fp": 9735,
+        "fn": 16,
+        "precision": 0.04866608032834946,
+        "coverage": 0.9688715953307393,
+        "f1": 0.09267702614683167,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      "caption_grade_2_plus": {
+        "tp": 481,
+        "fp": 624,
+        "fn": 33,
+        "precision": 0.43529411764705883,
+        "coverage": 0.9357976653696498,
+        "f1": 0.5941939468807906,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      }
+    }
+  },
+  "validation": {
+    "counts": {
+      "total": {
+        "tp": 458,
+        "fp": 367,
+        "fn": 84,
+        "precision": 0.5551515151515152,
+        "coverage": 0.8450184501845018,
+        "f1": 0.6700804681784931,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      "cases": {
+        "TC0011": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 20,
+          "precision": 1.0,
+          "coverage": 0.16666666666666666,
+          "f1": 0.2857142857142857,
+          "unmapped_fids": 0,
+          "reference_fids": 24
+        },
+        "TC0012": {
+          "tp": 66,
+          "fp": 4,
+          "fn": 5,
+          "precision": 0.9428571428571428,
+          "coverage": 0.9295774647887324,
+          "f1": 0.9361702127659575,
+          "unmapped_fids": 0,
+          "reference_fids": 71
+        },
+        "TC0013": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "coverage": 1.0,
+          "f1": 1.0,
+          "unmapped_fids": 0,
+          "reference_fids": 2
+        },
+        "TC0014": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 20,
+          "precision": 1.0,
+          "coverage": 0.047619047619047616,
+          "f1": 0.09090909090909091,
+          "unmapped_fids": 0,
+          "reference_fids": 21
+        },
+        "TC0015": {
+          "tp": 40,
+          "fp": 6,
+          "fn": 6,
+          "precision": 0.8695652173913043,
+          "coverage": 0.8695652173913043,
+          "f1": 0.8695652173913043,
+          "unmapped_fids": 0,
+          "reference_fids": 46
+        },
+        "TC0016": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "coverage": 0.3333333333333333,
+          "f1": 0.5,
+          "unmapped_fids": 1,
+          "reference_fids": 3
+        },
+        "TC0017": {
+          "tp": 54,
+          "fp": 5,
+          "fn": 13,
+          "precision": 0.9152542372881356,
+          "coverage": 0.8059701492537313,
+          "f1": 0.8571428571428571,
+          "unmapped_fids": 0,
+          "reference_fids": 67
+        },
+        "TC0018": {
+          "tp": 32,
+          "fp": 9,
+          "fn": 16,
+          "precision": 0.7804878048780488,
+          "coverage": 0.6666666666666666,
+          "f1": 0.7191011235955056,
+          "unmapped_fids": 0,
+          "reference_fids": 48
+        },
+        "TC0019": {
+          "tp": 30,
+          "fp": 7,
+          "fn": 1,
+          "precision": 0.8108108108108109,
+          "coverage": 0.967741935483871,
+          "f1": 0.8823529411764706,
+          "unmapped_fids": 0,
+          "reference_fids": 31
+        },
+        "TC0020": {
+          "tp": 228,
+          "fp": 336,
+          "fn": 1,
+          "precision": 0.40425531914893614,
+          "coverage": 0.9956331877729258,
+          "f1": 0.575031525851198,
+          "unmapped_fids": 0,
+          "reference_fids": 229
+        }
+      }
+    },
+    "queries": {
+      "TC0011": "喂锦鲤照片",
+      "TC0012": "大熊猫",
+      "TC0013": "好看的海葵",
+      "TC0014": "帮我找下雪人和小狗",
+      "TC0015": "小狗",
+      "TC0016": "一张像素狐狸",
+      "TC0017": "大象",
+      "TC0018": "竹子",
+      "TC0019": "孔雀",
+      "TC0020": "动物园"
+    },
+    "source_sha256": "c685d24bacb9c964af3644708d80cb5bde00aa640922de63c909d474be3a3969",
+    "funnel": {
+      "expanded_pool": {
+        "tp": 538,
+        "fp": 4442,
+        "fn": 4,
+        "precision": 0.10803212851405622,
+        "coverage": 0.992619926199262,
+        "f1": 0.19485693589279246,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      "all_examined_including_uncaptioned": {
+        "tp": 539,
+        "fp": 8725,
+        "fn": 3,
+        "precision": 0.058182210708117445,
+        "coverage": 0.9944649446494465,
+        "f1": 0.10993269426881501,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      },
+      "caption_grade_2_plus": {
+        "tp": 522,
+        "fp": 856,
+        "fn": 20,
+        "precision": 0.3788098693759071,
+        "coverage": 0.9630996309963099,
+        "f1": 0.54375,
+        "labeled_cases": 10,
+        "unscored_cases": 0,
+        "hit_cases": 10
+      }
+    }
+  },
+  "diagnostic_oracle": {
+    "at_precision_90": [
+      390,
+      43
+    ],
+    "at_coverage_90": [
+      0.6719883889695211,
+      463,
+      226
+    ],
+    "not_deployable": true
+  },
+  "gallery_reference_breakdown": {
+    "low_weight": 40,
+    "explicit_negative": 23,
+    "unlisted": 330
+  },
+  "local_replay_on_gallery_misses": {
+    "outside_route": 37,
+    "screen_rejected": 20,
+    "irrelevant": 9,
+    "uncertain": 9,
+    "relevant": 42
+  },
+  "gate_blind_sample": {
+    "seed": 20261124,
+    "returned_high_weight": {
+      "yes": 9,
+      "uncertain": 1,
+      "no": 2
+    },
+    "returned_unlisted": {
+      "yes": 4,
+      "uncertain": 4,
+      "no": 4
+    }
+  },
+  "colleague_comparison": {
+    "v41_visual": {
+      "hits": 262,
+      "returned": 518,
+      "expected": 514,
+      "uncertain": 138
+    },
+    "v41_hybrid": {
+      "hits": 397,
+      "returned": 790,
+      "expected": 514,
+      "uncertain": 238
+    },
+    "qwen_visual": {
+      "hits": 295,
+      "returned": 562,
+      "expected": 514,
+      "uncertain": 4
+    },
+    "qwen_hybrid": {
+      "hits": 435,
+      "returned": 801,
+      "expected": 514,
+      "uncertain": 5
+    }
+  }
+}

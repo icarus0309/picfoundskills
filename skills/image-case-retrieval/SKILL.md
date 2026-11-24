@@ -7,6 +7,10 @@ description: 根据自然语言用例检索本地图片，融合已有描述、O
 
 将查询工作簿与本地图片库建立关联，输出相关图片、证据、矩阵和可复查页面。扩展说明见 [数据与运行文档](https://github.com/icarus0309/picfoundskills/blob/main/docs/usage.md)；独立安装的核心接口以本文件和 `scripts/` 为准。
 
+## 高权重检索
+
+要求按“高权重预期fid”评分、扩大找图覆盖并处罚多找时，使用 `weighted_retrieval.py` 与 `score_weighted.py`。评分按表头识别高权重列，本地 v19 在 F 列。每张返回的清单外图片均计入精确率分母。默认历史 V1/V2 报表仍按 D 列复现。[高权重检索命令、证据来源与评测口径](references/high-weight.md)
+
 ## 输入与入口
 
 数据根目录包含：
