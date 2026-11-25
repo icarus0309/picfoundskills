@@ -94,6 +94,11 @@ def measure(labels, mapping, outputs):
 
 
 def score_legacy(root, out, header):
+    three_seal = out / "three_labels_seal.json"
+    if three_seal.exists() and any(
+        sha(out / name) != value for name, value in p.read_json(three_seal).items()
+    ):
+        raise ValueError("Three-class output changed")
     path = out / "predictions.json"
     seal = p.read_json(out / "predictions_seal.json")
     if sha(path) != seal["sha256"]:

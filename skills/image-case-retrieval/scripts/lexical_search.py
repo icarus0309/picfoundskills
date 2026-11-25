@@ -15,6 +15,9 @@ from weighted_retrieval import sha
 
 
 def search(a):
+    label_config = getattr(a, "three_labels_config", None)
+    if label_config and not getattr(a, "photo_root", None):
+        raise ValueError("--three-labels-config requires --photo-root")
     cases = p.read_json(a.queries)
     if (
         not isinstance(cases, dict)
@@ -193,7 +196,14 @@ def search(a):
     if require_venue:
         lexical_venue.apply(a.gallery, plans, result, a.out / "venue-result")
         result = a.out / "venue-result"
-    print(result / "matches.csv")
+    if label_config:
+        from three_labels import classify
+
+        result = classify(a.photo_root, result, a.out / "three-labels", label_config,
+                          a.gallery, a.workers)
+        print(result / "labels.csv")
+    else:
+        print(result / "matches.csv")
     return result
 
 
@@ -218,6 +228,7 @@ if __name__ == "__main__":
         "scout-model",
         "feedback-bank",
         "projection",
+        "three-labels-config",
     ):
         cli.add_argument("--" + key, type=Path)
     cli.add_argument("--block-registry", nargs="*", type=Path, default=[])
